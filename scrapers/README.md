@@ -5,6 +5,7 @@ This repository contains two Python scripts to scrape academic program and major
 ## Features
 - `programscrape.py`: Scrapes all undergraduate programs and their links into `programs.json`.
 - `majorscrape.py`: Scrapes majors under each program from `programs.json` and saves them into `majors.json`.
+- `coursescraper.py`: Scrapes courses under each major from `majors.json` and saves them into `courses.json`.
 
 ## Prerequisites
 1. **Python 3.7+**: [Download Python](https://www.python.org/downloads/)
@@ -19,13 +20,14 @@ This repository contains two Python scripts to scrape academic program and major
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/hyperloo.git
+git clone https://github.com/tumph/hyperloo.git
 cd scrapers
 ```
 
 ### 2. Install dependencies
 ```bash
 pip install selenium
+pip install beautifulsoup4
 ```
 
 ### 3. Run the scripts
@@ -33,12 +35,21 @@ pip install selenium
 Step 1: Scrape Programs
 Run the first script to generate programs.json:
 
+Hyperloo/scrapers/programscraper/programscrape.py
 ```bash
 python programscrape.py
 ```
 Step 2: Scrape Majors
 After programs.json is generated, run the second script to scrape majors:
 
+Hyperloo/scrapers/majorscraper/majorscraper.py
 ```bash
 python majorscrape.py
+```
+Step 3: Scrape Courses
+After majors.json is generated, run the third script to scrape courses:
+
+Hyperloo/scrapers/coursescraper/coursescraper.py
+```bash
+python coursescraper.py
 ```
