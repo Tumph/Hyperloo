@@ -55,5 +55,5 @@ def setup():
 def teardown(driver):
     driver.quit()
 
-
-scrape()
+if __name__ == "__main__":
+    scrape()
