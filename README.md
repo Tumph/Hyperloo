@@ -58,3 +58,6 @@ Hyperloo/scrapers/coursescraper/coursescraper.py
 ```bash
 python coursescraper.py
 ```
+
+
+Obviously, if you have a mac you need to configure your venv in order to run the python scripts and pip.
