@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
+
+
 # Set up the Selenium WebDriver (ensure the path to chromedriver is correct)
 service = Service('Hyperloo/chromedriver.exe')  # Update this path
 options = webdriver.ChromeOptions()
