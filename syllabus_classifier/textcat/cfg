@@ -1,0 +1,8 @@
+{
+  "labels":[
+    "SYLLABUS",
+    "NOT_SYLLABUS"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}
