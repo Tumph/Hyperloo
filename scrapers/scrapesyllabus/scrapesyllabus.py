@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 
 # Set up the Selenium WebDriver (ensure the path to chromedriver is correct)
-service = Service('Hyperloo/chromedriver.exe')  # Update this path
+service = Service('Hyperloo/scrapers/scrapesyllabus/chromedriver.exe')  # Update this path
 options = webdriver.ChromeOptions()
 # options.add_argument('--headless')  # Run in headless mode if needed
 
@@ -59,7 +59,32 @@ def courses(url):
         return temp
 
 
-url='https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1zle10Cs3?searchTerm=sof&bc=true&bcCurrent=Software%20Engineering%20(Bachelor%20of%20Software%20Engineering%20-%20Honours)&bcItemType=programs'
+# url='https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1zle10Cs3?searchTerm=sof&bc=true&bcCurrent=Software%20Engineering%20(Bachelor%20of%20Software%20Engineering%20-%20Honours)&bcItemType=programs'
 
-print(courses(url))
-print(courses("https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1-0kyACi3?searchTerm=physics&bc=true&bcCurrent=Physics%20(Bachelor%20of%20Science%20-%20Honours)&bcItemType=programs"))
+# print(courses(url))
+# print(courses("https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1-0kyACi3?searchTerm=physics&bc=true&bcCurrent=Physics%20(Bachelor%20of%20Science%20-%20Honours)&bcItemType=programs"))
+
+
+import json
+
+# Open and load the JSON file
+with open('Hyperloo/scrapers/majorscraper/majors.json', 'r') as file:
+    data = json.load(file)
+
+programCourses = []
+
+for i in data:
+    url = i["link"]
+    temp = courses(url)
+    programCourses.append({
+        "major_name": i["major_name"],
+                    "link": i["link"],
+                    "major_id": i["major_id"],
+                    "program_id": i["program_id"],
+                    "program_name": i["program_name"],
+                    "courses":temp
+    })
+    
+with open('Hyperloo/scrapers/scrapesyllabus/majorCourses.json', 'w') as file:
+        json.dump(programCourses, file, indent=4)
+    
