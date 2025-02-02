@@ -8,8 +8,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 def preprocess_text(text):
     doc = nlp(text)
     return " ".join([token.lemma_ for token in doc if not token.is_stop and not token.is_punct])
-
-course1_description = preprocess_text("CS 137 provides an introduction to fundamental programming principles for first-year Software Engineering students. Topics include: procedures and parameter passing, arrays and structures, recursion, sorting, pointers and simple dynamic structures, space and time analysis of designs, and design methodologies.")
+print("d")
+course1_description = preprocess_text("Basic electromagnetic theory; magnetic circuits; electric circuit elements; DC circuit analysis; first-order transient response; AC circuit analysis; Diodes; Transistors: regions of operation, single-transistor amplifiers")
 course2_description = preprocess_text("Analysis of linear circuits. Voltage, current, resistance, capacitance, inductance, voltage source, current source, dependent sources, Ohm's Law, Kirchhoff's Laws, nodal analysis, mesh analysis, circuit transformations, operational amplifier circuits, time response, sinusoidal steady-state response. Preparing for, conducting, and reporting of laboratory experiments.")
 
 
