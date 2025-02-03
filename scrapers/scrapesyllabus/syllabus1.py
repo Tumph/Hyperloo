@@ -4,9 +4,49 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from bs4 import BeautifulSoup
+import spacy
 import json
 import re
 import time
+from collections import defaultdict
+
+def load_nlp_model():
+    """Load and configure spaCy model"""
+    print("🔧 Loading spaCy model...")
+    nlp = spacy.load("en_core_web_lg")
+    
+    # Add custom patterns for academic terms
+    ruler = nlp.get_pipe("attribute_ruler")
+    patterns = [
+        {"label": "TOPIC", "pattern": [{"LOWER": {"IN": ["week", "lecture", "module", "unit", "topic", "session"]}}]},
+        {"label": "ACADEMIC", "pattern": [{"POS": "NOUN"}, {"LOWER": "theory"}]},
+        {"label": "ACADEMIC", "pattern": [{"POS": "NOUN"}, {"LOWER": "analysis"}]},
+        {"label": "ACADEMIC", "pattern": [{"POS": "NOUN"}, {"LOWER": "methods"}]}
+    ]
+    for pattern in patterns:
+        ruler.add(pattern)
+    return nlp
+
+def get_column_indices(table):
+    """Determine the indices of time and topic columns in a table."""
+    headers = table.find('tr').find_all(['th', 'td'])
+    time_col = None
+    topic_col = None
+    
+    for idx, header in enumerate(headers):
+        text = header.get_text(strip=True).lower()
+        if any(word in text for word in ['week', 'time', 'date', 'schedule']):
+            time_col = idx
+        if any(word in text for word in ['topic', 'content', 'subject', 'title']):
+            topic_col = idx
+    
+    # Default to first two columns if headers not found
+    if time_col is None:
+        time_col = 0
+    if topic_col is None:
+        topic_col = 1
+    
+    return time_col, topic_col
 
 def handle_login(driver):
     print("\n🔐 Manual Login Required")
@@ -16,7 +56,6 @@ def handle_login(driver):
     driver.get('https://outline.uwaterloo.ca/browse/')
     
     try:
-        #Waits until Course search element is open to start the script
         WebDriverWait(driver, 120).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
         )
@@ -27,14 +66,12 @@ def handle_login(driver):
         driver.quit()
         exit()
 
-
-def extract_syllabus_data(soup):
-    """Enhanced extraction with multiple fallback strategies"""
+def extract_syllabus_data(soup, nlp):
+    """Enhanced extraction with NLP filtering"""
     print("🔍 Beginning syllabus extraction...")
     topics = []
     times = []
     
-    # Strategy 1: Find schedule section using flexible header detection
     schedule_header = soup.find(['h2', 'h3', 'h4'], 
         string=re.compile(r'schedule|week|content week|tentative', re.IGNORECASE))
     
@@ -55,23 +92,27 @@ def extract_syllabus_data(soup):
                     topic_text = cells[topic_col].get_text(strip=True)
                     
                     if time_text and topic_text:
-                        times.append(time_text)
-                        topics.append(topic_text)
-            print(f"✅ Table extraction: {len(topics)} items found")
+                        doc = nlp(topic_text)
+                        if doc.cats["SYLLABUS"] > 0.5:
+                            times.append(time_text)
+                            topics.append(topic_text)
+            print(f"✅ Table extraction: {len(topics)} items found (NLP filtered)")
     
-    # Strategy 2: Fallback to list items if table parse fails
     if not topics:
         print("⚠️ Table parse failed, trying list items...")
         list_items = soup.select('ul li, ol li')
         for item in list_items:
-            if re.match(r'(week|session)\s+\d+', item.text, re.IGNORECASE):
-                parts = re.split(r':\s*', item.text, 1)
+            item_text = item.get_text(strip=True)
+            if re.match(r'(week|session)\s+\d+', item_text, re.IGNORECASE):
+                parts = re.split(r':\s*', item_text, 1)
                 if len(parts) == 2:
-                    times.append(parts[0])
-                    topics.append(parts[1])
-        print(f"📝 List extraction: {len(topics)} items found")
+                    time_part, topic_part = parts[0], parts[1]
+                    doc = nlp(topic_part)
+                    if doc.cats["SYLLABUS"] > 0.5:
+                        times.append(time_part)
+                        topics.append(topic_part)
+        print(f"📝 List extraction: {len(topics)} items found (NLP filtered)")
     
-    # Remove duplicates while preserving order
     seen = set()
     topics = [x for x in topics if not (x in seen or seen.add(x))]
     seen = set()
@@ -84,8 +125,13 @@ def scrape_syllabi():
     with open('../coursescraper/courses.json', 'r') as f:
         courses = json.load(f)
     
+    try:
+        nlp = spacy.load("../../syllabus_classifier2")
+    except Exception as e:
+        print(f"❌ Failed to load NLP model: {e}")
+        exit()
+    
     driver = webdriver.Chrome()
-    #Wait for login to execute scraping
     handle_login(driver)
     syllabus_data = []
 
@@ -94,11 +140,7 @@ def scrape_syllabi():
         formatted_code = re.sub(r'(\D)(\d)', r'\1 \2', course['course_code'])
         
         try:
-            # Navigate and search
-            print("🌐 Navigating to search page...")
             driver.get('https://outline.uwaterloo.ca/browse/')
-            
-            print(f"🔎 Searching for {formatted_code}...")
             search_box = WebDriverWait(driver, 15).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
             )
@@ -111,11 +153,10 @@ def scrape_syllabi():
             search_button.click()
 
         except Exception as e:
-            print(f"🔥 Error occured with course search: {str(e)}")
+            print(f"🔥 Error occurred with course search: {str(e)}")
             print(f"🌍 Current Error URL: {driver.current_url}")
             continue
 
-        # See if there are results or not
         try:
             WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
@@ -124,8 +165,6 @@ def scrape_syllabi():
             print("❌ No results found, skipping...")
             continue
 
-        # Click view button to go to syllabus
-        print("🔗 Accessing syllabus...")
         try:
             view_button = WebDriverWait(driver, 15).until(
                 EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
@@ -137,24 +176,18 @@ def scrape_syllabi():
             print("❌ View button not found, skipping...")
             continue
 
-
-        # Switch tabs and extract
-        print("🔄 Switching to new tab...")
-        
         try:
             WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
             )
 
             print("🖨️ Parsing...")
-            
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
             time.sleep(1)
             
             soup = BeautifulSoup(driver.page_source, 'html.parser')
-            topics, times = extract_syllabus_data(soup)
+            topics, times = extract_syllabus_data(soup, nlp)
             
-            # Validation check
             if len(topics) == 0:
                 print("⚠️ Warning: No topics extracted")
             else:
@@ -174,9 +207,6 @@ def scrape_syllabi():
             print("📂 Closing tab...")
             driver.close()
 
-
-
-    # Save results
     with open('syllabi.json', 'w') as f:
         json.dump(syllabus_data, f, indent=4)
     

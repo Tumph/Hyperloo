@@ -42,7 +42,7 @@ def scrape():
             print(f"Error clicking element: {e}")
 
     # Convert the list of programs to JSON
-    with open("programs.json", "w") as file:
+    with open("programs1.json", "w") as file:
         json.dump(programs, file, indent=4)
 
     teardown(driver)
