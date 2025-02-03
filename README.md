@@ -13,7 +13,7 @@ This repository contains three Python scripts to scrape academic program, major 
 - `coursescraper.py`: Scrapes courses under each major from `majors.json` and saves them into `courses.json`.
 
 ### Prerequisites
-1. **Python 3.7+**: [Download Python](https://www.python.org/downloads/)
+1. **Python 3.9+**: [Download Python](https://www.python.org/downloads/)
 2. **Chrome WebDriver**: Required for Selenium automation.
    - Download from [ChromeDriver](https://sites.google.com/chromium.org/driver/)
    - Ensure it is added to your system `PATH` or place it in the project directory.
@@ -33,6 +33,7 @@ cd scrapers
 ```bash
 pip install selenium
 pip install beautifulsoup4
+pip install spacy
 ```
 
 #### 3. Run the scripts
