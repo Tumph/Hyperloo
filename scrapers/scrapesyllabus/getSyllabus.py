@@ -4,14 +4,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-<<<<<<< HEAD
-bad = ["lab","$","chapter","week","jan","feb","%", "mar","apr","may","jun","jul","aug","sept","oct","nov","dec","quiz","exam","tutorial","assignment","january","february","march","april","june","july","august","september","october","november","december"]
-=======
 
 import spacy
 from spacy.training.example import Example
 bad = ["chapter","week","jan","feb","%", "mar","apr","may","jun","jul","aug","sept","oct","nov","dec","quiz","exam","tutorial","assignment","january","february","march","april","june","july","august","september","october","november","december"]
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f
 # Set up Chrome options to connect to the debugging port
 chrome_options = Options()
 chrome_options.debugger_address = "127.0.0.1:9222"  # Debugging port
@@ -29,10 +25,6 @@ search_box = WebDriverWait(driver, 10).until(
 )
 search_box.clear()  # Clear any existing text
 search_box.send_keys("ECE 109")  # Replace with the text you want to input
-<<<<<<< HEAD
-
-=======
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f
 search_box.submit()  # Submit the search
 
 # Step 2: Wait for the table and locate the first "View Online" button
@@ -51,10 +43,7 @@ h2_element = WebDriverWait(driver, 10).until(
 
 # Find all tables inside the same section/container as the h2 element
 tables = h2_element.find_elements(By.XPATH, ".//following::*[self::table]")
-<<<<<<< HEAD
-=======
 nlp = spacy.load("syllabus_classifier2")
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f
 
 # Loop through each table and extract text
 for idx, table in enumerate(tables, start=1):
@@ -69,12 +58,8 @@ for idx, table in enumerate(tables, start=1):
                     flag = True
                     break
             if(not flag and a!="" and len(a)>3):
-<<<<<<< HEAD
-                print(a)
-=======
                 doc = nlp(a)
                 if doc.cats["SYLLABUS"]>0.4:
                     print(a)
 
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f
 # "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:/ChromeDebug"

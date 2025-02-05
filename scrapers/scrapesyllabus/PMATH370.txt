@@ -1,0 +1,133 @@
+Chaos and Fractals Winter 2024
+PMATH 370
+Published Mar 08, 2024
+
+Print / Save PDF
+Class Schedule
+Course	Meet Days	Meet Time	Location	Instructor(s)
+PMATH 370 001 [LEC]	Monday, Wednesday, Friday -
+Mon, Wed, Fri
+Jan 8 - Apr 8
+11:30AM - 12:20PM	QNC 1502	
+B. Madill
+bmadill@uwaterloo.ca
+schedule data automatically refreshed daily
+Instructor & TA (Teaching Assistant) Information
+Instructor: Blake Madill
+
+E-mail: bmadill@uwaterloo.ca 
+
+Office Hours: Wedensday and Friday, 3:00 pm - 3:50 pm.
+
+TAs: Brady (balimedi@uwaterloo.ca), Laindon (lcburnett@uwaterloo.ca), Ramana (ramana.murugesan@uwaterloo.ca), Jackson (jackson.terning@uwaterloo.ca). 
+
+The TAs will be in charge of the grading and regrading of your assignments. 
+
+Course Description
+PMATH 370:
+The mathematics of iterated functions, properties of discrete dynamical systems, Mandelbrot and Julia sets. [Note: Programming experience on one computer language with graphical output is recommended.]
+
+Prereq: (One of MATH 118, 119, 128, 138, 148) and (One of MATH 114, 115, 136, 146, 225)
+
+Note: There will be no computer programming component in this offering of the course. 
+
+ 
+
+Learning Outcomes
+No explicit learning outcomes defined for this course.
+Tentative Course Schedule
+Week #
+
+Week of
+
+Topic 
+
+Due:
+
+1	
+Jan 8
+
+Iteration and Orbits 	 
+2	
+Jan 15
+
+Graphical Analysis and Fixed Points	 
+3	
+Jan 22
+
+Bifurcations and the Cantor Set	A1
+4	
+Jan 29
+
+Symbolic Dynamics 	 
+5	
+Feb 5
+
+Chaos	 
+6	
+ Feb 12
+
+Sarkovskii's Theorem and Fractals	A2 
+ 	
+ Feb 19
+
+Reading Week 	 
+7	
+Feb 26
+
+Iterated Function Systems I	Midterm
+8	
+March 4
+
+Iterated Function Systems II	 
+9	
+March 11
+
+Julia Sets	A3
+10	
+March 18
+
+Mandelbrot Set 	 
+11	
+March 25*
+
+Guest Speakers	 
+12	
+ April 1
+
+Guest Speakers	A4
+ 
+
+Texts / Materials
+Title / Name	Notes / Comments	Required
+A First Course in Chaotic Dynamical Systems	Author: Devaney	Yes
+Student Assessment
+Component	Value
+Assignments (x 4)	20%
+a) Assignments will be due on Tuesdays at 11:59 PM.
+b) Assignments may be done in groups of up to 3 people. However, it is each individual's responsibility to ensure they are solving each problem and learning the associated learning outcomes.
+
+Component	Value
+Midterm Exam	20%
+There will be an in-class midterm on Friday, March 1.
+
+Component	Value
+Final Exam	60%
+Assignment Screening
+No assignment screening will be used in this course.
+
+Administrative Policy
+University Policy
+Academic integrity: In order to maintain a culture of academic integrity, members of the University of Waterloo community are expected to promote honesty, trust, fairness, respect and responsibility. [Check the Office of Academic Integrity for more information.]
+
+Grievance: A student who believes that a decision affecting some aspect of their university life has been unfair or unreasonable may have grounds for initiating a grievance. Read Policy 70, Student Petitions and Grievances, Section 4. When in doubt, please be certain to contact the department’s administrative assistant who will provide further assistance.
+
+Discipline: A student is expected to know what constitutes academic integrity to avoid committing an academic offence, and to take responsibility for their actions. [Check the Office of Academic Integrity for more information.] A student who is unsure whether an action constitutes an offence, or who needs help in learning how to avoid offences (e.g., plagiarism, cheating) or about “rules” for group work/collaboration should seek guidance from the course instructor, academic advisor, or the undergraduate associate dean. For information on categories of offences and types of penalties, students should refer to Policy 71, Student Discipline. For typical penalties, check Guidelines for the Assessment of Penalties.
+
+Appeals: A decision made or penalty imposed under Policy 70, Student Petitions and Grievances (other than a petition) or Policy 71, Student Discipline may be appealed if there is a ground. A student who believes they have a ground for an appeal should refer to Policy 72, Student Appeals.
+
+Note for students with disabilities: AccessAbility Services, located in Needles Hall, Room 1401, collaborates with all academic departments to arrange appropriate accommodations for students with disabilities without compromising the academic integrity of the curriculum. If you require academic accommodations to lessen the impact of your disability, please register with AccessAbility Services at the beginning of each academic term.
+
+Turnitin.com: Text matching software (Turnitin®) may be used to screen assignments in this course. Turnitin® is used to verify that all materials and sources in assignments are documented. Students' submissions are stored on a U.S. server, therefore students must be given an alternative (e.g., scaffolded assignment or annotated bibliography), if they are concerned about their privacy and/or security. Students will be given due notice, in the first week of the term and/or at the time assignment details are provided, about arrangements and alternatives for the use of Turnitin in this course.
+
+It is the responsibility of the student to notify the instructor if they, in the first week of term or at the time assignment details are provided, wish to submit alternate assignment.

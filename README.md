@@ -62,3 +62,15 @@ python coursescraper.py
 
 
 Obviously, if you have a mac you need to configure your venv in order to run the python scripts and pip.
+
+
+
+
+Scraped the programs 
+Scraped the majors
+Scraped the courses (almost done)
+Scrape the syllabus for keywords (almost done)
+Generate 7-10 topics and 3-4 subtopics based on the keywords script using genai
+Graph model for courses / programs. Similar to graph.socratica.info
+Based on the topic tree, create neo4j diagram of it
+Script for actual resources at the lowest level

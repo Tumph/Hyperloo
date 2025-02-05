@@ -8,7 +8,6 @@ import json
 import re
 import time
 
-<<<<<<< HEAD
 def handle_login(driver):
     print("\n🔐 Manual Login Required")
     print("1. Browser window opening...")
@@ -16,18 +15,6 @@ def handle_login(driver):
     print("3. Wait for redirect to Outline after login")
     driver.get('https://outline.uwaterloo.ca/browse/')
     
-=======
-
-
-# Set up the Selenium WebDriver (ensure the path to chromedriver is correct)
-service = Service('Hyperloo/scrapers/scrapesyllabus/chromedriver.exe')  # Update this path
-options = webdriver.ChromeOptions()
-# options.add_argument('--headless')  # Run in headless mode if needed
-
-def courses(url):
-    driver = webdriver.Chrome(service=service, options=options)
-    temp = []
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f
     try:
         #Waits until Course search element is open to start the script
         WebDriverWait(driver, 120).until(
@@ -41,7 +28,6 @@ def courses(url):
         exit()
 
 
-<<<<<<< HEAD
 def extract_syllabus_data(soup):
     """Enhanced extraction with multiple fallback strategies"""
     print("🔍 Beginning syllabus extraction...")
@@ -166,7 +152,7 @@ def scrape_syllabi():
             time.sleep(1)
             
             soup = BeautifulSoup(driver.page_source, 'html.parser')
-            topics, times = extract_syllabus_data(soup)
+            topics, times = extract_syllabus_data(soup.get_text())
             
             # Validation check
             if len(topics) == 0:
@@ -200,34 +186,3 @@ def scrape_syllabi():
 
 if __name__ == "__main__":
     scrape_syllabi()
-=======
-# url='https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1zle10Cs3?searchTerm=sof&bc=true&bcCurrent=Software%20Engineering%20(Bachelor%20of%20Software%20Engineering%20-%20Honours)&bcItemType=programs'
-
-# print(courses(url))
-# print(courses("https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1-0kyACi3?searchTerm=physics&bc=true&bcCurrent=Physics%20(Bachelor%20of%20Science%20-%20Honours)&bcItemType=programs"))
-
-
-import json
-
-# Open and load the JSON file
-with open('Hyperloo/scrapers/majorscraper/majors.json', 'r') as file:
-    data = json.load(file)
-
-programCourses = []
-
-for i in data:
-    url = i["link"]
-    temp = courses(url)
-    programCourses.append({
-        "major_name": i["major_name"],
-                    "link": i["link"],
-                    "major_id": i["major_id"],
-                    "program_id": i["program_id"],
-                    "program_name": i["program_name"],
-                    "courses":temp
-    })
-    
-with open('Hyperloo/scrapers/scrapesyllabus/majorCourses.json', 'w') as file:
-        json.dump(programCourses, file, indent=4)
-    
->>>>>>> 02da7fde48ea5bbb8216f94a41c160796c560a5f

@@ -1,0 +1,415 @@
+
+
+          Course Outline -
+
+            Analytic Methods for Business 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Version
+
+
+
+Latest
+
+
+
+
+
+
+
+
+
+
+                Class Schedule
+
+
+
+
+                Instructor & TA (Teaching Assistant) Information
+
+
+
+
+                Course Description
+
+
+
+
+                Learning Outcomes
+
+
+
+
+                Tentative Course Schedule
+
+
+
+
+                Texts / Materials
+
+
+
+
+                Student Assessment
+
+
+
+
+                Assignment Screening
+
+
+
+
+                Notice of Recording
+
+
+
+
+                Administrative Policy
+
+
+
+
+                University Policy
+
+
+
+
+
+
+            Browse Outlines
+
+
+
+
+            Log Out
+
+
+
+
+
+
+
+
+
+            Analytic Methods for Business 1
+
+
+
+              Winter 2025
+
+
+
+            AFM 112
+
+
+Published Jan 06, 2025
+Print / Save PDF
+
+
+
+
+  Class Schedule
+
+
+
+
+
+
+Course
+Meet Days
+Meet Time
+Location
+Instructor(s)
+
+
+
+
+
+            AFM 112
+            001 [LEC]
+
+
+
+              Monday, Friday -
+
+
+Mon,
+Fri
+
+
+Jan 6 - Apr 4
+
+
+11:30AM - 12:20PM
+ONLN - Online
+
+
+A. DeFaria
+adefaria@uwaterloo.ca
+
+
+
+
+
+
+              Wednesdays -
+
+
+Wednesdays
+
+
+Jan 6 - Apr 4
+
+
+06:30PM - 07:20PM
+HH 1108
+
+
+
+            AFM 112
+            101 [TST]
+
+
+
+              Tuesday -
+
+
+Tuesday
+
+
+Feb 11
+
+
+07:00PM - 08:20PM
+
+
+
+
+
+
+schedule data automatically refreshed daily
+
+
+
+
+  Instructor & TA (Teaching Assistant) Information
+
+
+NameRoleOfficeEmailOffice HoursAaron DeFariaInstructorTatham Centre (Wed, Thurs), Virtual (Mon, Tues, Fri)adefaria@uwaterloo.caBy Appointment**Note: The office hour on-campus location may change, please contact in advance for the exact room number
+
+
+
+  Course Description
+
+
+
+
+AFM 112:
+This course introduces analytical methods commonly used in business for accounting and finance professionals. The course introduces students to the cross-industry standard process for data mining as an approach to business problem recognition and solving. Students also apply emerging technologies as a means to understand concepts such as variables, data types, subsets, formulas for creating derived variables, and simple models.
+
+View requirements for AFM 112
+
+
+
+
+
+This course introduces analytical methods commonly used in business for accounting and finance professionals. The course introduces students to the cross-industry standard process for data mining (CRISP-DM) as an approach to business problem recognition and solving. Students also apply emerging technologies to understand concepts such as variables, data types, subsets, formulas for creating derived variables, and simple models.  If you want to learn how the course fits the School of Accounting and Finance (SAF) data analytics curriculum, read How to Implement a Data Analytics Enabled Accounting Curriculum.You may also reference the course syllabus on Google Drive for convenience and any added context. 
+
+
+
+  Learning Outcomes
+
+
+By the end of this course students should be able to:
+
+
+
+1. Frame a business problem as a decision or question, applying CRISP-DM - step 1 in a simulated situation to identify required data elements.
+
+
+2. Develop an understanding of the data, applying CRISP-DM steps 2 & 3 in a simulated situation to describe the data and perform a simple statistical analysis of the data set.
+
+
+3. Build a spreadsheet-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.
+
+
+4. Build an R-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.
+
+
+5. Evaluate and communicate your analysis results in an engaging, attention-getting way, applying CRISP-DM - step 5 and visualization principles.
+
+
+
+
+
+Each of the School of Accounting and Finance’s Program Level learning outcomes identifies a knowledge, skill or value of a financial professional. These outcomes are organized into seven areas as reflected in the chart below. They reflect the integration of all areas. All outcomes are also developed through experiential learning.This course’s learning outcomes map to the Program Level learning outcomes as follows:Intended Learning OutcomesBy the end of the course, you will be able to:Knowledge Base for a Financial ProfessionalCommunication CapabilitiesProblem-Solving CapabilitiesFluency in the Languages of Business, Entrepreneurship, and TechnologyAttributes / Qualities of a Financial Professional1. Frame a business problem as a decision or question, applying CRISP-DM - step 1 in a simulated situation to identify required data elements.XXXX 2. Develop an understanding of the data, applying CRISP-DM steps 2 & 3 in a simulated situation to describe the data and perform a simple statistical analysis of the data set.X X  3. Build a spreadsheet-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.X X X4. Build an R-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.X X X5. Evaluate and communicate your analysis results in an engaging, attention-getting way, applying CRISP-DM - step 5 and visualization principles.XXXX  Intended Learning OutcomesLearning AssessmentsLearning Activities1. Frame a business problem as a decision or question, applying CRISP-DM - step 1 in a simulated situation to identify required data elements.Interactive exercises, Midterm, and Final examsEngage in Lectures; Read assigned material2. Develop an understanding of the data, applying CRISP-DM steps 2 & 3 in a simulated situation to describe the data and perform a simple statistical analysis of the data set.Interactive exercises, Online Homework, Midterm, and Final examsEngage in Lectures; Watch suggested videos and complete DataCamp assignments; complete hands-on exercises in seminars;3. Build a spreadsheet-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.Interactive exercises, Online Homework, Midterm exams,Engage in Lectures; Watch suggested videos and complete DataCamp assignments; complete hands-on exercises in seminars;4. Build an R-based model to solve a business problem, applying CRISP-DM - step 4 to run a modeling tool on a prepared data set.Interactive exercises, Online Homework, Midterm, and Final examsEngage in Lectures; Watch suggested videos and complete DataCamp assignments; complete hands-on exercises in seminars;5. Evaluate and communicate your analysis results in an interesting, attention-getting way, applying CRISP-DM - step 5 and visualization principles.Interactive  exercises, Midterm and Final exams, Team Project PresentationsEngage in Lectures; Watch suggested videos and complete DataCamp assignments; complete hands-on exercises in seminars;  
+
+
+
+  Tentative Course Schedule
+
+
+Content WeekDate(s)Chapter - TopicHomeworkDue DateTimeWeek 1Jan-601 - Course IntroductionHomework h4w01  Week 2Jan-10 - Jan-1302- Data ManagementHomework h4w01Jan-107:00-8:20 pmWeek 3Jan-17 - Jan-2003 - Big Picture - Descriptive AnalyticsHomework h4w02Jan-177:00-8:20 pmWeek 4Jan-24 - Jan-2704 - Segment Analysis - Diagnostic AnalyticsHomework h4w03Jan-247:00-8:20 pmWeek 5Jan-31 - Feb-305 - CRISP-DMHomework h4w04Jan-317:00-8:20 pmWeek 6Feb 7 - Feb-1006 - CRISP with R - IHomework h4w05Feb-77:00-8:20 pmWeek 6Feb-11Midterm (Covers Content Week 1-5)MidtermFeb-1107:00-8:30 PMReading WeekFeb-14 - Feb18Reading Week   Week 7*Feb 14 / Feb 2407 - CRISP with R - II   Week 8Feb 28 - Mar 408 - OK Cupid - Predictive AnalyticsHomework h4w07Feb-287:00-8:20 pmWeek 9Mar 7 - Mar 11 09 - Pet Adoption - Prescriptive AnalyticsHomework h4w08Mar-77:00-8:20 pmWeek 10Mar 14 - Mar 18Review ProbabilitiesHomework h4w09Mar-147:00-8:20 pmWeek 11Mar 21 - Mar 25Interactive DashboardsHomework h4w10Mar-217:00-8:20 pmWeek 12Mar 28 - Apr 1Team Project - ReviewHomework h4w11Mar-287:00-8:20 pmWeek 13Apr 4Final ReviewHomework h4w12Apr-47:00-8:20 pm   Team ProjectApr-44:00 pm   Final ExamFinalTBATBANotes: The first homework (Homework h4W01) is based on course orientation. It will count as class participation for week 1, and it will not be included in the list of the lowest three quizzes that you can drop.*Week 7's content begins Friday February 14 and concludes Monday February 24 due to Reading Week
+
+
+
+  Texts / Materials
+
+
+Note: Any prices provided in course outlines are best estimates based on recent online prices and do not include shipping or taxes. Prices may vary between retailers.
+
+
+
+
+
+        Title / Name
+
+
+        Notes / Comments
+
+
+        Required
+
+
+        Price (CAD)
+
+
+
+
+Introduction to Data Analytics Process: From Spreadsheets to R and Python 1st Edition
+By: Prof. Theo Stratopoulos
+Yes
+120 Days: $30.00
+
+
+Introduction to Data Analytics Process: From Spreadsheets to R and Python 1st Edition
+By: Prof. Theo Stratopoulos
+No
+160 Days: $35.00
+
+
+Introduction to Data Analytics Process: From Spreadsheets to R and Python 1st Edition
+By: Prof. Theo Stratopoulos
+No
+Lifetime: $90.00
+
+
+Google Drive/Google Sheets
+By: Google Inc.
+Yes
+Free
+
+
+R Code
+By: Prof. Ross Ihaka and Prof. Robert Gentleman
+Yes
+Free
+
+
+R Studio
+By: posit
+Yes
+Free
+
+
+
+
+
+
+
+
+  Student Assessment
+
+
+
+
+
+        Component
+
+
+        Value
+
+
+
+
+Class Attendance and Participation
+7.5%
+
+
+Books/Notes
+20%
+
+
+DataCamp Assignments
+0%
+
+
+Team Project
+12.5%
+
+
+Midterm Exam - Open Books/Notes
+25%
+
+
+Final Exam - Open Books/Notes
+35%
+
+
+
+
+
+
+
+Assessment MethodDatePercentClass Attendance and ParticipationThroughout term7.5%Weekly Homework on Learn - Open Books/NotesThroughout term20%DataCamp AssignmentsThroughout term0%Team ProjectSee Weekly Schedule12.5%Midterm Exam - Open Books/NotesFebruary 1125%Final Exam - Open Books/NotesTBA35%  100%Notes:Homework: The homework will cover all material assigned in the course. The homework questions may be either multiple choice or true/ false questions. The best 8 quizzes out of the total of 11* will be used to determine the final homework mark.Team Assignments: All members of a team normally receive the team’s grade for each assignment. Should any significant teamwork issues arise, see your instructor as soon as the issue occurs, not after the assignment has been evaluated.Team Peer Evaluations: At the end of the course you will be asked to complete a summative peer evaluation of each of the members of your team along with a self-evaluation.Midterm & Final Examination: All assessments/examinations must be the exclusive work of the individual student. You should expect to be tested on all material including text, course readings package, assignments and lectures. One mid-term exam is scheduled, in the 6th week of the course. This exam will include all material since the beginning of the course through week 5. Written requests for re-grading a mid-term examination must normally be made within one week after the examination has been returned. A written request must be submitted that indicates your reasons for believing that a question was improperly graded. The instructor reserves the right to re-grade the entire examination. Final Examination: The final examination will be one and one-half hours duration and will be scheduled by the Registrar’s Office during the Winter 2025 term. The examination period is from April 9 to April 25. The final examination emergency days are April 13 and April 26. There are no exams or classes held April 7 to April 8. The final examination is comprehensive, covering all material delivered throughout the course. Students must pass the weighted average of the midterm and final exam to pass the course. --*The first homework (Homework h4W01) is based on course orientation. It will count as class participation for week 1, and it will not be included in the list of the lowest three quizzes that you can drop.
+
+
+
+  Assignment Screening
+
+
+  Text matching software (Turnitin) will be used to screen assignments in this course. This is being done to verify that use of all material and sources in assignments is documented. In the first week of the term, details will be provided about the arrangements for the use of Turnitin and alternatives in this course. See Administrative Policy below for more information and links.
+
+
+
+  Notice of Recording
+
+
+Activities for this course involve recording, in partial fulfillment of the course learning outcomes.  You will receive notification of recording via at least one of the following mechanisms: within the Learning Management System (LEARN), a message from your course instructor, course syllabus/website, or other means. Some technologies may also provide a recording indicator. Images, audio, text/chat messaging that have been recorded may be used and/or made available by the University to students and/or faculty for the purpose of reviewing the course content and delivery. Recordings will be managed according to the University records classification scheme, WatClass, and will be securely destroyed when no longer needed by the University. Your personal information is protected in accordance with the Freedom of Information and Protection of Privacy Act, as well as University policies and guidelines and may be subject to disclosure where required by law.The University will use reasonable means to protect the security and confidentiality of the recorded information, but cannot provide a guarantee of such due to factors beyond the University’s control, such as recordings being forwarded, copied, intercepted, circulated, disclosed, or stored without the University’s knowledge or permission or the introduction of malware into computer system which could potentially damage or disrupt the computer, networks, and security settings. The University is not responsible for connectivity/technical difficulties or loss of data associated with your hardware, software or Internet connection.By engaging in course activities that involve recording, you are consenting to the use of your appearance, image, text/chat messaging, and voice and/or likeness in the manner and under the conditions specified herein. (In the case of a live stream event, if you choose not to have your image or audio recorded, you may disable the audio and video functionality. Instructions to participate using a pseudonym instead of your real name are included where the feature exists; however, you must disclose the pseudonym to your instructor in advance in order to facilitate class participation.) If you choose not to be recorded, this notice serves as confirmation of your understanding that you will review any and all recorded class content independently to ensure you are keeping up with the class material.  You are not permitted to disclose the link to/URL of an event or an event session recording or copies of recording to anyone, for any reason. Recordings are available only to authorized individuals who have been directly provided the above instructions/link for their use. Recordings for personal use, required to facilitate your learning and preparation of personal course/lecture notes, should not be shared with others without the permission of the instructor or event coordinator. Review the University’s guidelines for faculty, staff and students entering relationships with external organizations offering access to course materials for more information on your obligations with respect to keeping copies of course materials. For more information about accessibility, connect with AccessAbility Services.
+
+
+
+  Administrative Policy
+
+
+AFM 112 Generative AI Tools (e.g., ChatGPT) PolicyRule 1: The Generative AI Tools policy is just for this course (AFM112).Rule 2: We will fully embrace Generative AI Tools in the context of this course for two reasons. First, this is a course on data analytics and emerging technologies. Second, accounting and financial professionals with AI will replace accounting and financial professionals. Fully embracing means you will be encouraged to use Generative AI Tools when studying and working on all course-related assignments.Rule 3: Respect intellectual property. You should not enter content that is someone else's intellectual property into publicly available generative AI tools. This includes content from the text and data developed for this class. Information shared with generative AI tools using default settings is not private and could expose proprietary or sensitive information to unauthorized parties.Rule 4: You are responsible for any content you produce that includes AI-generated material. AI-generated content can be inaccurate, misleading, entirely fabricated, or may contain copyrighted material. Review your AI-generated content before publication.University of Waterloo Generative AI PolicyGenerative artificial intelligence (GenAI) trained using large language models (LLM) or other methods to produce text, images, music, or code, like Chat GPT, DALL-E, or GitHub CoPilot, may be used for assignments in this class with proper documentation, citation, and acknowledgement. Recommendations for how to cite GenAI in student work at the University of Waterloo may be found through the Library: https://subjectguides.uwaterloo.ca/chatgpt_generative_ai. Please be aware that generative AI is known to falsify references to other work and may fabricate facts and inaccurately express ideas. GenAI generates content based on the input of other human authors and may therefore contain inaccuracies or reflect biases. In addition, you should be aware that the legal/copyright status of generative AI inputs and outputs is unclear. Exercise caution when using large portions of content from AI sources, especially images. More information is available from the Copyright Advisory Committee: https://uwaterloo.ca/copyright-at-waterloo/teaching/generative-artificial-intelligence You are accountable for the content and accuracy of all work you submit in this class, including any supported by generative AI. Territorial AcknowledgementThe University of Waterloo acknowledges that much of our work takes place on the traditional territory of the Neutral, Anishinaabeg, and Haudenosaunee peoples. Our main campus is situated on the Haldimand Tract, the land granted to the Six Nations that includes six miles on each side of the Grand River. Our active work toward reconciliation takes place across our campuses through research, learning, teaching, and community building, and is co-ordinated within the Office of Indigenous Relations.Academic freedom at the University of WaterlooPolicy 33, Ethical Behaviour states, as one of its general principles (Section 1), “The University supports academic freedom for all members of the University community. Academic freedom carries with it the duty to use that freedom in a manner consistent with the scholarly obligation to base teaching and research on an honest and ethical quest for knowledge. In the context of this policy, 'academic freedom' refers to academic activities, including teaching and scholarship, as is articulated in the principles set out in the Memorandum of Agreement between the FAUW and the University of Waterloo, 1998 (Article 6). The academic environment which fosters free debate may from time to time include the presentation or discussion of unpopular opinions or controversial material. Such material shall be dealt with as openly, respectfully and sensitively as possible.” This definition is repeated in Policies 70 and 71, and in the Memorandum of Agreement, Section 6Anti-Racism StatementThe University of Waterloo does not tolerate racism or any other form of discrimination and expects campus community members to contribute to a culture where all members feel safe and valued. Any member of the campus community who has experienced racism or discrimination at the University is encouraged to review available processes for addressing their concerns under Policy 33 – Ethical Behaviour and to seek guidance from the Equity Office via email at equity@uwaterloo.ca or through their website.Intellectual PropertyStudents should be aware that this course contains the intellectual property of their instructor, TA, and/or the University of Waterloo. Intellectual property includes items such as:Lecture content, spoken and written (and any audio/video recording thereof);Lecture handouts, presentations, and other materials prepared for the course (e.g., PowerPoint slides);Questions or solution sets from various types of assessments (e.g., assignments, quizzes, tests, final exams); andWork protected by copyright (e.g., any work authored by the instructor or TA or used by the instructor or TA with permission of the copyright owner).Course materials and the intellectual property contained therein are used to enhance a student’s educational experience. However, sharing this intellectual property without the intellectual property owner’s permission is a violation of intellectual property rights.  For this reason, it is necessary to ask the instructor, TA and/or the University of Waterloo for permission before uploading and sharing the intellectual property of others online (e.g., to an online repository).Permission from an instructor, TA or the University is also necessary before sharing the intellectual property of others from completed courses with students taking the same/similar courses in subsequent terms/years.  In many cases, instructors might be happy to allow distribution of certain materials. However, doing so without expressed permission is considered a violation of intellectual property rights.Please alert the instructor if you become aware of intellectual property belonging to others (past or present) circulating, either through the student body or online. The intellectual property rights owner deserves to know (and may have already given their consent).Mental Health SupportAll of us need a support system. The faculty and staff in Arts encourage students to seek out mental health support if they are needed.On campus supportsFor counselling (individual or group) reach out to Campus Wellness and Counselling Services. Counselling Services strives to provide a secure, supportive environment for students of all orientations and backgrounds. They offer confidential counselling for a variety of areas including anxiety, stress management, depression, grief, substance use, sexuality, relationship issues, and much more. Other on-campus supportsMATES:  one-to-one peer support program offered by the Waterloo Undergraduate Student Association (WUSA) and Counselling ServicesDownload the Regroup Mobile to your phone to quickly access mental health support informationEmpower Me: to access create an account on the Dialogue mobile app or on the web at www.studentcare.ca/dialogueSexual Violence Prevention and Response Centre - supports all members of the University of Waterloo campus community who have experienced or been impacted by sexual violence.Off campus supportsGood2Talk:  Free confidential help line for post-secondary students. Phone: 1-866-925-5454Grand River Hospital: Emergency care for mental health crisis. Phone: 519-749-4300St. Mary's Hospital - 519-744-3311Here 24/7: Mental Health and Crisis Service Team. Phone: 1-844-437-3247988 Suicide Crisis Helpline: a 24/7 urgent mental health care three-digit helplineOK2BME: set of support services for Two-Spirit, lesbian, gay, bisexual, trans, queer, intersex, asexual (@SLGBTQIA+) and questioning kids, teens, adults, and their families in Waterloo Region.  Phone: 519-884-0000 or e-mail ok2bme@caminowellbeing.caSexual Assault Support Centre of Waterloo Region - offers individual counselling to people of all genders, 16+ who have been sexually assaulted at any point in their lives. As well as short-term support for family members or friends of sexual assault survivors. Also, information and referralsMore information about resources and supports for students can be found online in on the Faculty of Arts Student Support page.School of Accounting and Finance Academic Integrity ExpectationsStudents at Waterloo and in SAF are expected to act with integrity, even when faced with difficult situations. Integrity is the cornerstone of the accounting and finance professions. What you practice at the University of Waterloo and in SAF will inform and even define who you are as an A&F professional. As a student at the University of Waterloo and in SAF you are expected to know what constitutes academic integrity, avoid committing offences and take responsibility for your actions. While there are common university wide expectations, you will also be expected to know and comply with course specific expectations as well. Participating in the course introduction and reviewing the course syllabus are basic expectations and are helpful regarding course specific academic requirements.Policy 71 governs student discipline on campus and SAF works with the Associate Deans of a student’s home faculty when reporting academic misconduct. All suspected academic misconduct, regardless of type or severity, is reported to the appropriate Associate Dean who will review the evidence and apply the appropriate discipline and penalties.Specific considerations for SAF students:Students majoring in accounting and finance programs at UWaterloo should be aware that, due to the highly structured nature of the study plans and the fact that many AFM courses are offered on a limited basis, a penalty imposed because of an academic offence could result in a significant delay of the student’s degree completion and convocation dates - particularly if the penalty involves a suspension.Students placed on disciplinary probation will not be granted access to activities where they are viewed as SAF representatives. For example, students represent SAF in the AFM Fellowship Program, the Student Investment or Venture Fund, at case competitions, as TAs or Research Assistants, and as recruitment ambassadors. This is not an exhaustive list. When applying to participate in these activities, students are expected to declare if they are/are not on disciplinary probation. Normally, this access is denied for a period that spans two complete academic terms subsequent to the term in which the offence occurs.The academic integrity expectations for each of the assessments in this course have been outlined above as have the potentially unique implications for SAF students who fail to meet integrity expectations. These expectations are provided for further clarity and accompany the expectations outlined below in the discipline section (University Policy) and do not replace or reduce the importance of these expectations. If ever you are unsure about what’s expected of you, you are responsible for seeking clarification from an appropriate source. “I did not know” is not an acceptable personal justification or formal defense to an allegation.Submission Times Please be aware that the University of Waterloo is located in the Eastern Time Zone (GMT or UTC-5 during standard time and UTC-4 during daylight saving time) and, as such, the time for your activities and/or assignments are due is based on this zone. If you are completing a course online and are outside of the Eastern Time Zone and require assistance converting your time, please try the Ontario, Canada Time Converter. Students are expected to attend and adhere to the course timing set through the Schedule of Classes.Accommodating religious and spiritual observancesThe University of Waterloo has a duty to accommodate religious, spiritual, and other creed-based beliefs and practices under the Ontario Human Rights Commission (2015) Policy on preventing discrimination based on creed. Students may seek accommodations for missed course components on religious, spiritual, or other creed grounds. In such cases the students should please consult the instructor within two weeks of the announcement of the due date for which the accommodation is being sought.  Students also may request accommodations for temporary absences from classes or other course-related activities to engage in prayer or other daily spiritual practices. Instructors are expected to make reasonable arrangements to respectfully accommodate such requests. The University of Waterloo has a number of multi-faith spaces that students can use for faith-based practices. SAF Process for Missed AssessmentsStudents are expected to complete all course assessments and write examinations as scheduled; however, there may be circumstances where accommodating a missed assessment is approved. See your course syllabus for specific accommodation policies that apply to your course. It is possible the syllabus will identify a process that renders redundant any need to formally declare an absence by means discussed below (e.g., for regular quizzes perhaps the syllabus will identify that only x of y attempts will be included in the final grade).Review “Declaring Absences” below for instructions on how to declare absences and request accommodations for missed course component(s). To be considered for an academic accommodation, SAF students must follow the Arts Accommodations for Illness or Extenuating Circumstances. If an accommodation for a missed assessment is approved, the student is responsible for contacting instructor to discuss accommodation arrangements. The instructor will determine the appropriate accommodation.If an accommodation is approved regarding a missed final exam, the student needs to consult with the course instructor about writing a deferred final exam. In this case, the University of Waterloo Incomplete (INC) grade process will be followed, where all course requirements are not completed during the term. It is important to understand that, particularly with a cooperative education program, it is possible a deferred writing date will not be perfectly convenient to the student. If necessary, a CEE representative may be able to assist a student in their communications with an employer, however, it is still the student’s responsibility to initiate and manage any such process. Other than in exceptional circumstances, students are expected to prioritize writing the exam and completing the course (including making necessary arrangements for time away from work and being on campus). At the end of the current term, students will receive an INC course grade. Once the final exam has been written, a grade revision will be submitted based on the results of the final exam and other course work. Failure to write the final exam at the next SAF identified opportunity will result in a course grade based on the elements of the course that were completed. If a student does not utilize one of the indicated approved methods that can justify missing an assessment (and receive some sort of accommodation) or if the request through the VIF or Extenuating Circumstances System is not approved, the student will receive 0 for that course element missed. It is important to understand and properly utilize the appropriate process. Indicating that someone did not know of a process will not be an accepted justification.Declaring absences Please see the Academic Regulations section of the Undergraduate Calendar for more details. Regardless of the process used to declare an absence, it is the student’s responsibility to contact their instructor so that the instructor can determine how to accommodate the missed work. Absences due to religious, creed, and spiritual observancesBeginning Fall 2024, students can submit a Religious Observance Self-Declaration Form in Quest. This form allows the student to register dates of potential conflicts with coursework. Students are expected to record their absence within two weeks of announcement of the due date or scheduled examination date for which academic accommodation is being sought. Submission through Quest will notify your instructors of your absence. Absences due to verified illnessFor absences due to illness that are not pandemic-related, students need to obtain a Verification of Illness or Extenuating Circumstances Process. Submission through the Absence Verification System, once registered, will notify your instructors of your absence. Students should not submit their VIF or any other medical documentation to your instructors, teaching assistants, or other course personnel.  To request and arrange accommodation, it is the student’s responsibility to contact the instructor within 48 hours of the date of any missed course component, or as soon as the student is able to given their health condition.Absences due to extenuating circumstances (e.g., bereavement)For absences due to extenuating circumstances (e.g., bereavement, serious family illness), students submit a request for absence due to extenuating circumstances to the Abse nce Verification System for processing. Students use the form to submit supporting documentation, which will be considered in a comparable manner to a VIF. Official documentation is necessary before any action can be taken. Examples are plane/train/bus tickets, court documents, police reports, death certificates/obituaries/letters from funeral directors. To request and arrange accommodation, it is the student’s responsibility to contact the instructor within 48 hours of the date of any missed course component, or as soon as the student is able to given their circumstances.Self-declared absences due to COVID-related illnessStudents can self-declare an absence on Quest due to COVID-related illness or a requirement to self-isolate. A self-declared COVID absence covers up to 10 days and no documentation is required. No in-person course activity is permitted during the period of a self-declared COVID absence. Participation in on-line components is permitted but should not be required if the student notifies the instructor that they are too ill to participate in the online work. Submitting the self-declaration through Quest will notify your instructors of your absence.  It is the student’s responsibility to contact their instructors within the first 48 hours after submitting their COVID-related absence, or as soon as they are well enough, to discuss arrangements for missed course components.Self-declared short-term absences for any reasonStudents can self-declare one short-term absence per term on Quest for any reason. A short-term absence covers two calendar days, and no documentation is required. The student has only one self-declared short-term absence per term and this absence can only be used during the formal lecture period. Self-declared absences cannot be applied to Laboratory (LAB), Clinic (CLN), or Studio (STU) course components.  Submitting the self-declaration through Quest will notify your instructors of your absence. It is the student’s responsibility to contact their instructors within the first 48 hours after submitting their self-declaration to discuss accommodations for missed course components.Recording lecture In addition to any other language addressing recording of lectures in this outline, when permission is granted the use of all course recordings is strictly limited to the purpose of private/personal study and for no other reason (e.g., loaning the recording or reproducing a copy for another student, contesting grading, posting in whole or part online, etc.). Any failure to abide by these requirements is a violation of the university's academic integrity requirements and is subject to proceedings under Policy 71, Student Discipline and Policy 33, Ethical Behaviour.  Attendance at the Registered SectionYou are assigned to a specific section for instructor grading and office hours. If you require a change, please contact an SAF Advisor. It is not appropriate to attend a session you are not enrolled in, without talking to the instructor first. Failure to attend the registered section can result in negative grade consequences (e.g., participation) and students cannot assert that they were otherwise not aware there could be potential negative grade outcomes associated with not attending their registered section.
+
+
+Pronouns and chosen or preferred first name Students can verify their chosen or preferred first name by logging into WatIAM. Your chosen or preferred first name listed in WatIAM will be used across campus (e.g., in LEARN, Quest, WaterlooWorks, WatCard, etc). Your legal first name will always be used on certain official documents, such as diplomas and transcripts. Students can view and change their pronouns in Quest. Should you choose to include your pronouns in Quest, your pronouns will be accessible by instructors, advisors, and employees with access to Quest. If no pronoun is added, the field in Quest will remain blank. The University is working to provide your pronouns to other systems across campus (e.g., LEARN, WaterlooWorks).
+
+
+
+  University Policy
+
+
+Academic integrity: In order to maintain a culture of academic integrity, members of the University of Waterloo community are expected to promote honesty, trust, fairness, respect and responsibility. [Check the Office of Academic Integrity for more information.]
+Grievance: A student who believes that a decision affecting some aspect of their university life has been unfair or unreasonable may have grounds for initiating a grievance. Read Policy 70, Student Petitions and Grievances, Section 4. When in doubt, please be certain to contact the department’s administrative assistant who will provide further assistance.
+Discipline: A student is expected to know what constitutes academic integrity to avoid committing an academic offence, and to take responsibility for their actions. [Check the Office of Academic Integrity for more information.] A student who is unsure whether an action constitutes an offence, or who needs help in learning how to avoid offences (e.g., plagiarism, cheating) or about “rules” for group work/collaboration should seek guidance from the course instructor, academic advisor, or the undergraduate associate dean. For information on categories of offences and types of penalties, students should refer to Policy 71, Student Discipline. For typical penalties, check Guidelines for the Assessment of Penalties.
+Appeals: A decision made or penalty imposed under Policy 70, Student Petitions and Grievances (other than a petition) or Policy 71, Student Discipline may be appealed if there is a ground. A student who believes they have a ground for an appeal should refer to Policy 72, Student Appeals.
+Note for students with disabilities: AccessAbility Services, located in Needles Hall, Room 1401, collaborates with all academic departments to arrange appropriate accommodations for students with disabilities without compromising the academic integrity of the curriculum. If you require academic accommodations to lessen the impact of your disability, please register with AccessAbility Services at the beginning of each academic term.
+Turnitin.com: Text matching software (Turnitin®) may be used to screen assignments in this course. Turnitin® is used to verify that all materials and sources in assignments are documented. Students' submissions are stored on a U.S. server, therefore students must be given an alternative (e.g., scaffolded assignment or annotated bibliography), if they are concerned about their privacy and/or security. Students will be given due notice, in the first week of the term and/or at the time assignment details are provided, about arrangements and alternatives for the use of Turnitin in this course.
+It is the responsibility of the student to notify the instructor if they, in the first week of term or at the time assignment details are provided, wish to submit alternate assignment.
