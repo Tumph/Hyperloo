@@ -1,9 +1,11 @@
 import spacy
 from tqdm import tqdm
 
+currentmodel = "syllabus_classifierv3"
+
 def classify_text_from_file(file_path):
     # Load the trained model for classification
-    nlp_classifier = spacy.load('./syllabus_classifierv2')
+    nlp_classifier = spacy.load(f'./{currentmodel}')
 
     # Load a model for sentence segmentation (e.g., en_core_web_sm)
     nlp_segmenter = spacy.load('en_core_web_sm')
