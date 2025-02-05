@@ -10,7 +10,7 @@ def preprocess_text(text):
     return " ".join([token.lemma_ for token in doc if not token.is_stop and not token.is_punct])
 print("d")
 course1_description = preprocess_text("Basic electromagnetic theory; magnetic circuits; electric circuit elements; DC circuit analysis; first-order transient response; AC circuit analysis; Diodes; Transistors: regions of operation, single-transistor amplifiers")
-course2_description = preprocess_text("Analysis of linear circuits. Voltage, current, resistance, capacitance, inductance, voltage source, current source, dependent sources, Ohm's Law, Kirchhoff's Laws, nodal analysis, mesh analysis, circuit transformations, operational amplifier circuits, time response, sinusoidal steady-state response. Preparing for, conducting, and reporting of laboratory experiments.")
+course2_description = preprocess_text("The diversity of invertebrate animals will be explored in this class. Topics covered in lectures and laboratory will include reproduction, development, life history, feeding, locomotion, and behaviour.")
 
 
 course1_embedding = model.encode(course1_description)

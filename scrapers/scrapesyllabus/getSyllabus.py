@@ -4,7 +4,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 import spacy
 from spacy.training.example import Example
 bad = ["chapter","week","jan","feb","%", "mar","apr","may","jun","jul","aug","sept","oct","nov","dec","quiz","exam","tutorial","assignment","january","february","march","april","june","july","august","september","october","november","december"]
