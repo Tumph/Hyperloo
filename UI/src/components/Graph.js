@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import { ForceGraph3D } from "react-force-graph";
 import neo4j from "neo4j-driver";
 import * as THREE from "three";
@@ -9,24 +9,23 @@ const Graph = () => {
   const [highlightLinks, setHighlightLinks] = useState(new Set());
   const [hoverNode, setHoverNode] = useState(null);
   const [selectedNode, setSelectedNode] = useState(null);
+  const fgRef = useRef();
 
+  // Update highlighting when hovering on a node.
   const updateHighlight = useCallback(() => {
     if (!hoverNode) {
       setHighlightNodes(new Set());
       setHighlightLinks(new Set());
       return;
     }
-
     const connectedNodes = graphData.links
       .filter(link => link.source === hoverNode || link.target === hoverNode)
       .map(link => (link.source === hoverNode ? link.target : link.source));
-
     setHighlightNodes(new Set([hoverNode, ...connectedNodes]));
 
     const connectedLinks = graphData.links.filter(
       link => link.source === hoverNode || link.target === hoverNode
     );
-
     setHighlightLinks(new Set(connectedLinks));
   }, [hoverNode, graphData.links]);
 
@@ -34,6 +33,7 @@ const Graph = () => {
     updateHighlight();
   }, [hoverNode, updateHighlight]);
 
+  // Fetch nodes and links from Neo4j.
   useEffect(() => {
     const fetchData = async () => {
       const driver = neo4j.driver(
@@ -42,52 +42,49 @@ const Graph = () => {
       );
       const session = driver.session();
       try {
-        const result = await session.run(`
-          MATCH (c:Course)-[r:PREREQUISITE]->(d:Course)
-          RETURN c.course_id AS source, d.course_id AS target
-        `);
+        // 1. Fetch ALL nodes (even isolated ones)
+        const nodesResult = await session.run(
+          `MATCH (n:Employee) RETURN n.title AS id`
+        );
+        // Create nodes with random initial positions.
+        const nodes = nodesResult.records.map(record => ({
+          id: record.get("id"),
+          size: 2,
+          connections: 0,
+          // Assign random positions so that isolated nodes don't all overlap
+          x: (Math.random() - 0.5) * 500,
+          y: (Math.random() - 0.5) * 500,
+          z: (Math.random() - 0.5) * 500,
+        }));
 
-        // Use a map to store nodes with a set of unique adjacent nodes.
+        // Create a map for quick lookup.
         const nodesMap = new Map();
+        nodes.forEach(node => nodesMap.set(node.id, node));
+
+        // 2. Fetch links (relationships)
+        const linksResult = await session.run(
+          `MATCH (c:Employee)-[r:MANAGES]->(d:Employee)
+           RETURN c.title AS source, d.title AS target`
+        );
         const links = [];
-
-        result.records.forEach(record => {
-          const sourceId = record.get("source");
-          const targetId = record.get("target");
-          if (sourceId && targetId) {
-            if (!nodesMap.has(sourceId)) {
-              nodesMap.set(sourceId, { 
-                id: sourceId,
-                size: 2,
-                neighborSet: new Set()
-              });
-            }
-            if (!nodesMap.has(targetId)) {
-              nodesMap.set(targetId, { 
-                id: targetId,
-                size: 2,
-                neighborSet: new Set()
-              });
-            }
-
-            nodesMap.get(sourceId).neighborSet.add(targetId);
-            nodesMap.get(targetId).neighborSet.add(sourceId);
-
-            links.push({ 
-              source: sourceId, 
-              target: targetId,
-              value: Math.random() * 1.5 + 0.5
-            });
+        linksResult.records.forEach(record => {
+          const source = record.get("source");
+          const target = record.get("target");
+          links.push({
+            source,
+            target,
+            value: Math.random() * 1.5 + 0.5,
+          });
+          // Update connection counts.
+          if (nodesMap.has(source)) {
+            nodesMap.get(source).connections += 1;
+          }
+          if (nodesMap.has(target)) {
+            nodesMap.get(target).connections += 1;
           }
         });
 
-        const nodes = Array.from(nodesMap.values()).map(node => ({
-          id: node.id,
-          size: node.size,
-          connections: node.neighborSet.size
-        }));
-
-        setGraphData({ nodes, links });
+        setGraphData({ nodes: Array.from(nodesMap.values()), links });
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -99,6 +96,16 @@ const Graph = () => {
     fetchData();
   }, []);
 
+  // When graph data loads, let the simulation run a few ticks and then adjust the camera.
+  useEffect(() => {
+    if (graphData.nodes.length && fgRef.current) {
+      // Allow the simulation to "warm up" a bit.
+      setTimeout(() => {
+        fgRef.current.zoomToFit(400);
+      }, 500);
+    }
+  }, [graphData]);
+
   const handleNodeClick = useCallback(node => {
     setSelectedNode(node);
   }, []);
@@ -108,7 +115,7 @@ const Graph = () => {
     document.body.style.cursor = node ? "pointer" : "default";
   }, []);
 
-  // Improved node three-object with an outline and glow effect
+  // Custom node rendering using Three.js (with a glow effect)
   const getNodeObject = (node) => {
     const isHighlighted = highlightNodes.has(node);
     const group = new THREE.Group();
@@ -120,17 +127,17 @@ const Graph = () => {
       emissive: isHighlighted ? "#222222" : "#000000",
       shininess: 50,
       transparent: true,
-      opacity: 0.9
+      opacity: 0.9,
     });
     const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     group.add(sphere);
 
-    // Glow effect (an outline-like glow)
+    // Glow effect
     const glowGeometry = new THREE.SphereGeometry(node.size * 1.25, 32, 32);
     const glowMaterial = new THREE.ShaderMaterial({
       uniforms: {
         glowColor: { value: new THREE.Color(isHighlighted ? "#ff1493" : "#ff69b4") },
-        viewVector: { value: new THREE.Vector3(0, 0, 0) }
+        viewVector: { value: new THREE.Vector3(0, 0, 0) },
       },
       vertexShader: `
         uniform vec3 viewVector;
@@ -152,7 +159,7 @@ const Graph = () => {
       `,
       side: THREE.BackSide,
       blending: THREE.AdditiveBlending,
-      transparent: true
+      transparent: true,
     });
     const glowMesh = new THREE.Mesh(glowGeometry, glowMaterial);
     group.add(glowMesh);
@@ -210,6 +217,7 @@ const Graph = () => {
       </div>
 
       <ForceGraph3D
+        ref={fgRef}
         graphData={graphData}
         backgroundColor="rgba(0,0,0,0)"
         nodeLabel={node =>
@@ -223,9 +231,8 @@ const Graph = () => {
           highlightLinks.has(link) ? "#ff1493" : "#ff69b4"
         }
         linkOpacity={link => (highlightLinks.has(link) ? 0.5 : 0.15)}
-        linkWidth={link =>
-          highlightLinks.has(link) ? link.value * 2 : link.value
-        }
+        // All edges will have the same width
+        linkWidth={() => 2}
         linkDirectionalParticles={3}
         linkDirectionalParticleWidth={link =>
           highlightLinks.has(link) ? 3 : 2
@@ -236,17 +243,25 @@ const Graph = () => {
         linkDirectionalParticleColor={link =>
           highlightLinks.has(link) ? "#ff1493" : "#ff69b4"
         }
+        // Allow the simulation to run a few ticks before settling.
+        warmupTicks={100}
         width={window.innerWidth}
         height={window.innerHeight}
         showNavInfo={false}
         enableNavigationControls={true}
         controlType="orbit"
         enableNodeDrag={false}
-        // Add improved lighting to the scene
         onEngineInit={engine => {
+          // Adjust simulation forces to better separate disconnected groups.
+          if (engine.d3Force) {
+            // Increase repulsion strength.
+            engine.d3Force("charge").strength(-100);
+            // Increase desired link distance.
+            engine.d3Force("link").distance(80);
+          }
+          // Add lighting.
           const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
           engine.scene.add(ambientLight);
-
           const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
           directionalLight.position.set(50, 50, 50);
           engine.scene.add(directionalLight);

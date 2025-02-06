@@ -81,7 +81,7 @@ def extract_syllabus_data(soup):
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/courses.json', 'r') as f:
+    with open('Hyperloo/scrapers/coursescraper/courses.json', 'r') as f:
         courses = json.load(f)
     
     driver = webdriver.Chrome()
