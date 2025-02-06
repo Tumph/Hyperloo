@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <title>Neovis.js Simple Example</title>
+    <style type="text/css">
+        html, body {
+            font: 16pt arial;
+        }
+
+        #viz {
+            width: 900px;
+            height: 700px;
+            border: 1px solid lightgray;
+            font: 22pt arial;
+        }
+
+    </style>
+
+    <!-- FIXME: load from dist -->
+    <script type="text/javascript" src="../dist/neovis.js"></script>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+		// define config car
+		// instantiate nodevis object
+		// draw
+
+		var viz;
+
+		function draw() {
+			var config = {
+				containerId: "viz",
+				neo4j: {
+					serverUrl: "bolt://54.209.44.254:33146",
+					serverUser: "neo4j",
+					serverPassword: "investigators-spill-future"
+				},
+				labels: {
+					//"Character": "name",
+					Person: {
+						label: "name",
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								value: 1.0
+							},
+							cypher: {
+								value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s;"
+							}
+						}
+					},
+					"Organization": {
+						caption: "name",
+						[NeoVis.NEOVIS_ADVANCED_CONFIG]: {
+							static: {
+								value: 2.0
+							},
+							cypher: {
+								value: "MATCH (n) WHERE id(n) = $id RETURN SIZE((n)--()) AS s"
+							}
+						}
+					}
+
+				},
+				relationships: {
+					PRESIDENT: {
+						label: "El Presidente"
+					}
+				},
+				initialCypher: "match (p:Person)-[r]-(o:Organization)-[r1]-(p2:Person) RETURN * LIMIT 10"
+			};
+
+			viz = new NeoVis.default(config);
+			viz.render();
+			console.log(viz);
+
+		}
+    </script>
+</head>
+<body onload="draw()">
+<div id="viz"></div>
+
+
+Cypher query: <textarea rows="4" cols=50 id="cypher"></textarea><br>
+<input type="submit" value="Submit" id="reload">
+
+
+</body>
+
+<script>
+	$("#reload").click(function () {
+
+		var cypher = $("#cypher").val();
+
+		if (cypher.length > 3) {
+			viz.renderWithCypher(cypher);
+		} else {
+			console.log("reload");
+			viz.reload();
+
+		}
+
+	});
+
+</script>
+</html>

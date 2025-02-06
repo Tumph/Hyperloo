@@ -87,7 +87,7 @@ def scrape_courses():
             print(f" !! Error processing major: {str(e)[:80]}")
             continue
     
-    with open('courses.json', 'w') as file:
+    with open('courses.json2', 'w') as file:
         json.dump(courses, file, indent=4)
     
     print(f"\nScraping complete. Found {len(courses)} courses.")
