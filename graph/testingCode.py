@@ -1,5 +1,4 @@
 from py2neo import Graph, Node, Relationship
-# Connect to the local Neo4j database
 graph = Graph("bolt://localhost:7687", auth=("neo4j", "hyperloo"))
 
 # Example nested dictionary
