@@ -1,4 +1,3 @@
-
 Version
 Latest
 Class Schedule
@@ -9,373 +8,326 @@ Tentative Course Schedule
 Texts / Materials
 Student Assessment
 Assignment Screening
+Notice of Recording
 Administrative Policy
 University Policy
 Browse Outlines
 Log Out
-Circuits, Instrumentation, and Measurements Fall 2024
-SYDE 292
-Published Sep 05, 2024
-
+Human Factors in Design Spring 2024
+SYDE 162
+Published May 07, 2024
 Print / Save PDF
 Class Schedule
-Course	Meet Days	Meet Time	Location	Instructor(s)
-SYDE 292 001 [LEC]	Wednesdays -
-Wednesdays
-Sep 4 - Dec 3
-01:30PM - 02:50PM	E7 4433
-C. Azzi
-cazzi@uwaterloo.ca
-Fridays -
-Fridays
-Sep 4 - Dec 3
-11:30AM - 12:50PM	E7 4433
-SYDE 292 101 [TUT]	Mondays -
-Mondays
-Sep 4 - Dec 3
-01:30PM - 02:20PM	RCH 211
-C. Azzi
-cazzi@uwaterloo.ca
+Course Meet Days Meet Time Location Instructor(s)
+SYDE 162 001 [LEC]
+Tuesdays -
+Tuesdays
+May 6 - Jul 30
+01:30PM - 03:20PM E5 6006
+R. Hunter
+r5hunter@uwaterloo.ca
+Thursdays -
+Thursdays
+May 6 - Jul 30
+01:30PM - 02:20PM E5 6006
+SYDE 162 101 [TUT]
+Thursdays -
+Thursdays
+May 6 - Jul 30
+02:30PM - 03:20PM E5 6006
+R. Hunter
+r5hunter@uwaterloo.ca
 schedule data automatically refreshed daily
 Instructor & TA (Teaching Assistant) Information
-Instructor: Dr. Charbel Azzi                                   Email: cazzi@uwaterloo.ca
-
-                   Office: E7 6336
-
-Office Hours: Wednesday 10:00am – 11:00pm EST and Monday10:00am – 11:00pm EST in E7 6336 EST. My office hours will be scheduled live on Microsoft Teams or in person or via appointment (See LEARN or Microsoft Teams for more info).
-
-Teaching Assistants: James Tweel                                 Email: jtweel@uwaterloo.ca
-
-                                   Mohamed Abdelrahman              Email: mam5abde@uwaterloo.ca
-
-
-
-Course Description
-SYDE 292:
-Active and passive circuit elements, Kirchhoff's laws, mesh and nodal circuit analysis, principle of superposition; step response of first and second order networks; sinusoidal steady state analysis using complex impedance phasors; input-output relationships, transfer functions and frequency response of linear systems; operational amplifiers, operational amplifier circuits using negative or positive feedback; diodes, operational amplifier circuits using diodes; analog signal detection, conditioning and conversion systems; transducers, difference and instrumentation amplifiers, active filters, A/D and D/A conversion.
-
-View requirements for SYDE 292
-
-In this course, students will gain an overall understanding and processes, including sources of errors, involved in obtaining electrical analog measurements and digitally acquiring these measurements.
-
-The specific objectives of these courses are to develop an understanding of:
-
-           - voltage, current, resistance, capacitance, and inductance;
-
-           - voltage and current supplies, resistors, capacitors, inductors and diodes;
-
-           - techniques for analyzing simple circuits when driven by direct or alternating power sources;
-
-           - important basic circuit concepts such as transfer functions, loading effects and frequency response;
-
-           - operational amplifiers and circuits using operational amplifiers;
-
-           - filters, transducers, pulse width modulation;
-
-           - the concept of a measurement channel and
-
-           - possible sources of error when performing electronic measurements.
-
-Email Policy: Microsoft Teams group chat window and email are the best way to get in touch with the instructor or TA. When sending an email, remember the following: 1. Emails should be sent from your official UW email account. 2. Put SYDE 292 in the email subject line followed by a brief description of the email subject. For example, ‘SYDE 292: Question concerning ….”. 3. Sign your email with your first and last name and your student number. 4. Emails should contain professional and respectful language. 5. While we will do our best to respond to your emails as soon as possible, allow couple of hours (excluding weekends) for a response to your email. 6. If your question or concern requires a complex answer or warrants a discussion, the instructor or teaching assistant may suggest a face-to-face or e-meeting.
-
+Instructor Robert Hunter, PhD (he/they)
+Email: r5hunter@uwaterloo.ca.
+Office: E7 6446.
+  Office Hours.
+Tuesdays 4:30 - 5:30 pm
+Thursdays 9:00 - 10:00 am
+For quick questions or concerns, please send me an email or a message on teams.
+  Teaching Assistants.
+Wendy Ding
+Email: wendy.ding@uwaterloo.ca
+Office Hour: Thursday 4:30 - 5:30
+Office: EC4 2151C
+Ali Karim
+Email: ali.karim@uwaterloo.ca
+Office Hour: Fridays 2:00
+Office: EC4 2112B
+Email Policy
+Microsoft Teams or email is the best way to get in touch with the instructor or TA. When sending an email, remember the following:
+Emails should be sent from your official UW email account.
+Put SYDE162 in the email subject line followed by a brief description of the email subject. For example, ‘SYDE162: Question concerning FTA’.
+Emails should contain professional and respectful language.
+While we will do our best to respond to your emails as soon as possible, allow 24 to 48 hours (excluding weekends) for a response to your email.
+If your question or concern requires a complex answer or warrants a discussion, the instructor or teaching assistant may suggest a face-to-face meeting.
+  Course Description
+SYDE 162:
+Design of human-machine environments, design to reduce human error. Analytical methods of determining user needs in systems with humans. Information processing and human sensory processes and consideration of these elements in the design of systems with humans. Human physical capabilities and consideration of these in ergonomic design. [Offered: S]
+Prereq: 1B Systems Design Engineering. Antireq: BME 162
+Additional Description:
+SYDE 162, Human Factors in Design, is the second course in the SYDE Design course sequence. We will extend learning from SYDE 161 Introduction to Design by focusing on user/workplace requirements as they apply to the design of human-machine systems. In Human Factors in Design, we will introduce students to the discipline of human factors engineering and how it informs design decisions to improve design outcomes from the perspective of overall safety and human performance.
+Students will be exposed to human factors engineering concepts and analytical techniques relating to user experience and usability design, physical workplace design, and complex system design through lectures, assignments, case studies, and tests.
+See the course schedule for a breakdown of topics covered each week, assignment and test deadlines, and more.
+Guiding Principles:
+I consider the classroom to be a place where we all will be with respect.  I welcome individuals of all ages, backgrounds, beliefs, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, ability – and other visible and nonvisible differences. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.
 Learning Outcomes
 By the end of this course students should be able to:
-Apply knowledge of basic circuit components and their interactions, (Attributes: 1a,1c)
-Analyze circuits that include passive components (e.g., resistors, capacitors, and inductors), (Attributes: 2a, 2b, 2c)
-Analyze circuits that include fundamental non-linear devices (e.g., BJTs, MOSFETs, diodes). (Attributes: 2a, 2b, 2c)
-Carry out or use a procedure or methodology that is part of the course material through using a detailed method of attack for every problem (Attributes: 2c)
-Carry out modelling and analysis and use it to reach valid conclusions (Attributes: 2a, 2b, 2c)
-Numbers are in reference to the CEAB Graduate Attributes: Graduate attributes | Engineering (uwaterloo.ca)
-
-Tentative Course Schedule
-Week
-
-Dates
-
-Topics
-
-Activities & Deliverables
-
-1	Sept 4 – 6	Course Overview
-No tutorial
-2	Sept 9 – 13
-Fundamentals of Active and Passive Circuit Elements
-
-Schematics, Sources, and Resistive Circuits
-
-Makeup Lecture during tutorial time: Monday September 9 at 1:30pm in RCH 211
-Textbook Ch.1 [section 4-6]
-3	Sept 16 – 20
-Schematics, Sources, and Resistive Circuits Continued
-
-Kirchhoff’s Current and Voltage Laws
-
-Textbook Ch.2 [section 1,2,4,5] &  Ch.3 [section 1-4]
-4	Sept 23 – 27
-Kirchhoff’s Current and Voltage Laws Continued
-
-Circuit Analysis Techniques and Drills
-
-Textbook Ch.2 [section 4,5] &  Ch.4 [section 1-8]
-Assessment 1 due September 27
-5	Oct 30 – Oct 4
-Circuit Analysis Techniques and Drills Continued
-
-Source Transforms and Thevenin/Norton Equivalents
-
-Textbook Ch.4 [section 9-11] & Ch. 6 [section 1-3]
-6	Oct 7 – 11 	Capacitors in Time Domain and their Natural and Step Response
-Textbook Ch.7 [section 1-4] & Ch. 9 [section 1-9]
-Makeup Lecture: Tuesday October 8 at 4:30-6:20pm in E7 4433
-Assessment 2 due October 11
-7	Oct 14 – 18	Reading Week No Classes
-8	Oct 21 – 25	Midterm Week No Classes
-Midterm Exam: TBA
-9	Oct 28 – Nov 1
-Inductors in Time Domain and their Natural and Step Response
-
-Sinusoidal and Phasor Analysis
-
-Textbook Ch.7 [section 1-4] & Ch. 9 [section 1-9]
-Textbook Ch.13 [section 1,2,4] & Ch. 5 [section 1-3]
-10	Nov 4 – 8
-Impedance, Transfer Functions, Frequency Response
-
-Intro to OpAmps
-
-Instructor’s Notes & Ch. 14 [section 1-5]
-Textbook Ch. 5 [section 4-6] & Instructor’s Notes
-11	Nov 11 – 15
-More OpAmps
-
-Differential and Instrumentational Amplifiers
-
-Instructor’s Notes
-Assessment 3 due November 15
-12	Nov 18 – 22
-Diodes
-
-Passive Filters
-
-Ch. 15 [section 1-5]
-Instructor’s Notes
-13 	Nov 25 – Nov 29	Active Filters and Conversions
-Ch. 15 [section 1-5]
-Instructor’s Notes
-Makeup Lecture: Tuesday November 26 at 4:30-6:20pm in E7 4433
-Assessment 4 (if released) due November 29
-14	Dec 2 – 3	Sensors (subject to change)
-Final Exam: TBD during final exam period
-
-
-Weekly Learning Outcomes
-
-
-
-Week
-
-Topics
-
+Outline and illustrate a basic understanding of human physical and psychological capabilities and how these affect a person's ability to work and interact with technology. (GAs 1b and 9a,b)
+Appreciate the ethical responsibilities when conducting Human Factors/User Research (GAs 8a and 10a,b,c)
+Apply risk analysis techniques to develop a complete and holistic understanding of incidents involving human error. (GAs 1d and 2c)
+Apply human factors engineering concepts to analyze case studies and real-world design problems. (GAs 1d and 2c)
+Investigate stakeholder requirements in the context of user, task, and environmental characteristics. (GA 3a)
+Critique and recommend redesign solutions for case studies and real-world problems based on human factors analytical methods. (GAs 4c and 5a)
+Graduate attributes:
+Knowledge Base - Demonstrated competence in university level mathematics, natural sciences, engineering fundamentals, and specialized engineering knowledge appropriate to the program.
+Problem Analysis - An ability to use appropriate knowledge and skills to identify, formulate, analyze, and solve complex engineering problems in order to reach substantiated conclusions.
+Investigation - An ability to conduct investigations of complex problems by methods that include appropriate experiments, analysis and interpretation of data, and synthesis of information in order to reach valid conclusions.
+Design - An ability to design solutions for complex, open-ended engineering problems and to design systems, components or processes that meet specified needs with appropriate attention to health and safety risks, applicable standards, and economic, environmental, cultural and societal considerations.
+Use of Engineering Tools - An ability to create, select, apply, adapt, and extend appropriate techniques, resources, and modern engineering tools to a range of engineering activities, from simple to complex, with an understanding of the associated limitations.
+Individual and Teamwork - An ability to work effectively as a member and leader in teams, preferably in a multi‐disciplinary setting.
+Communication Skills - An ability to communicate complex engineering concepts within the profession and with society at large. Such ability includes reading, writing, speaking and listening, and the ability to comprehend and write effective reports and design documentation, and to give and effectively respond to clear instructions.
+Professionalism - An understanding of the roles and responsibilities of the professional engineer in society, especially the primary role of protection of the public and the public interest.
+Impact of Engineering - An ability to analyze social and environmental aspects of engineering activities. Such ability includes an understanding of the interactions that engineering has with the economic, social, health, safety, legal, and cultural aspects of society, the uncertainties in the prediction of such interactions; and the concepts of sustainable design and development and environmental stewardship.
+Ethics and Equity - An ability to apply professional ethics, accountability, and equity.
+Economics and Project Management - An ability to appropriately incorporate economics and business practices including project, risk, and change management into the practice of engineering and to understand their limitations.
+Lifelong Learning - An ability to identify and to address their own educational needs in a changing world in ways sufficient to maintain their competence and to allow them to contribute to the advancement of knowledge.
+  Tentative Course Schedule
+Class Time and Location
+Tuesdays: 1:30 pm – 3:20 pm (Room E5 6006)
+Thursdays: 1:30 pm – 2:20 pm (LEC), 2:30 - 3:20 (TUT) (Room E5 6006)
+Course Schedule:
+The course schedule is posted on LEARN and details the following important information:
+Weekly course topics
+Associated textbook readings.
+Assignments and/or other deliverables (tests, ethics quiz)
+Students are expected to review the course schedule, familiarize themselves with weekly expectations, and ask questions in advance of activities and associated deadlines to clear up any confusion. Changes to the course schedule will be announced as soon as possible and an updated course schedule will be posted on LEARN.
+Weekly Course Breakdown:
+Week Tuesdays Thursdays Readings Deliverables and
 Learning Outcomes
-
-1	Course Overview	1
-2
-Fundamentals of Active and Passive Circuit Elements
-
-Schematics, Sources, and Resistive Circuits
-
-1, 2
-3
-Schematics, Sources, and Resistive Circuits Continued
-
-Kirchhoff’s Current and Voltage Laws
-
-1, 2
-4
-Kirchhoff’s Current and Voltage Laws Continued
-
-Circuit Analysis Techniques and Drills
-
-    1, 2
-
-5
-Circuit Analysis Techniques and Drills Continued
-
-Source Transforms and Thevenin/Norton Equivalents
-
-1, 2
-6	Capacitors in Time Domain and their Natural and Step Response	1, 2
-7	Reading Week No Classes
-8	Midterm Week No Classes
-9
-Inductors in Time Domain and their Natural and Step Response
-
-Sinusoidal and Phasor Analysis
-
-1, 2
-10
-Impedance, Transfer Functions, Frequency Response
-
-Intro to OpAmps
-
-1, 2
-11
-More OpAmps
-
-Differential and Instrumentational Amplifiers
-
-1, 2
-12
-Diodes
-
-Passive Filters
-
-       1, 2
-13	Active Filters and Conversions
-         1, 2
-
-14	Sensors (subject to change)	1
-
-
-Texts / Materials
-Title / Name	Notes / Comments	Required
-Nilsson, J. W., & Riedel, S. A.. Electric Circuits, 12th ed. Pearson Education.	11th edition is okay too	Yes
-C. K. Alexander and M. N. O. Sadiku, Fundamentals of Electric Circuits, 3rd ed. McGrawHill, 2005.		No
-P. Scherz and S. Monk, Practical Electronics for Inventors, 4th ed. McGraw-Hill, 2016		No
+Week 1
+(May 6 - 10)
+Course Introduction
+HF Engineering and Design
+Contextual Inquiry.
+Master-Apprentice Interview (Activity)
+Lee Ch. 1: 1 – 13,
+Ch. 2: 18 – 27, 37 – 38.
+Participation Activity 1
+May 10th
+LO 2,5
+Week 2
+(May 13 - 17)
+Interviews and Questionnaires
+Set Phasers on Stun
+(Case Study)
+Accident Analysis Pt. 1
+  Lee Ch. 2: 26 – 27, 37 – 38,
+Ch. 16: 511 – 544.
+Casey Set Phasers on Stun.
+Assignment 1
+Friday May 17th
+LO 3-5
+Week 3
+(May 20 - 24)
+Victoria Day 
+Follow Monday Schedule
+Accident Analysis Pt. 2
+Business in Bhopal
+Ch. 16: 511 – 544.
+Casey Business in Bhopal
+LO 3,4
+Week 4
+(May 27 - 31)
+Accident Analysis Pt. 3
+Double Vision 
+(Case Study)
+Attention and Vigilance
+Perception and Memory
+Ch. 16: 511 – 544.
+Casey Double Vision
+Assignment 2
+Friday May 31
+LO 3,4
+Week 5
+(June 3 - 7)
+Decision Making
+Rental Car 
+(Case Study)
+Test 1
+Lee Ch. 6: 161 – 198,
+Ch. 7: 209 – 231,
+Ch. 15: 497 – 499.
+Casey Rental Car
+Test 1 
+In Class
+TCPS2 Certificate
+Friday June 7th
+LO 1,2
+Week 6
+(June 10 - 14)
+Signal Detection.
+Never Cry Wolf (Case Study)
+Controls and Displays
+Lee Ch.8: 243 – 279, 
+Ch. 9: 283 – 319. 
+Casey  Never Cry Wolf.
+Ethics Quiz
+In Class
+Participation Activity 2
+Friday June 14th
+LO 1,4,6
+Week 7
+(June 17 - 21)
+Heuristic Evaluation and Design Principles
+Wireframing
+Task Analysis Lee Ch. 2: 25 – 45,
+ Ch. 3: 55 – 60.
+Assignment 3
+Friday June 21
+LO 5,6
+Week 8
+(June 24 -28)
+Wireframing Activity
+Automation
+That Newfangled Technology 
+(Case Study)
+Lee Ch. 11: 372 – 385,
+Ch. 13: 427 – 445, 461 - 475
+Assignment 4
+Friday June 28
+LO 5,6
+Week 9
+(July 1 - 5)
+Test 2
+Fatigue and Circadian Rhythms
+Sound & Noise
+Lee Ch. 15: 497 – 506
+Ch. 5: 123 – 147
+Test 2
+In Class
+LO 1
+Week 10
+(July 8 - 12)
+Vision
+Anthropometrics
+Loads and Lifting
+Energy Usage
+Lee Ch. 4: 85 – 111,
+Lee Ch. 12 389 – 405,
+Assignment 5
+Friday July 12
+LO 1
+Week 11
+(July 15 - 19)
+Biomechanics, Spinal Loading, 
+and Extreme Work.
+Tigershark & Return from Salyut
+ (Case Studies)
+User Experience Mapping.
+Stress
+Lee Ch. 13: 424 – 429.
+Casey
+Tigershark & Return from Salyut
+Participation Activity 3
+Friday July 19th
+LO 1,4
+Week 12
+(July 22 - 26)
+Physical Demands Analysis
+Unhealthy Work
+Macroergonomics
+Peppermint Twist (Case Study)
+Lee Ch. 15: 480-507
+Casey Peppermint Twist
+Assignment 6
+Friday July 26
+LO 1,4,5
+Week 13
+(July 29 - 30)
+July 30th follows Tuesday Schedule
+Course Wrap-up
+Classes end.  
+Test 3 in Exam Period
+(TBD)
+  Texts / Materials
+Course Texts
+Title / Name Notes / Comments Required
+J.D. Lee, C.D. Wickens, Y. Liu & L.N. Boyle. “Designing for people: an introduction to human factors engineering.”3rd edition, Charleston, SC: CreateSpace. No
+S. Casey. “Set phasers on stun: and other true tales of design, technology, and human error,” Santa Barbara, CA: Aegean Publishing Company. Yes
+Additional Textbooks
+Title / Name Notes / Comments Required
+S.M.Weinschenk. “100 things every designer needs to know about people,”Berkley, CA: New Riders. No
+W. Lidwell, K. Holden, & J. Butler,“Universal principles of design,” Beverly,MA: Rockport. No
+The design of everyday things:revised and expanded edition. By Norman, Donald a. Publication date: Jan. 1, 2013 No
 Student Assessment
-Component	Value
-Participation Activities (PA)	10%
-Assessments	20%
-Midterm Exam	30%
-Final Exam	40%
-Participation Activities:
-
-Weekly attendance activities starting from week 2. Every week the instructor will have a 5 min participation activity in the form of a game/quiz (Kahoot style) in class. This will be unannounced and could be during any lecture day and any time during the lecture (beginning, middle or end). It is every student’s responsibility to attend the class. Those will be marked for completion/participation not correctness. The split of the grade is to reward attending the activities. Missing those will be penalized as follows:
-
-
-
-Total Activities Missed
-
-PA Weight (out of 10%)
-
-<=1
-
-10%
-
-2
-
-8.9%
-
-3
-
-7.8%
-
-4
-
-6.7%
-
-5
-
-5.6%
-
-6
-
-4.5%
-
-7
-
-3.3%
-
-8
-
-2.2%
-
-9
-
-1.1%
-
->=10
-
-0%
-
-
-
-Valid reasons (medical note, short-absence, interviews, any other occasions will not be accepted) approved by the instructor can result in waiving any missed session.
-
-
-
-Any student registered with AccessAbility Services who has concerns about accommodations for these deliverables to talk to their Accommodation Consultant and the course instructor by week 2 of the term.
-
-
-
-Sharing the code of the session with other classmates that are not present is an academic integrity breach and will be subject to the consequences that could extend to failing the course. In the case of a breach that is unknown the whole class will loose 1 point on their final mark for every breach up to a maximum of 10 points.
-
-
-
-Assessments:
-
-4 take-home assignments that need to be done individually (may change based on the instructor’s discretion). The assignments is for us to assess your knowledge and provide you with constructive feedback. Plagiarism detection tools will be used. Individual interview may be conducted, where a student is asked to explain the completed work to the instructor and TA.
-
-
-
-Midterm and Final Exams:
-
-Each student must complete the exam solely by her or his own efforts. Learning materials and notes prepared before an exam may be allowed and will be communicated via LEARN by the instructor.
-
-Any missed mid-term exam will receive a mark of 0, unless there is a valid documented reason approved by the instructor. Using short-absence on a midterm exam will shift its weight to other course component – no makeup will be offered. If such a reason is provided and accepted by the instructor, the mid-term weight may be applied to the final exam. If a student is unable to write the final exam, they need to notify the instructor at least 24 hours before the exam (as earlier as possible).
-
-
-
-
-
-Course Laboratories (SYDE 292L):
-
-The labs will cover practicum related to course topics that deserve more attention beyond the level of coverage given in lectures. Each lab will include practical problems related to the topics covered in lectures. Lab attendance is mandatory.
-
-
-
-The lab component is run independently from the course and the lab instructor is in charge of it not the course instructor.
-
+Component Value
+Three Tests (Individual, 20% each) 60%
+Assignments (Best 5/6, 6% each)) 30%
+Participation Activities 3%
+Ethics 7%
+Additional Student Assessment Information
+Importantly, you must pass the tests (≥ 50%) to access the grades for the group assignments. If you fail Test 1, the weighting for Assignment 1 and 2 will be shifted to Test 1. If you fail Test 2, the weighting for Assignment 3 and 4 will be shifted to Test 2. If you fail Test 3, the weighting for Assignment 5 and 6 will be shifted to Test 3. This would increase the weighting associated with the test from 20% to 32%. Given that the lowest scoring assignment is dropped, the first time this occurs, one assignment would be dropped and the weighting for only one assignment would shift to the test, making that test worth 26% instead of 32%. 
+Course Evaluation:
+All evaluated course work (assignments, quizzes, tests, etc.) must be solely the work of the student or students submitting it for credit.
+Participation activities, quizzes and tests are to be completed independently with no collaboration with other students. The instructor reserves the right to have follow-up conservations with individual students to ensure that the work submitted was completed on their own. Marks may be adjusted, or disciplinary action taken, based on these conversations and other sources of evidence.
+Late submissions will not be graded and will receive a grade of zero. Up to three grace days can be used for the group assignments. Up to three grace days can be used for the following individual activities: participation activities and the TCPS2 Certificate. Students must email the instructor before the assignment deadline to use these grace days.
+It is expected that all group members will contribute to the group assignments. Any group issues related to non-participating group members should be brought to the attention of Professor Robert Hunter or a teaching assistant as soon as possible. Individual members’ group assignment grades may be adjusted at the instructor’s discretion based on level of participation. In extreme circumstances, a non-participating group member may be removed from the group and tasked with completing group assignments individually.
+Deliverable Formatting
+Unless otherwise stated in provided deliverable instructions, the following formatting expectations apply to submissions:
+Maximum page size is 8.5 by 11 inches.
+Margins must be no smaller than 0.5 inches.
+11 or 12 pt. font size.
+Times New Roman, Arial, or other similar professional and legible font styles.
+References, when expected, must follow IEEE guidelines.
+File submissions should be .pdf files.
+Grade penalties for not following formatting expectations may be applied at the discretion of the course instructor. 
 Assignment Screening
 No assignment screening will be used in this course.
-
+Notice of Recording
+Lectures will be recorded to support all students in achieving the learning outcomes.  You will receive notification of recording via at least one of the following mechanisms: within the Learning Management System (LEARN), a message from your course instructor, course syllabus/website, or other means. Some technologies may also provide a recording indicator. Images, audio, text/chat messaging that have been recorded may be used and/or made available by the University to students taking SYDE 162 for the purpose of catching up on missed content. Recordings will be managed according to the University records classification scheme, WatClass, and will be securely destroyed when no longer needed by the University. Your personal information is protected in accordance with the Freedom of Information and Protection of Privacy Act, as well as University policies and guidelines and may be subject to disclosure where required by law.
+The University will use reasonable means to protect the security and confidentiality of the recorded information, but cannot provide a guarantee of such due to factors beyond the University’s control, such as recordings being forwarded, copied, intercepted, circulated, disclosed, or stored without the University’s knowledge or permission or the introduction of malware into computer system which could potentially damage or disrupt the computer, networks, and security settings. The University is not responsible for connectivity/technical difficulties or loss of data associated with your hardware, software or Internet connection.
+By engaging in course activities that involve recording, you are consenting to the use of your appearance, image, text/chat messaging, and voice and/or likeness in the manner and under the conditions specified herein. (In the case of a live stream event, if you choose not to have your image or audio recorded, you may disable the audio and video functionality. Instructions to participate using a pseudonym instead of your real name are included where the feature exists; however, you must disclose the pseudonym to your instructor in advance in order to facilitate class participation.) If you choose not to be recorded, this notice serves as confirmation of your understanding that if participating in a streamed class online, you can disable the audio and video functionality and if participating in a streamed class in-person, you can ask Professor Hunter to mute the microphone before you answer a question, share an opinion, etc.    
+You are not permitted to disclose the link to/URL of an event or an event session recording or copies of recording to anyone, for any reason. Recordings are available only to authorized individuals who have been directly provided the above instructions/link for their use. Recordings for personal use, required to facilitate your learning and preparation of personal course/lecture notes, should not be shared with others without the permission of the instructor or event coordinator. Review the University’s guidelines for faculty, staff and students entering relationships with external organizations offering access to course materials for more information on your obligations with respect to keeping copies of course materials. For more information about accessibility, connect with AccessAbility Services.
 Administrative Policy
-Course Expectations
-Deadlines and Late Penalties: Course deliverables submitted after the due date will be assigned a grade of zero (0). This penalty may be waived at the discretion of the instructor in the event of extraordinary or special circumstances (with supporting verification/documentation).
-
-Absence Due to Special Circumstances or Illness: Let Charbel know in advance if you need to be away due to special circumstances. In the event of illness that prevents attendance or participation in mandatory course activities, a Health Services Verification of Illness form must be completed by an authorized medical practitioner. See www.healthservices.uwaterloo.ca/Health_Services/verification.html and the associated policy: Accommodation due to illness.
-
-UW Policy on Attendance: “Students are expected to attend all scheduled components of the courses in which they have enrolled. Students may be required to present documentation confirming the reasons for non-attendance. During the course add period, students may be removed from a course for non-attendance. Students who are removed from a class will be notified by the Registrar's Office.” https://ugradcalendar.uwaterloo.ca/page/Acad-Regs-Class-Attendance
-
-Academic Integrity: In order to maintain a culture of academic integrity, members of the University of Waterloo community are expected to promote honesty, trust, fairness, respect and responsibility. [Check the Office of Academic Integrity: www.uwaterloo.ca/academicintegrity/ for more information.]
-
-Discipline: A student is expected to know what constitutes academic integrity (see link above) to avoid committing an academic offence, and to take responsibility for their actions. A student who is unsure whether an action constitutes an offence, or who needs help in learning how to avoid offences (e.g. plagiarism, cheating) or about “rules” for group work/collaboration should seek guidance from the course instructor, academic advisor, or the undergraduate Associate Dean. For information on categories of offences and types of penalties, students should refer to Policy 71, Student Discipline www.adm.uwaterloo.ca/infosec/Policies/policy71.htm. For typical penalties check Guidelines for the Assessment of Penalties, www.adm.uwaterloo.ca/infosec/guidelines/penaltyguidelines.htm.
-
-Grievance: A student who believes that a decision affecting some aspect of their university life has been unfair or unreasonable may have grounds for initiating a grievance. Read Policy70, Student Petitions and Grievances, Section 4 www.adm.uwaterloo.ca/infosec/Policies/policy70.htm. When in doubt please be certain to contact the department’s administration who will provide further assistance.
-
-Appeals: A decision made or penalty imposed under Policy 70 (Student Petitions and Grievances) (other than a petition) or Policy 71 (Student Discipline) may be appealed if there are grounds. A student who believes they have a ground for an appeal should refer to Policy 72 (Student Appeals) www.adm.uwaterloo.ca/infosec/Policies/policy72.htm.
-
-Note for Students with Disabilities: AccessAbility Services, located in Needles Hall Room 1401, collaborates with all academic departments to arrange appropriate accommodations for students with disabilities without compromising the academic integrity of the curriculum. If you require accommodation to lessen the impact of your disability, please work with AccessAbility Services and myself at the beginning of the term to ensure your needs are met. https://uwaterloo.ca/accessability-services/
-
-Turnitin
-
-Turnitin.com: Text matching software (Turnitin®) may be used to screen assignments in this course. Turnitin® is used to verify that all materials and sources in assignments are documented. Students’ submissions are stored on a U.S. server, therefore students must be given an alternative (e.g., scaffolded assignment or annotated bibliography), if they are concerned about their privacy and/or security. Students will be given due notice, in the first week of the term and/or at the time assignment details are provided, about arrangements and alternatives for the use of Turnitin® in this course.
-
-Instructor Right: The instructor reserves the right to modify course topics and/or assessments with due notice. In the event of further challenges, the instructor will work with the Department to find reasonable and fair solutions.
-
-It is the responsibility of the student to notify the instructor if they, in the first week of term or at the time assignment details are provided, wish to submit the alternate assignment.
-
+Generative AI
+Generative artificial intelligence (GenAI) trained using large language models (LLM) or other methods to produce text, images, music, or code, like Chat GPT, DALL-E, or GitHub CoPilot, may be used for assignments in this class with proper documentation, citation, and acknowledgement. Recommendations for how to cite GenAI in student work at the University of Waterloo may be found through the Library: https://subjectguides.uwaterloo.ca/chatgpt_generative_ai. Please be aware that generative AI is known to falsify references to other work and may fabricate facts and inaccurately express ideas. GenAI generates content based on the input of other human authors and may therefore contain inaccuracies or reflect biases. 
+In addition, you should be aware that the legal/copyright status of generative AI inputs and outputs is unclear. Exercise caution when using large portions of content from AI sources, especially images. More information is available from the Copyright Advisory Committee: https://uwaterloo.ca/copyright-at-waterloo/teaching/generative-artificial-intelligence 
+You are accountable for the content and accuracy of all work you submit in this class, including any supported by generative AI. 
+Course and Departmental Expectations
+Guiding Principles for our SYDE-BME Community (faculty, staff, and students):
+1. Be compassionate. 2. Be accountable. 3. Be patient.4. Be safe and healthy.
+Compassionate and respectful communication: Most online communication between the Department and students will be done through LEARN and/or email. Students are reminded that they should now use their email accountname@uwaterloo.ca. Include an academic signature with your full name, program, student ID. We encourage you to include your preferred pronouns (he/him; she/her; they/them).
+Scheduling of Synchronous (live) online course events: Due to the COVID-19 pandemic, all University of Waterloo courses components will be delivered online, until further notice. To maintain build supportive teaching environments, instructors may use the time slots (EDT) scheduled “in-class” hours to hold “live-stream” events such as lectures, tutorial help sessions, group activities, and open office hours. To accommodate different time zones, different working/studying conditions and limitations in internet access, all critical course components, including lectures and student support must be made available in asynchronous formats. Any timed component (e.g. test/quiz) must take time zone and internet availability into account.
+SYDE-BME COMMENT ON ACCOMMODATION: We respect that our SYDE-BME
+students are independent adult decision-makers, with many opportunities to partake in activities that might be in time conflict with academic deadlines and deliverables. Along with the right to make adult decisions comes the responsibility and accountability for those decisions and any outcomes.
+The University of Waterloo’s policy on accommodation for missed deliverables pertains to verifiable health matters, and highly unfortunate events (e.g. family tragedies). The Department of Systems Design Engineering follows UW’s general policy: students who self-elect to forgo a deliverable receive a “0” for that deliverable. It is preferred practice so that fairness is maintained for members of the same class/course by avoiding preferential treatment, and so that instructors are not burdened with having to create extra quizzes, deliverables, etc. It also reflects professional practice, as failing to show up to work and missing deadlines can be very costly to the company and individual (e.g. not submitting a contract proposal, or design review on time). Please read the policy here: Accommodation due to illness.
+SYDE-BME Academic Priorities over Co-op Interviews: With asynchronous schedules, students should be able to arrange co-op interviews that do not conflict with major deliverables (i.e. timed course midterms, final exams). For deliverables with longer time windows (e.g. 24-48 hours or more),students must manage their time for deliverables and co-op interviews accordingly. If a co-op interview conflicts with a short deliverable time window (e.g. 1-3 hours), then students MUST follow the CECA procedure for rescheduling the interview: CECA rescheduling co-op interviews.
+Compassionate Accommodation: If you are facing challenges that are affecting more than one course contact the Associate Chair Undergraduate (ACUG sydeunde@uwaterloo.ca) or the Directorof BME (sdbmedir@uwaterloo.ca ). They will review your case and coordinate a reasonable and fair plan in consultation with appropriate others (e.g. instructors, Department Undergraduate Studies Committee, Chair, AccessAbility Services, Engineering Counselling services, Registrar's Office).
+ Faculty of Engineering Guiding Practices. 
+Territorial Acknowledgement: The University of Waterloo acknowledges that much of our work takes place on the traditional territory of the Neutral, Anishinaabeg and Haudenosaunee peoples. Our main campus is situated on the Haldimand Tract, the land granted to the Six Nations that includes six miles on each side of the Grand River. Our active work toward reconciliation takes place across our campuses through research, learning, teaching, and community building, and is centralized within the Office of Indigenous Relations. 
+Inclusive Teaching-Learning Spaces: The University of Waterloo values the diverse and intersectional identities of its students, faculty, and staff. The University regards equity and diversity as an integral part of academic excellence and is committed to accessibility for all. We consider our classrooms, online learning, and community spaces to be places where we all will be treated with respect, dignity, and consideration. We welcome individuals of all ages, backgrounds, beliefs, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, ability – and other visible and nonvisible differences. We are all expected to contribute to a respectful, welcoming, and inclusive teaching- learning environment. Any member of the campus community who has experienced discrimination at the University is encouraged to seek guidance from the Office of Equity, Diversity, Inclusion & Anti-racism (EDI-R) via email at equity@uwaterloo.ca. Sexual Violence Prevention & Response Office (SVPRO), supports students at UWaterloo who have experienced, or have been impacted by, sexual violence and gender-based violence. This includes those who experienced harm, those who are supporting others who experienced harm. SVPRO can be contacted at svpro@uwaterloo.ca
+Religious & Spiritual Observances: The University of Waterloo has a duty to accommodate religious and spiritual observances under the Ontario Human Rights Code. Please inform the instructor at the beginning of term if special accommodation needs to be made for religious observances that are not otherwise accounted for in the scheduling of classes and assignments. Consult with your instructor(s) within two weeks of the announcement of the due date for which accommodation is being sought. 
+Respectful Communication and Pronouns: Communications with Instructor(s) and teaching assistants (TAs) should be through recommended channels for the course (e.g., email, LEARN, Piazza, Teams, etc.) Please use your UWaterloo email address. Include an academic signature with your full name, program, student ID. We encourage you to include your pronouns to facilitate respectful communication (e.g., he/him; she/her; they/them). You can update your chosen/preferred name at WatIAM. You can update your pronouns in Quest. 
+Mental Health and Wellbeing Resources: If you are facing challenges impacting one or more courses, contact your academic advisor, Associate Chair Undergraduate, or the Director of your academic program. Mental health is a serious issue for everyone and can affect your ability to do your best work. We encourage you to seek out mental health and wellbeing support when needed. The Faculty of Engineering Wellness Program has programming and resources for undergraduate students. For counselling (individual or group) reach out to Campus Wellness and Counselling Services. Counselling Services is an inclusive, non-judgmental, and confidential space for anyone to seek support. They offer confidential counselling for a variety of areas including anxiety, stress management, depression, grief, substance use, sexuality, relationship issues, and much more. 
+Intellectual Property: Be aware that this course contains the intellectual property of their instructor, TA, and/or the University of Waterloo. Intellectual property includes items such as:
+Lecture content, spoken and written (and any audio/video recording thereof).
+Lecture handouts, presentations, and other materials prepared for the course (e.g., PowerPoint slides).
+Questions or solution sets from various types of assessments (e.g., assignments, quizzes, tests, final exams); and
+Work protected by copyright (e.g., any work authored by the instructor or TA or used by the instructor or TA with permission of the copyright owner).
+Course materials and the intellectual property contained therein are used to enhance a student’s educational experience. However, sharing this intellectual property without the intellectual property owner’s permission is a violation of intellectual property rights. For this reason, it is necessary to ask the
+instructor, TA and/or the University of Waterloo for permission before uploading and sharing the intellectual property of others online (e.g., to an online repository).
+Permission from an instructor, TA or the University is also necessary before sharing the intellectual property of others from completed courses with students taking the same/similar courses in subsequent terms/years. In many cases, instructors might be happy to allow distribution of certain materials. However, doing so without expressed permission is considered a violation of intellectual property rights and academic integrity.
+Please alert the instructor if you become aware of intellectual property belonging to others (past or present) circulating, either through the student body or online.
+Continuity Plan - Fair Contingencies for Unforeseen Circumstances (e.g., resurgence of COVID-19): In the event of emergencies or highly unusual circumstances, the instructor will collaborate with the Department/Faculty to find reasonable and fair solutions that respect rights and workloads of students, staff, and faculty. This may include modifying content delivery, course topics and/or assessments and/or weight and/or deadlines with due and fair notice to students. Substantial changes after the first week of classes require the approval of the Associate Dean, Undergraduate Studies.
+Declaring absences: [undergraduate students and/or courses only]  Regardless of the process used to declare an absence, students are responsible for reaching out to their instructors as soon as possible. The course instructor will determine how missed course components are accommodated. Self-declared absences (for COVID-19 and short-term absences up to 2 days) must be submitted through Quest. Absences requiring documentation (e.g., Verification of Illness Form, bereavement, etc.) are to be uploaded by completing the form on the VIF System. The UWaterloo Verification of Illness form, completed by a health professional, is the only acceptable documentation for an absence due to illness. Do not send documentation to your advisor, course instructor, teaching assistant, or lab coordinator. Submission through the VIF System, once approved, will notify your instructors of your absence. 
+Rescheduling Co-op Interviews: Follow the co-op process for rescheduling co-op interviews for conflicts to graded assignments (e.g., midterms, tests, and final exams). Attendance at co-operative work-term employment interviews is not considered to be a valid reason to miss a test.
 University Policy
 Academic integrity: In order to maintain a culture of academic integrity, members of the University of Waterloo community are expected to promote honesty, trust, fairness, respect and responsibility. [Check the Office of Academic Integrity for more information.]
-
 Grievance: A student who believes that a decision affecting some aspect of their university life has been unfair or unreasonable may have grounds for initiating a grievance. Read Policy 70, Student Petitions and Grievances, Section 4. When in doubt, please be certain to contact the department’s administrative assistant who will provide further assistance.
-
 Discipline: A student is expected to know what constitutes academic integrity to avoid committing an academic offence, and to take responsibility for their actions. [Check the Office of Academic Integrity for more information.] A student who is unsure whether an action constitutes an offence, or who needs help in learning how to avoid offences (e.g., plagiarism, cheating) or about “rules” for group work/collaboration should seek guidance from the course instructor, academic advisor, or the undergraduate associate dean. For information on categories of offences and types of penalties, students should refer to Policy 71, Student Discipline. For typical penalties, check Guidelines for the Assessment of Penalties.
-
 Appeals: A decision made or penalty imposed under Policy 70, Student Petitions and Grievances (other than a petition) or Policy 71, Student Discipline may be appealed if there is a ground. A student who believes they have a ground for an appeal should refer to Policy 72, Student Appeals.
-
 Note for students with disabilities: AccessAbility Services, located in Needles Hall, Room 1401, collaborates with all academic departments to arrange appropriate accommodations for students with disabilities without compromising the academic integrity of the curriculum. If you require academic accommodations to lessen the impact of your disability, please register with AccessAbility Services at the beginning of each academic term.
-
 Turnitin.com: Text matching software (Turnitin®) may be used to screen assignments in this course. Turnitin® is used to verify that all materials and sources in assignments are documented. Students' submissions are stored on a U.S. server, therefore students must be given an alternative (e.g., scaffolded assignment or annotated bibliography), if they are concerned about their privacy and/or security. Students will be given due notice, in the first week of the term and/or at the time assignment details are provided, about arrangements and alternatives for the use of Turnitin in this course.
-
 It is the responsibility of the student to notify the instructor if they, in the first week of term or at the time assignment details are provided, wish to submit alternate assignment.
