@@ -495,8 +495,29 @@ TRAIN_DATA = [
     ("(GAs 1b and 9a,b)", {"cats": {"NOT_SYLLABUS": 1.0}}),
     ("Appreciate the ethical responsibilities when conducting Human Factors/User Research (GAs 8a and 10a,b,c)", {"cats": {"SYLLABUS": 1.0}}),
     ("(GAs 1d and 2c)", {"cats": {"NOT_SYLLABUS": 1.0}}),
-    ("Professionalism - An understanding of the roles and responsibilities of the professional engineer in society, especially the primary role of protection of the public and the public interest.", {"cats": {"SYLLABUS": 1.0}})
-
+    ("Professionalism - An understanding of the roles and responsibilities of the professional engineer in society, especially the primary role of protection of the public and the public interest.", {"cats": {"SYLLABUS": 1.0}}),
+    ("Texts / Materials", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Texts / Materials", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Monday, Wednesday -", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Monday, Wednesday", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Texts / Materials", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Prices may vary between retailers.", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Class participation 10%", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Academic Integrity Offenses, Penalties, and Implications", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("No Free Online Access", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Prices may vary between retailers.", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Component Value", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Absences due to religious, creed, and spiritual observances", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Declaring absences", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("Accommodating religious and spiritual observances", {"cats": {"NOT_SYLLABUS": 1.0}}),
+    ("""AFM 321 helps students develop a do-it-yourself (DIY) individual financial planning and tax mindset. """, {"cats": {"SYLLABUS": 1.0}}),
+    ("Students will learn how to prepare and assess a basic financial plan for themselves, centered around the budget, across various life stages.", {"cats": {"SYLLABUS": 1.0}}),
+    ("Within each area of planning, saving, spending, and reporting, students will develop appreciation of important financial and tax considerations that will set them up for financial success.", {"cats": {"SYLLABUS": 1.0}}),
+    ("Prepare a financial plan and budget for various life stages using fore core elements (planning, saving, spending, and reporting)", {"cats": {"SYLLABUS": 1.0}}),
+    ("Analyze and recommend a financial plan/budget for various life stages", {"cats": {"SYLLABUS": 1.0}}),
+    (" Integrate tax implications and analysis within your plan/budget and each life stage", {"cats": {"SYLLABUS": 1.0}}),
+    ("Use data and analytical techniques to evaluate comparable investments", {"cats": {"SYLLABUS": 1.0}}),
+    ("The University of Waterloo has a number of multi-faith spaces that students can use for faith-based practices.", {"cats": {"NOT_SYLLABUS": 1.0}})
 
 
 ]

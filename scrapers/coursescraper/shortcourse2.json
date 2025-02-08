@@ -1,0 +1,933 @@
+[
+    {
+        "major_name": "Accounting and Financial Management (Bachelor of Accounting and Financial Management - Honours)",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/rkZgeyACi3?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Accounting%20and%20Financial%20Management%20(Bachelor%20of%20Accounting%20and%20Financial%20Management%20-%20Honours)&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 1,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "AFM111 - Professional Pathways and Problem-Solving (0.50)",
+                "#/courses/view/64a5ba02ec4d1ab5f46b541a"
+            ],
+            [
+                "Required Courses",
+                "AFM112 - Analytic Methods for Business 1 (0.50)",
+                "#/courses/view/64a5ba0269e9ee07622ae7d2"
+            ],
+            [
+                "Required Courses",
+                "AFM113 - Analytic Methods for Business 2 (0.50)",
+                "#/courses/view/64a5ba06b9ada2661c1af37c"
+            ],
+            [
+                "Required Courses",
+                "AFM132 - Introduction to Business Stages (0.50)",
+                "#/courses/view/64a5ba0484500d2165c8d260"
+            ],
+            [
+                "Required Courses",
+                "AFM182 - Foundations for Management Accounting (0.50)",
+                "#/courses/view/64a5ba1069e9ee33262ae7f8"
+            ],
+            [
+                "Required Courses",
+                "AFM191 - Foundations for Financial Reporting (0.50)",
+                "#/courses/view/64a5ba11ec4d1a48b06b544f"
+            ],
+            [
+                "Required Courses",
+                "AFM205 - Introduction to Financial Services (0.25)",
+                "#/courses/view/64a5ba029e76cc1227849142"
+            ],
+            [
+                "Required Courses",
+                "AFM206 - Introduction to Tax (0.25)",
+                "#/courses/view/6571d435e0c67a57f974939c"
+            ],
+            [
+                "Required Courses",
+                "AFM207 - Introduction to Performance Analytics (0.25)",
+                "#/courses/view/64a5ba025d7577300876ca29"
+            ],
+            [
+                "Required Courses",
+                "AFM208 - Introduction to Assurance (0.25)",
+                "#/courses/view/65a9defffd7afe673b08266d"
+            ],
+            [
+                "Required Courses",
+                "AFM212 - Financial Analysis and Planning (0.50)",
+                "#/courses/view/64a5ba0484500d9c06c8d25f"
+            ],
+            [
+                "Required Courses",
+                "AFM241 - Impact of Technology on Business (0.50)",
+                "#/courses/view/64a5b943af75ce5509abae7b"
+            ],
+            [
+                "Required Courses",
+                "AFM244 - Analytic Methods for Business 3 (0.50)",
+                "#/courses/view/64a5ba0284500df729c8d25a"
+            ],
+            [
+                "Required Courses",
+                "AFM274 - Introduction to Corporate Finance (0.50)",
+                "#/courses/view/64a5b8b869e9eeee632ae480"
+            ],
+            [
+                "Required Courses",
+                "AFM291 - Intermediate Financial Accounting 1 (0.50)",
+                "#/courses/view/64a5b8b664e0fe231b173b85"
+            ],
+            [
+                "Required Courses",
+                "AFM321 - Personal Financial Planning and Taxation (0.50)",
+                "#/courses/view/6571d5bb9804a51602ca5967"
+            ],
+            [
+                "Required Courses",
+                "AFM335 - Business Law for Financial Managers (0.50)",
+                "#/courses/view/64a5ba13ec4d1a7e206b5451"
+            ],
+            [
+                "Required Courses",
+                "AFM373 - Cases and Applications in Corporate Finance (0.50)",
+                "#/courses/view/64a5b95164e0fe2bde173c60"
+            ],
+            [
+                "Required Courses",
+                "AFM391 - Intermediate Financial Accounting 2 (0.50)",
+                "#/courses/view/64a5b8b79e76cc4113848edc"
+            ],
+            [
+                "Required Courses",
+                "AFM433 - Business Strategy (0.50)",
+                "#/courses/view/64a5b8b73bbc4eda813ef519"
+            ],
+            [
+                "Required Courses",
+                "AFM480 - Introduction to Organizational Behaviour (0.50)",
+                "#/courses/view/65ce2e6bf40b2742b626cd69"
+            ],
+            [
+                "Required Courses",
+                "BET100 - Foundations of Entrepreneurial Practice (0.50)",
+                "#/courses/view/65b7e9ebf81cd81a51130f7b"
+            ],
+            [
+                "Required Courses",
+                "COMMST111 - Leadership, Communication, and Collaboration (0.50)",
+                "#/courses/view/65b1cecb98f044624d100db2"
+            ],
+            [
+                "Required Courses",
+                "ECON101 - Introduction to Microeconomics (0.50)",
+                "#/courses/view/64a5b8caec4d1a2a9e6b5136"
+            ],
+            [
+                "Required Courses",
+                "ECON102 - Introduction to Macroeconomics (0.50)",
+                "#/courses/view/64a5b8ca1731ad80ff2ccc06"
+            ],
+            [
+                "Required Courses",
+                "ACTSC127 - Introduction to Global Capital Markets and Financial Analytics (0.50)",
+                "#/courses/view/65c6578ececa08d3a24c399d"
+            ],
+            [
+                "Required Courses",
+                "AFM121 - Introduction to Global Financial Markets (0.50)",
+                "#/courses/view/64a5b9880f5f45319b430d3b"
+            ],
+            [
+                "Required Courses",
+                "AFM127 - Introduction to Global Capital Markets and Financial Analytics (0.50)",
+                "#/courses/view/65c656d8387f609befd76dad"
+            ],
+            [
+                "Required Courses",
+                "ACTSC291 - Global Capital Markets and Financial Analytics (0.50)",
+                "#/courses/view/65c67741ceca085e544c3a5a"
+            ],
+            [
+                "Required Courses",
+                "AFM272 - Global Capital Markets and Financial Analytics (0.50)",
+                "#/courses/view/65c6772d387f60fd49d76e61"
+            ],
+            [
+                "Required Courses",
+                "AFM273 - Financial Instruments and Capital Markets (0.50)",
+                "#/courses/view/64a5b8b71731ad9f102ccbb2"
+            ],
+            [
+                "Required Courses",
+                "AFM311 - Connections to Ethical Context (0.50)",
+                "#/courses/view/64a5b988b9ada2a8b91af2d0"
+            ],
+            [
+                "Required Courses",
+                "SFM309 - Sustainability and Business Ethics (0.50)",
+                "#/courses/view/64a5ba1784500d817fc8d28d"
+            ],
+            [
+                "Required Courses",
+                "AFM323 - Quantitative Foundations for Finance (0.50)",
+                "#/courses/view/64a5bd0b84500d5858c8d362"
+            ],
+            [
+                "Required Courses",
+                "AFM341 - Accounting Information Systems (0.50)",
+                "#/courses/view/64a5b8b73bbc4ebb9a3ef516"
+            ],
+            [
+                "Required Courses",
+                "AFM345 - Business Applications of Social Media Analytics (0.50)",
+                "#/courses/view/64a5ba100f5f455ff2430e6b"
+            ],
+            [
+                "Required Courses",
+                "AFM346 - Applications of Predictive Analytics in Accounting and Finance (0.50)",
+                "#/courses/view/64a5ba1084500dafa0c8d27b"
+            ],
+            [
+                "Required Courses",
+                "STAT374 - Quantitative Foundations for Finance (0.50)",
+                "#/courses/view/64a5bd0bec4d1ae05f6b552b"
+            ]
+        ]
+    },
+    {
+        "major_name": "Business Analytics Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/rylgeJRCo3?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Business%20Analytics%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 2,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "ACTSC423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814e2f81cd872ad1310b6"
+            ],
+            [
+                "Required Courses",
+                "AFM323 - Quantitative Foundations for Finance (0.50)",
+                "#/courses/view/64a5bd0b84500d5858c8d362"
+            ],
+            [
+                "Required Courses",
+                "AFM341 - Accounting Information Systems (0.50)",
+                "#/courses/view/64a5b8b73bbc4ebb9a3ef516"
+            ],
+            [
+                "Required Courses",
+                "AFM345 - Business Applications of Social Media Analytics (0.50)",
+                "#/courses/view/64a5ba100f5f455ff2430e6b"
+            ],
+            [
+                "Required Courses",
+                "AFM346 - Applications of Predictive Analytics in Accounting and Finance (0.50)",
+                "#/courses/view/64a5ba1084500dafa0c8d27b"
+            ],
+            [
+                "Required Courses",
+                "AFM347 - Cybersecurity (0.50)",
+                "#/courses/view/64a5ba104973965ec2a3167a"
+            ],
+            [
+                "Required Courses",
+                "AFM423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814fcf81cd8ecf61310b8"
+            ],
+            [
+                "Required Courses",
+                "AFM444 - Business Analytics Project Management (0.50)",
+                "#/courses/view/64a5b9f73bbc4ed76a3ef7cf"
+            ],
+            [
+                "Required Courses",
+                "AFM445 - Information Technology Assurance and Audit Analytics (0.50)",
+                "#/courses/view/64a5ba13af75ce5779abb04d"
+            ],
+            [
+                "Required Courses",
+                "AFM446 - Performance Management and Tax Analytics (0.50)",
+                "#/courses/view/64a5ba130f5f458b18430e74"
+            ],
+            [
+                "Required Courses",
+                "AFM447 - Governance and Ethical Issues with Data and Emerging Technologies (0.50)",
+                "#/courses/view/64a5ba13497396be6da3167d"
+            ],
+            [
+                "Required Courses",
+                "AFM448 - Data Analytics and Emerging Technologies Consulting Group (0.25)",
+                "#/courses/view/65aff64e23cba7e2b9478d79"
+            ],
+            [
+                "Required Courses",
+                "STAT374 - Quantitative Foundations for Finance (0.50)",
+                "#/courses/view/64a5bd0bec4d1ae05f6b552b"
+            ]
+        ]
+    },
+    {
+        "major_name": "Entrepreneurial Mindset Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/HJ7gx10Cih?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Entrepreneurial%20Mindset%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 3,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "BET320 - Entrepreneurial Strategy (0.50)",
+                "#/courses/view/65b11fc35a8cf762cf8a33ae"
+            ],
+            [
+                "Required Courses",
+                "BET340 - Essentials of Entrepreneurial Planning and Execution (0.50)",
+                "#/courses/view/65b1202d5c94798b56e54418"
+            ],
+            [
+                "Required Courses",
+                "AFM326 - Student Venture Fund - Analyst (0.25)",
+                "#/courses/view/65afefd73f91c75eb368d595"
+            ],
+            [
+                "Required Courses",
+                "AFM377 - Private Equity and Venture Capital (0.50)",
+                "#/courses/view/64a5ba001731addf8d2ccf3b"
+            ],
+            [
+                "Required Courses",
+                "AFM426 - Student Venture Fund-Associate (0.25)",
+                "#/courses/view/65aff515b44f433d3569b5e3"
+            ],
+            [
+                "Required Courses",
+                "AFM470 - Financial Management of High Growth Companies (0.50)",
+                "#/courses/view/64a5ba05ec4d1a5c216b5425"
+            ],
+            [
+                "Required Courses",
+                "BET350 - Customer Experience Design (0.50)",
+                "#/courses/view/65b7ea9f026ebaafa5bb524b"
+            ],
+            [
+                "Required Courses",
+                "BET400 - Marketing Foundations for Early-Stage Ventures (0.50)",
+                "#/courses/view/65b7eb3af81cd85ee0130f83"
+            ],
+            [
+                "Required Courses",
+                "BET420 - Entrepreneurship for Social Impact (0.50)",
+                "#/courses/view/65b7ebce5f4404e465f29079"
+            ],
+            [
+                "Required Courses",
+                "BET430 - Sales Fundamentals (0.50)",
+                "#/courses/view/65b7ec01f81cd87363130f88"
+            ],
+            [
+                "Required Courses",
+                "BET450 - Leadership (0.50)",
+                "#/courses/view/6626644d21977334b9cc4086"
+            ],
+            [
+                "Required Courses",
+                "BET460 - Business Negotiations (0.50)",
+                "#/courses/view/65b7ec745c947962e1e567f7"
+            ],
+            [
+                "Required Courses",
+                "BET470 - Family Business (0.50)",
+                "#/courses/view/65b8176698f044148b102f29"
+            ],
+            [
+                "Required Courses",
+                "BET580 - Consulting (0.50)",
+                "#/courses/view/65b7ecab5f4404488ef2907f"
+            ],
+            [
+                "Required Courses",
+                "ENBUS203 - Green Entrepreneurship (0.50)",
+                "#/courses/view/65eb4b4ebf387c7a9b69cb66"
+            ],
+            [
+                "Required Courses",
+                "MGMT220 - Entrepreneurship and the Creative Workplace (0.50)",
+                "#/courses/view/65b5668598f0443ea810204d"
+            ]
+        ]
+    },
+    {
+        "major_name": "Financial Leadership Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/rkQglJ0Coh?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Financial%20Leadership%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 4,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "AFM434 - Corporate Governance and Risk Management (0.50)",
+                "#/courses/view/64a5b98a1731ad4e0b2cce45"
+            ],
+            [
+                "Required Courses",
+                "AFM478 - International Financial Management (0.50)",
+                "#/courses/view/64a5b98869e9ee00282ae6da"
+            ],
+            [
+                "Required Courses",
+                "BET450 - Leadership (0.50)",
+                "#/courses/view/6626644d21977334b9cc4086"
+            ],
+            [
+                "Required Courses",
+                "BET460 - Business Negotiations (0.50)",
+                "#/courses/view/65b7ec745c947962e1e567f7"
+            ],
+            [
+                "Required Courses",
+                "AFM422 - Management of Financial Institutions (0.50)",
+                "#/courses/view/64a5b98849739669aaa315cc"
+            ],
+            [
+                "Required Courses",
+                "AFM470 - Financial Management of High Growth Companies (0.50)",
+                "#/courses/view/64a5ba05ec4d1a5c216b5425"
+            ],
+            [
+                "Required Courses",
+                "AFM477 - Mergers and Acquisitions (0.50)",
+                "#/courses/view/64a5b98884500dd303c8d19d"
+            ],
+            [
+                "Required Courses",
+                "AFM485 - Approaches to Measuring Value (0.50)",
+                "#/courses/view/64a5ba13b9ada21ebe1af399"
+            ],
+            [
+                "Required Courses",
+                "ENBUS310 - Introduction to Sustainable Finance (0.50)",
+                "#/courses/view/64a5ba0c84500ddc8ac8d271"
+            ],
+            [
+                "Required Courses",
+                "ENBUS407 - Corporate Sustainability Accounting and Reporting (0.50)",
+                "#/courses/view/64a5b9720f5f45e43c430cd7"
+            ],
+            [
+                "Required Courses",
+                "ENVS220 - Ecological Economics (0.50)",
+                "#/courses/view/64a5b8cf3bbc4e414c3ef56f"
+            ]
+        ]
+    },
+    {
+        "major_name": "Financial Markets Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyeeyCAi3?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Financial%20Markets%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 5,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "ACTSC423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814e2f81cd872ad1310b6"
+            ],
+            [
+                "Required Courses",
+                "AFM276 - Financial Statement Analysis (0.50)",
+                "#/courses/view/65afecc5fd7afeb0ab0843ee"
+            ],
+            [
+                "Required Courses",
+                "AFM322 - Derivative Securities (0.50)",
+                "#/courses/view/64a5b95769e9ee01052ae622"
+            ],
+            [
+                "Required Courses",
+                "AFM324 - Wealth Management (0.50)",
+                "#/courses/view/64a5ba0769e9ee639e2ae7db"
+            ],
+            [
+                "Required Courses",
+                "AFM326 - Student Venture Fund - Analyst (0.25)",
+                "#/courses/view/65afefd73f91c75eb368d595"
+            ],
+            [
+                "Required Courses",
+                "AFM328 - Investment Management - Junior Analyst (0.25)",
+                "#/courses/view/64a5b99cec4d1a09cf6b5361"
+            ],
+            [
+                "Required Courses",
+                "AFM329 - Investment Management - Senior Analyst (0.25)",
+                "#/courses/view/64a5b99b3bbc4e58a73ef759"
+            ],
+            [
+                "Required Courses",
+                "AFM377 - Private Equity and Venture Capital (0.50)",
+                "#/courses/view/64a5ba001731addf8d2ccf3b"
+            ],
+            [
+                "Required Courses",
+                "AFM422 - Management of Financial Institutions (0.50)",
+                "#/courses/view/64a5b98849739669aaa315cc"
+            ],
+            [
+                "Required Courses",
+                "AFM423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814fcf81cd8ecf61310b8"
+            ],
+            [
+                "Required Courses",
+                "AFM425 - Fixed Income Securities (0.50)",
+                "#/courses/view/64a5b9573bbc4ec3903ef65b"
+            ],
+            [
+                "Required Courses",
+                "AFM426 - Student Venture Fund-Associate (0.25)",
+                "#/courses/view/65aff515b44f433d3569b5e3"
+            ],
+            [
+                "Required Courses",
+                "AFM427 - Intermediate Portfolio Management (0.50)",
+                "#/courses/view/64a5ba130f5f457d86430e77"
+            ],
+            [
+                "Required Courses",
+                "AFM428 - Investment Management - Junior Portfolio Manager (0.25)",
+                "#/courses/view/65aff5f55c94791e43e53e07"
+            ],
+            [
+                "Required Courses",
+                "AFM429 - Investment Management - Senior Portfolio Manager (0.25)",
+                "#/courses/view/64a5b99cec4d1a7f836b5360"
+            ],
+            [
+                "Required Courses",
+                "AFM434 - Corporate Governance and Risk Management (0.50)",
+                "#/courses/view/64a5b98a1731ad4e0b2cce45"
+            ],
+            [
+                "Required Courses",
+                "AFM470 - Financial Management of High Growth Companies (0.50)",
+                "#/courses/view/64a5ba05ec4d1a5c216b5425"
+            ],
+            [
+                "Required Courses",
+                "AFM477 - Mergers and Acquisitions (0.50)",
+                "#/courses/view/64a5b98884500dd303c8d19d"
+            ],
+            [
+                "Required Courses",
+                "AFM478 - International Financial Management (0.50)",
+                "#/courses/view/64a5b98869e9ee00282ae6da"
+            ],
+            [
+                "Required Courses",
+                "SFM310 - Sustainability in Capital Markets (0.50)",
+                "#/courses/view/64a5ba175d757771fa76ca5f"
+            ],
+            [
+                "Required Courses",
+                "SFM412 - Investor Behaviour (0.50)",
+                "#/courses/view/64a5ba1769e9ee84ab2ae819"
+            ]
+        ]
+    },
+    {
+        "major_name": "Professional Accountant Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/S1eey0Ain?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Professional%20Accountant%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 6,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "AFM362 - Corporate Taxation (0.50)",
+                "#/courses/view/64a5b98a0f5f454e52430d3f"
+            ],
+            [
+                "Required Courses",
+                "AFM382 - Cost Management Systems (0.50)",
+                "#/courses/view/65aff0e1026ebaf35abb2800"
+            ],
+            [
+                "Required Courses",
+                "AFM451 - Audit Strategy (0.50)",
+                "#/courses/view/65aff6966cd58966efe8d2c2"
+            ],
+            [
+                "Required Courses",
+                "AFM462 - Specialized Topics in Taxation (0.50)",
+                "#/courses/view/64a5b98c69e9ee6fb02ae6e0"
+            ],
+            [
+                "Required Courses",
+                "AFM482 - Performance Measurement and Organization Control (0.50)",
+                "#/courses/view/64a5b951b9ada20dbf1af240"
+            ],
+            [
+                "Required Courses",
+                "AFM491 - Advanced Financial Accounting (0.50)",
+                "#/courses/view/64a5b8b784500d537dc8cfd1"
+            ]
+        ]
+    },
+    {
+        "major_name": "Sustainability Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/ryxlgkACoh?group=Accounting%20and%20Financial%20Management&bc=true&bcCurrent=Sustainability%20Specialization&bcGroup=Accounting%20and%20Financial%20Management&bcItemType=programs",
+        "major_id": 7,
+        "program_id": 1,
+        "program_name": "Accounting and Financial Management",
+        "courses": [
+            [
+                "Required Courses",
+                "ENBUS102 - Introduction to Environment and Business (0.50)",
+                "#/courses/view/64a5b9409e76cce1d0848fbd"
+            ],
+            [
+                "Required Courses",
+                "ENVS195 - Introduction to Environmental Studies (0.50)",
+                "#/courses/view/64a5b8cf69e9ee22062ae4e6"
+            ],
+            [
+                "Required Courses",
+                "INDEV100 - Introduction to International Development (0.50)",
+                "#/courses/view/64a5b96a84500d8037c8d138"
+            ],
+            [
+                "Required Courses",
+                "ENVS200 - Field Ecology (0.50)",
+                "#/courses/view/65b2c15d6cd5895b71e8e25d"
+            ],
+            [
+                "Required Courses",
+                "ENVS205 - Sustainability: The Future We Want (0.50)",
+                "#/courses/view/65ac7153fd7afe5969083303"
+            ],
+            [
+                "Required Courses",
+                "ENVS220 - Ecological Economics (0.50)",
+                "#/courses/view/64a5b8cf3bbc4e414c3ef56f"
+            ],
+            [
+                "Required Courses",
+                "INDEV200 - The Political Economy of Development (0.50)",
+                "#/courses/view/64a5b96d1731ad38552ccdcc"
+            ],
+            [
+                "Required Courses",
+                "AFM485 - Approaches to Measuring Value (0.50)",
+                "#/courses/view/64a5ba13b9ada21ebe1af399"
+            ],
+            [
+                "Required Courses",
+                "ENBUS202 - Environmental Management Systems (0.50)",
+                "#/courses/view/65cf8d85ad8d23797c80ee1f"
+            ],
+            [
+                "Required Courses",
+                "ENBUS407 - Corporate Sustainability Accounting and Reporting (0.50)",
+                "#/courses/view/64a5b9720f5f45e43c430cd7"
+            ],
+            [
+                "Required Courses",
+                "ENBUS310 - Introduction to Sustainable Finance (0.50)",
+                "#/courses/view/64a5ba0c84500ddc8ac8d271"
+            ],
+            [
+                "Required Courses",
+                "ENBUS408 - Policy Instruments for Sustainability (0.50)",
+                "#/courses/view/65cf8e91b406405163dde844"
+            ],
+            [
+                "Required Courses",
+                "ENBUS410 - Engaging Stakeholders (0.50)",
+                "#/courses/view/65cf9017f40b27b18526d4df"
+            ]
+        ]
+    },
+    {
+        "major_name": "Actuarial Science (Bachelor of Mathematics - Honours)",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/HkeH1JRCjh?group=Actuarial%20Science&bc=true&bcCurrent=Actuarial%20Science%20(Bachelor%20of%20Mathematics%20-%20Honours)&bcGroup=Actuarial%20Science&bcItemType=programs",
+        "major_id": 1,
+        "program_id": 2,
+        "program_name": "Actuarial Science",
+        "courses": []
+    },
+    {
+        "major_name": "Actuarial Science (Joint Honours)",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/ryHykRAi3?group=Actuarial%20Science&bc=true&bcCurrent=Actuarial%20Science%20(Joint%20Honours)&bcGroup=Actuarial%20Science&bcItemType=programs",
+        "major_id": 2,
+        "program_id": 2,
+        "program_name": "Actuarial Science",
+        "courses": [
+            [
+                "Required Courses",
+                "ACTSC231 - Introductory Financial Mathematics (0.50)",
+                "#/courses/view/65b07885edfead561633ddf1"
+            ],
+            [
+                "Required Courses",
+                "ACTSC232 - Life Contingencies 1 (0.50)",
+                "#/courses/view/65afe988b44f436e7c69b5a6"
+            ],
+            [
+                "Required Courses",
+                "ACTSC331 - Life Contingencies 2 (0.50)",
+                "#/courses/view/65afea7823cba75c33478d33"
+            ],
+            [
+                "Required Courses",
+                "ACTSC363 - Casualty and Health Insurance Mathematics 1 (0.50)",
+                "#/courses/view/65afeaf5b1bab0cc37faf002"
+            ],
+            [
+                "Required Courses",
+                "ACTSC372 - Investment Science and Corporate Finance (0.50)",
+                "#/courses/view/65b079415a8cf714cf8a3079"
+            ],
+            [
+                "Required Courses",
+                "ACTSC431 - Casualty and Health Insurance Mathematics 2 (0.50)",
+                "#/courses/view/65b079913f91c7c94368d872"
+            ],
+            [
+                "Required Courses",
+                "ACTSC446 - Mathematics of Financial Markets (0.50)",
+                "#/courses/view/65b07a6ffd7afe583a0846f6"
+            ],
+            [
+                "Required Courses",
+                "AFM101 - Introduction to Financial Accounting (0.50)",
+                "#/courses/view/64a5b951af75ceccf3abaead"
+            ],
+            [
+                "Required Courses",
+                "MTHEL131 - Introduction to Actuarial Practice (0.50)",
+                "#/courses/view/65b94b2eec4e645218e247c8"
+            ],
+            [
+                "Required Courses",
+                "STAT330 - Mathematical Statistics (0.50)",
+                "#/courses/view/65b7b9ff6cd58934fee8fc63"
+            ],
+            [
+                "Required Courses",
+                "STAT333 - Stochastic Processes 1 (0.50)",
+                "#/courses/view/65b9b61eec4e641e8de24ab7"
+            ],
+            [
+                "Required Courses",
+                "ENGL378 - Professional Communications in Statistics and Actuarial Science (0.50)",
+                "#/courses/view/65b2b888026ebab4d6bb3749"
+            ],
+            [
+                "Required Courses",
+                "MTHEL300 - Professional Communications in Statistics and Actuarial Science (0.50)",
+                "#/courses/view/65b2b9ee5f44040d7cf27605"
+            ],
+            [
+                "Required Courses",
+                "MATH237 - Calculus 3 for Honours Mathematics (0.50)",
+                "#/courses/view/65f993288fa4df89441e0e6e"
+            ],
+            [
+                "Required Courses",
+                "MATH247 - Calculus 3 (Advanced Level) (0.50)",
+                "#/courses/view/65b91c1cfd7afea4850875c8"
+            ]
+        ]
+    },
+    {
+        "major_name": "Actuarial Science Minor",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyxByJ00o3?group=Actuarial%20Science&bc=true&bcCurrent=Actuarial%20Science%20Minor&bcGroup=Actuarial%20Science&bcItemType=programs",
+        "major_id": 3,
+        "program_id": 2,
+        "program_name": "Actuarial Science",
+        "courses": [
+            [
+                "Required Courses",
+                "ACTSC231 - Introductory Financial Mathematics (0.50)",
+                "#/courses/view/65b07885edfead561633ddf1"
+            ],
+            [
+                "Required Courses",
+                "ACTSC232 - Life Contingencies 1 (0.50)",
+                "#/courses/view/65afe988b44f436e7c69b5a6"
+            ],
+            [
+                "Required Courses",
+                "AFM101 - Introduction to Financial Accounting (0.50)",
+                "#/courses/view/64a5b951af75ceccf3abaead"
+            ],
+            [
+                "Required Courses",
+                "MTHEL131 - Introduction to Actuarial Practice (0.50)",
+                "#/courses/view/65b94b2eec4e645218e247c8"
+            ],
+            [
+                "Required Courses",
+                "STAT330 - Mathematical Statistics (0.50)",
+                "#/courses/view/65b7b9ff6cd58934fee8fc63"
+            ],
+            [
+                "Required Courses",
+                "STAT333 - Stochastic Processes 1 (0.50)",
+                "#/courses/view/65b9b61eec4e641e8de24ab7"
+            ],
+            [
+                "Required Courses",
+                "MATH237 - Calculus 3 for Honours Mathematics (0.50)",
+                "#/courses/view/65f993288fa4df89441e0e6e"
+            ],
+            [
+                "Required Courses",
+                "MATH247 - Calculus 3 (Advanced Level) (0.50)",
+                "#/courses/view/65b91c1cfd7afea4850875c8"
+            ],
+            [
+                "Required Courses",
+                "ACTSC331 - Life Contingencies 2 (0.50)",
+                "#/courses/view/65afea7823cba75c33478d33"
+            ],
+            [
+                "Required Courses",
+                "ACTSC363 - Casualty and Health Insurance Mathematics 1 (0.50)",
+                "#/courses/view/65afeaf5b1bab0cc37faf002"
+            ],
+            [
+                "Required Courses",
+                "ACTSC372 - Investment Science and Corporate Finance (0.50)",
+                "#/courses/view/65b079415a8cf714cf8a3079"
+            ]
+        ]
+    },
+    {
+        "major_name": "Finance Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SJSk100i2?group=Actuarial%20Science&bc=true&bcCurrent=Finance%20Specialization&bcGroup=Actuarial%20Science&bcItemType=programs",
+        "major_id": 4,
+        "program_id": 2,
+        "program_name": "Actuarial Science",
+        "courses": [
+            [
+                "Required Courses",
+                "ACTSC445 - Quantitative Enterprise Risk Management (0.50)",
+                "#/courses/view/65b07a1cfd7afe4afa0846f3"
+            ],
+            [
+                "Required Courses",
+                "AFM102 - Introduction to Managerial Accounting (0.50)",
+                "#/courses/view/64a5b956b9ada207d61af253"
+            ],
+            [
+                "Required Courses",
+                "CS476 - Numeric Computation for Financial Modeling (0.50)",
+                "#/courses/view/65b276923f91c753b968e317"
+            ],
+            [
+                "Required Courses",
+                "STAT340 - Stochastic Simulation Methods (0.50)",
+                "#/courses/view/65b9b70318ca2355b90b7283"
+            ],
+            [
+                "Required Courses",
+                "ACTSC423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814e2f81cd872ad1310b6"
+            ],
+            [
+                "Required Courses",
+                "ACTSC471 - Corporate Financial Decision Making (0.50)",
+                "#/courses/view/64a5bcd94973967087a31722"
+            ],
+            [
+                "Required Courses",
+                "AFM423 - Topics in Financial Econometrics (0.50)",
+                "#/courses/view/65b814fcf81cd8ecf61310b8"
+            ],
+            [
+                "Required Courses",
+                "AFM424 - Equity Investments (0.50)",
+                "#/courses/view/64a5b8b784500d3d92c8cfd2"
+            ],
+            [
+                "Required Courses",
+                "AFM476 - Corporate Financial Decision Making (0.50)",
+                "#/courses/view/64a5bcda64e0fe9d25173e3c"
+            ],
+            [
+                "Required Courses",
+                "AMATH242 - Introduction to Computational Mathematics (0.50)",
+                "#/courses/view/65aff72198f044e6a610039b"
+            ],
+            [
+                "Required Courses",
+                "CS370 - Numerical Computation (0.50)",
+                "#/courses/view/65b2709ab44f4336f569c2c4"
+            ],
+            [
+                "Required Courses",
+                "CS371 - Introduction to Computational Mathematics (0.50)",
+                "#/courses/view/65b270ef77863046407fd96e"
+            ]
+        ]
+    },
+    {
+        "major_name": "Predictive Analytics Specialization",
+        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/S1WH1yA0i3?group=Actuarial%20Science&bc=true&bcCurrent=Predictive%20Analytics%20Specialization&bcGroup=Actuarial%20Science&bcItemType=programs",
+        "major_id": 5,
+        "program_id": 2,
+        "program_name": "Actuarial Science",
+        "courses": [
+            [
+                "Required Courses",
+                "CS330 - Management Information Systems (0.50)",
+                "#/courses/view/65cfafaa7a540588fe8060f0"
+            ],
+            [
+                "Required Courses",
+                "STAT341 - Computational Statistics and Data Analysis (0.50)",
+                "#/courses/view/65b9b73d7405c4e693ac5dc6"
+            ],
+            [
+                "Required Courses",
+                "STAT431 - Generalized Linear Models and their Applications (0.50)",
+                "#/courses/view/65b9b9427786306480800226"
+            ],
+            [
+                "Required Courses",
+                "STAT441 - Statistical Learning - Classification (0.50)",
+                "#/courses/view/65b9ba42b44f43018b69ec8d"
+            ],
+            [
+                "Required Courses",
+                "STAT443 - Forecasting (0.50)",
+                "#/courses/view/65b9ba902ce9d30c70ecb0fa"
+            ],
+            [
+                "Required Courses",
+                "ACTSC454 - Longevity and Mortality Using Predictive Analytics (0.50)",
+                "#/courses/view/65b07ad45f4404a00df269ac"
+            ],
+            [
+                "Required Courses",
+                "STAT437 - Statistical Methods for Life History Analysis (0.50)",
+                "#/courses/view/65b9b9e7ec4e64542fe24ae0"
+            ],
+            [
+                "Required Courses",
+                "STAT440 - Computational Inference (0.50)",
+                "#/courses/view/65b9ba17778630c8c0800233"
+            ],
+            [
+                "Required Courses",
+                "STAT442 - Data Visualization (0.50)",
+                "#/courses/view/65b9ba6af81cd873e8131c46"
+            ]
+        ]
+    },
