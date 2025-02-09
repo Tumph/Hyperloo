@@ -1,56 +1,119 @@
 [
-    {
-        "major_name": "Predictive Analytics Specialization",
-        "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/S1WH1yA0i3?group=Actuarial%20Science&bc=true&bcCurrent=Predictive%20Analytics%20Specialization&bcGroup=Actuarial%20Science&bcItemType=programs",
-        "major_id": 5,
-        "program_id": 2,
-        "program_name": "Actuarial Science",
-        "courses": [
-            [
-                "Required Courses",
-                "CS330 - Management Information Systems (0.50)",
-                "#/courses/view/65cfafaa7a540588fe8060f0"
-            ],
-            [
-                "Required Courses",
-                "STAT341 - Computational Statistics and Data Analysis (0.50)",
-                "#/courses/view/65b9b73d7405c4e693ac5dc6"
-            ],
-            [
-                "Required Courses",
-                "STAT431 - Generalized Linear Models and their Applications (0.50)",
-                "#/courses/view/65b9b9427786306480800226"
-            ],
-            [
-                "Required Courses",
-                "STAT441 - Statistical Learning - Classification (0.50)",
-                "#/courses/view/65b9ba42b44f43018b69ec8d"
-            ],
-            [
-                "Required Courses",
-                "STAT443 - Forecasting (0.50)",
-                "#/courses/view/65b9ba902ce9d30c70ecb0fa"
-            ],
-            [
-                "Required Courses",
-                "ACTSC454 - Longevity and Mortality Using Predictive Analytics (0.50)",
-                "#/courses/view/65b07ad45f4404a00df269ac"
-            ],
-            [
-                "Required Courses",
-                "STAT437 - Statistical Methods for Life History Analysis (0.50)",
-                "#/courses/view/65b9b9e7ec4e64542fe24ae0"
-            ],
-            [
-                "Required Courses",
-                "STAT440 - Computational Inference (0.50)",
-                "#/courses/view/65b9ba17778630c8c0800233"
-            ],
-            [
-                "Required Courses",
-                "STAT442 - Data Visualization (0.50)",
-                "#/courses/view/65b9ba6af81cd873e8131c46"
-            ]
-        ]
-    }
+  {
+    "major_name": "Predictive Analytics Specialization",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/S1WH1yA0i3?group=Actuarial%20Science&bc=true&bcCurrent=Predictive%20Analytics%20Specialization&bcGroup=Actuarial%20Science&bcItemType=programs",
+    "major_id": 5,
+    "program_id": 2,
+    "program_name": "Actuarial Science",
+    "courses": [
+      [
+        "Required Courses",
+        "CS330 - Management Information Systems (0.50)",
+        "#/courses/view/65cfafaa7a540588fe8060f0"
+      ],
+      [
+        "Required Courses",
+        "STAT341 - Computational Statistics and Data Analysis (0.50)",
+        "#/courses/view/65b9b73d7405c4e693ac5dc6"
+      ],
+      [
+        "Required Courses",
+        "STAT431 - Generalized Linear Models and their Applications (0.50)",
+        "#/courses/view/65b9b9427786306480800226"
+      ],
+      [
+        "Required Courses",
+        "STAT441 - Statistical Learning - Classification (0.50)",
+        "#/courses/view/65b9ba42b44f43018b69ec8d"
+      ],
+      [
+        "Required Courses",
+        "STAT443 - Forecasting (0.50)",
+        "#/courses/view/65b9ba902ce9d30c70ecb0fa"
+      ],
+      [
+        "Required Courses",
+        "ACTSC454 - Longevity and Mortality Using Predictive Analytics (0.50)",
+        "#/courses/view/65b07ad45f4404a00df269ac"
+      ],
+      [
+        "Required Courses",
+        "STAT437 - Statistical Methods for Life History Analysis (0.50)",
+        "#/courses/view/65b9b9e7ec4e64542fe24ae0"
+      ],
+      [
+        "Required Courses",
+        "STAT440 - Computational Inference (0.50)",
+        "#/courses/view/65b9ba17778630c8c0800233"
+      ],
+      [
+        "Required Courses",
+        "STAT442 - Data Visualization (0.50)",
+        "#/courses/view/65b9ba6af81cd873e8131c46"
+      ]
+    ]
+  },
+  {
+    "major_name": "Computer Science (Bachelor of Mathematics - Honours)",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/HkxPJk0Cj3?group=Computer%20Science&bc=true&bcCurrent=Computer%20Science%20(Bachelor%20of%20Mathematics%20-%20Honours)&bcGroup=Computer%20Science&bcItemType=programs",
+    "major_id": 8,
+    "program_id": 40,
+    "program_name": "Computer Science",
+    "courses": [
+      [
+        "Required Courses",
+        "CS136L - Tools and Techniques for Software Development (0.25)",
+        "#/courses/view/660d9e053123427965b7e67f"
+      ],
+      [
+        "Required Courses",
+        "CS330 - Management Information Systems (0.50)",
+        "#/courses/view/65cfafaa7a540588fe8060f0"
+      ],
+      [
+        "Required Courses",
+        "CS341 - Algorithms (0.50)",
+        "#/courses/view/6627d327126715c17eef80fc"
+      ],
+      [
+        "Required Courses",
+        "CS246E - Object-Oriented Software Development (Enriched) (0.50)",
+        "#/courses/view/65b2825d98f0449e3d101116"
+      ],
+      [
+        "Required Courses",
+        "CS251 - Computer Organization and Design (0.50)",
+        "#/courses/view/6627d5d1a1b5e87658999a7d"
+      ],
+      [
+        "Required Courses",
+        "CS251E - Computer Organization and Design (Enriched) (0.50)",
+        "#/courses/view/6627d554046a8d55c988eb6c"
+      ],
+      [
+        "Required Courses",
+        "MATH239 - Introduction to Combinatorics (0.50)",
+        "#/courses/view/65b91bf318ca23d8820b6dba"
+      ],
+      [
+        "Required Courses",
+        "MATH249 - Introduction to Combinatorics (Advanced Level) (0.50)",
+        "#/courses/view/65b53589edfead1fbf33f6fa"
+      ]
+    ]
+  },
+  {
+    "major_name": "Computer Science Minor",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyPykARoh?group=Computer%20Science&bc=true&bcCurrent=Computer%20Science%20Minor&bcGroup=Computer%20Science&bcItemType=programs",
+    "major_id": 10,
+    "program_id": 40,
+    "program_name": "Computer Science",
+    "courses": [
+      [
+        "Required Courses",
+        "CS330 - Management Information Systems (0.50)",
+        "#/courses/view/65cfafaa7a540588fe8060f0"
+      ]
+    ]
+  }
 ]
