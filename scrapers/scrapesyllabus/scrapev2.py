@@ -3,13 +3,20 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import json
+from selenium.webdriver.chrome.options import Options
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
 import re
 import time
 import spacy
 from tqdm import tqdm
-
-
-currentmodel = "../../NLP/syllabus_classifierv4"
+service = Service('Hyperloo/scrapers/chromedriver.exe')  # Update this path
+options = webdriver.ChromeOptions()
+options.debugger_address = "127.0.0.1:9222"  # Debugging port
+currentmodel = "Hyperloo/NLP/syllabus_classifierv4"
 
 def classify(text):
     nlp_classifier = spacy.load(f'{currentmodel}')
@@ -76,10 +83,11 @@ def extract_syllabus(driver):
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/course2.json', 'r') as f:
+    with open('Hyperloo/scrapers/coursescraper/shortcourse2.json', 'r') as f:
         courses = json.load(f)
 
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(service=service, options=options)
+
     handle_login(driver)
     syllabus_data = []
 
@@ -93,10 +101,14 @@ def scrape_syllabi():
             course_str = current_course[1]
             link = current_course[2]
 
-            course_code_match = re.findall(r'^([A-Z]{4}\d{3})', course_str)
-            course_code = course_code_match[0]
-
-            name_credits = course_str.split(' - ')[1]
+            course_code = course_str.split(" ")[0]
+            course_code = re.sub(r'(\D)(\d)', r'\1 \2', course_code, count=1)
+            
+            list1 = course_str.split(' - ')
+            for i in range(1,len(list1)):
+                name_credits = course_code + " " + list1[i]
+            
+            print(name_credits+"sdfsfdf")
             course_name, credits = name_credits.rsplit(' (', 1)
             credits = credits.rstrip(')')  # Removes trailing )
 
@@ -132,53 +144,64 @@ def scrape_syllabi():
                 print(f"🔍 Found {len(results)} search results")
 
                 # Click view button
+                
                 print("🔗 Accessing syllabus...")
-                view_button = WebDriverWait(driver, 15).until(
-                    EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
-                )
-                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", view_button)
+                try:
+                    view_button = WebDriverWait(driver, 15).until(
+                        EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
+                    )
+                    view_button.click()
+                    print("Button clicked successfully.")
+                    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", view_button)
 
-                view_button.click()
-
-
-                # Wait for syllabus page to load
-                WebDriverWait(driver, 15).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
-                )
+                    view_button.click()
 
 
-                print("🖨️ Extracting syllabus content...")
-                topics = classify(extract_syllabus(driver))
+                    # Wait for syllabus page to load
+                    WebDriverWait(driver, 15).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
+                    )
 
-                print("Adding to Json...")
 
-                if len(topics) == 0:
-                    print("⚠️ Warning: No topics extracted")
-                else:
-                    print(f"✔️ Success: Collected {len(topics)} topics")
-                    course_data = {
-                        'course_code': course_code,
-                        'course_name': course_name.strip(),
-                        'credits': credits,
-                        'term': term,
-                        'link': link,
-                        'major_id': courses[2],
-                        'program_id': courses[3]
-                    }
+                    print("🖨️ Extracting syllabus content...")
+                    tex = extract_syllabus(driver)
+                    print(tex)
+                    topics = classify(tex)
 
+                    print("Adding to Json...")
+
+                    if len(topics) == 0:
+                        print("⚠️ Warning: No topics extracted")
+                    else:
+                        print(f"✔️ Success: Collected {len(topics)} topics")
+                        course_data = {
+                            'course_code': course_code,
+                            'course_name': course_name.strip(),
+                            'credits': credits,
+                            'term': term,
+                            'link': link,
+                            'major_id': course['major_id'],
+                            'program_id': course['program_id'],
+                            'topics': topics
+                        }
+                        syllabus_data.append(course_data)
+
+                except TimeoutException:
+                    print("Button not found, performing alternative action.")
+                    
+                
 
             except Exception as e:
                 print(f"❌ Error processing {course['course_code']}: {str(e)}")
                 print(f"🌍 Current URL: {driver.current_url}")
                 print(f"🪟 Window handles: {driver.window_handles}")
                 continue
-
-    with open('syllabi.json', 'w') as f:
+    with open('syllabie.json', 'w') as f:
         json.dump(syllabus_data, f, indent=4)
 
     driver.quit()
     print(f"\n🎉 Completed: {len(syllabus_data)} syllabi processed")
-    print("💾 Output saved to syllabi.json")
+    print("💾 Output saved to syllabie.json")
 
 if __name__ == "__main__":
     scrape_syllabi()
