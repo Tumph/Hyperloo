@@ -84,7 +84,7 @@ def extract_and_format_course_codes(course_title):
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/shortcourse2.json', 'r') as f:
+    with open('../coursescraper/stem_majors.json', 'r') as f:
         majors = json.load(f)
 
     driver = webdriver.Chrome()
