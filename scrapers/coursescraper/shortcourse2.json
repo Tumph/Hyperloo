@@ -115,5 +115,78 @@
         "#/courses/view/65cfafaa7a540588fe8060f0"
       ]
     ]
+  },
+  {
+    "major_name": "Communications and Signal Processing Specialization",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyPkyRRi2?group=Computer%20Engineering&bc=true&bcCurrent=Communications%20and%20Signal%20Processing%20Specialization&bcGroup=Computer%20Engineering&bcItemType=programs",
+    "major_id": 1,
+    "program_id": 39,
+    "program_name": "Computer Engineering",
+    "courses": [
+      [
+        "Required Courses",
+        "ECE313 - Digital Signal Processing (0.50)",
+        "#/courses/view/65b86e025c94790f70e56bc7"
+      ],
+      [
+        "Required Courses",
+        "ECE318 - Communication Systems (0.50)",
+        "#/courses/view/65cce38eb29e15d4577e4ee8"
+      ],
+      [
+        "Required Courses",
+        "ECE358 - Computer Networks (0.50)",
+        "#/courses/view/65b86f3fedfead35ae34093a"
+      ],
+      [
+        "Required Courses",
+        "ECE414 - Wireless Communications (0.50)",
+        "#/courses/view/65b871a5b44f43119a69e45f"
+      ],
+      [
+        "Required Courses",
+        "ECE416 - Advanced Topics in Networking (0.50)",
+        "#/courses/view/65b9c998e709ef8f1c62ff7b"
+      ],
+      [
+        "Required Courses",
+        "ECE417 - Image Processing (0.50)",
+        "#/courses/view/65b871d75a8cf73c068a5bf0"
+      ],
+      [
+        "Required Courses",
+        "ECE474 - Radio and Wireless Systems (0.50)",
+        "#/courses/view/65b874775f44048186f29436"
+      ]
+    ]
+  },
+  {
+    "major_name": "Computer Engineering (Bachelor of Applied Science - Honours)",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/BybwJ10Ri3?group=Computer%20Engineering&bc=true&bcCurrent=Computer%20Engineering%20(Bachelor%20of%20Applied%20Science%20-%20Honours)&bcGroup=Computer%20Engineering&bcItemType=programs",
+    "major_id": 2,
+    "program_id": 39,
+    "program_name": "Computer Engineering",
+    "courses": [
+      [
+        "1A Term",
+        "ECE105 - Classical Mechanics (0.50)",
+        "#/courses/view/65ccc7aa1a5d9723a1703b39"
+      ],
+      [
+        "1A Term",
+        "ECE150 - Fundamentals of Programming (0.50)",
+        "#/courses/view/65cce24c481f467edf81aab1"
+      ],
+      [
+        "1A Term",
+        "ECE190 - Engineering Profession and Practice (0.25)",
+        "#/courses/view/65cce27a13b38625168e9ccb"
+      ],
+      [
+        "1A Term",
+        "ECE198 - Project Studio (0.25)",
+        "#/courses/view/65cce294481f4645a281aab4"
+      ]
+    ]
   }
 ]

@@ -32,7 +32,7 @@ def analyze_courses(json_path):
     }
 
 # Execution Example
-results = analyze_courses('course2.json')
+results = analyze_courses('stem_majors.json')
 print("\nCourses per Major:")
 for major, count in results['courses_per_major'].items():
     print(f"{major}: {count}")
