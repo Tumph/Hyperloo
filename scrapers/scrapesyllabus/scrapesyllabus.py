@@ -11,11 +11,13 @@ from tqdm import tqdm
 
 currentmodel = "../../NLP/syllabus_classifierv4"
 
+
 def classify(text):
     nlp_classifier = spacy.load(f'{currentmodel}')
     nlp = spacy.load("en_core_web_lg")
 
-    nlp.disable_pipes(["ner", "tagger", "parser", "attribute_ruler", "lemmatizer"])
+    nlp.disable_pipes(["ner", "tagger", "parser",
+                      "attribute_ruler", "lemmatizer"])
     nlp.enable_pipe("senter")
 
     max_length = nlp.max_length
@@ -26,7 +28,8 @@ def classify(text):
     truesyllabus = []
 
     for doc in tqdm(nlp.pipe(texts), desc="Processing Text"):
-        sentences.extend([sent.text.strip() for sent in doc.sents if sent.text.strip()])
+        sentences.extend([sent.text.strip()
+                         for sent in doc.sents if sent.text.strip()])
 
     final_sentences = []
     for sentence in sentences:
@@ -52,7 +55,8 @@ def handle_login(driver):
     driver.get('https://outline.uwaterloo.ca/browse/')
     try:
         WebDriverWait(driver, 120).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
         )
         print("\n✅ Login validated!")
         time.sleep(2)
@@ -60,6 +64,7 @@ def handle_login(driver):
         print(f"\n❌ Login failed: {str(e)}")
         driver.quit()
         exit()
+
 
 def extract_syllabus(driver):
     try:
@@ -72,19 +77,22 @@ def extract_syllabus(driver):
     except Exception as e:
         print(f"❌ Failed to extract or write text: {str(e)}")
 
-def extract_and_format_course_codes(course_title):
-    pattern = r'([A-Z]+\d+[A-Z]*)'
 
-    course_codes = re.findall(pattern, course_title)
+def extract_and_format_course_codes(course_titles):
+    pattern = r'([A-Z]+)(\d+)([A-Z]*)'
 
-    formatted_codes = [re.sub(r'(\D+)(\d+)([A-Z]*)', r'\1 \2\3', code) for code in course_codes]
+    matches = re.findall(pattern, course_titles)
 
-    return formatted_codes[0]
+    formatted_codes = [f"{match[0]} {match[1]}{match[2]}" for match in matches]
+    subject_codes = [match[0] for match in matches]
+    catalog_numbers = [f"{match[1]}{match[2]}" for match in matches]
+
+    return formatted_codes[0], subject_codes[0], catalog_numbers[0]
 
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/stem_majors.json', 'r') as f:
+    with open('../coursescraper/shortcourse2.json', 'r') as f:
         majors = json.load(f)
 
     driver = webdriver.Chrome()
@@ -93,9 +101,12 @@ def scrape_syllabi():
 
     for idx, major in enumerate(majors):
         for idy, course in enumerate(major['courses']):
-            print(f"\n📚 Processing {idx+1}/{len(majors)}: {major['major_name']}")
-            print(f"\n📚 Processing {idy+1}/{len(major['courses'])}: {course[1]}")
-            course_code = extract_and_format_course_codes(course[1])
+            print(f"\n📚 Processing {
+                  idx+1}/{len(majors)}: {major['major_name']}")
+            print(f"\n📚 Processing {
+                  idy+1}/{len(major['courses'])}: {course[1]}")
+            course_code, subject_code, catalog_number = extract_and_format_course_codes(
+                course[1])
 
             try:
                 # Debug current window state
@@ -104,43 +115,35 @@ def scrape_syllabi():
 
                 # Navigate and search
                 print("🌐 Navigating to search page...")
-                driver.get('https://outline.uwaterloo.ca/browse/')
-
-                print(f"🔎 Searching for {course_code}...")
-                search_box = WebDriverWait(driver, 15).until(
-                    EC.element_to_be_clickable((By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
-                )
-                search_box.clear()
-                search_box.send_keys(course_code)
-
-                search_button = WebDriverWait(driver, 15).until(
-                    EC.element_to_be_clickable((By.CSS_SELECTOR, "button#button-addon2"))
-                )
-                search_button.click()
+                driver.get(
+                    f'https://outline.uwaterloo.ca/browse/search/?q={subject_code}+{catalog_number}&term=')
 
                 # Wait for search results to load
                 # At this point the script should be on the page with the view button
-                WebDriverWait(driver, 15).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
+                WebDriverWait(driver, 3).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, "table tbody tr"))
                 )
-                results = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
+                results = driver.find_elements(
+                    By.CSS_SELECTOR, "table tbody tr")
                 print(f"🔍 Found {len(results)} search results")
 
                 # Click view button
                 print("🔗 Accessing syllabus...")
-                view_button = WebDriverWait(driver, 15).until(
-                    EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
+                view_button = WebDriverWait(driver, 2).until(
+                    EC.element_to_be_clickable(
+                        (By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
                 )
-                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", view_button)
+                driver.execute_script(
+                    "arguments[0].scrollIntoView({block: 'center'});", view_button)
 
                 view_button.click()
 
-
                 # Wait for syllabus page to load
-                WebDriverWait(driver, 3).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
+                WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, "table tbody tr"))
                 )
-
 
                 print("🖨️ Extracting syllabus content...")
                 topics = classify(extract_syllabus(driver))
@@ -163,7 +166,6 @@ def scrape_syllabi():
                         "topics": topics
                     })
 
-
             except Exception as e:
                 print(f"❌ Error processing {course_code}: {str(e)}")
                 print(f"🌍 Current URL: {driver.current_url}")
@@ -176,6 +178,7 @@ def scrape_syllabi():
     driver.quit()
     print(f"\n🎉 Completed: {len(syllabus_data)} syllabi processed")
     print("💾 Output saved to syllabi.json")
+
 
 if __name__ == "__main__":
     scrape_syllabi()

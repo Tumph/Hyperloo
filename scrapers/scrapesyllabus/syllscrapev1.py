@@ -72,87 +72,93 @@ def extract_syllabus(driver):
     except Exception as e:
         print(f"❌ Failed to extract or write text: {str(e)}")
 
+def extract_and_format_course_codes(course_titles):
+    pattern = r'([A-Z]+)(\d+)([A-Z]*)'
+
+    matches = re.findall(pattern, course_titles)
+
+    formatted_codes = [f"{match[0]} {match[1]}{match[2]}" for match in matches]
+    subject_codes = [match[0] for match in matches]
+    catalog_numbers = [f"{match[1]}{match[2]}" for match in matches]
+
+    return formatted_codes[0], subject_codes[0], catalog_numbers[0]
 
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/courses.json', 'r') as f:
-        courses = json.load(f)
+    with open('../coursescraper/shortcourse2.json', 'r') as f:
+        majors = json.load(f)
 
     driver = webdriver.Chrome()
     handle_login(driver)
     syllabus_data = []
 
-    for idx, course in enumerate(courses):
-        print(f"\n📚 Processing {idx+1}/{len(courses)}: {course['course_code']}")
-        formatted_code = re.sub(r'(\D)(\d)', r'\1 \2', course['course_code'])
+    for idx, major in enumerate(majors):
+        for idy, course in enumerate(major['courses']):
+            print(f"\n📚 Processing {idx+1}/{len(majors)}: {major['major_name']}")
+            print(f"\n📚 Processing {idy+1}/{len(major['courses'])}: {course[1]}")
+            course_code, subject_code, catalog_number = extract_and_format_course_codes(course[1])
 
-        try:
-            # Debug current window state
-            print(f"🪟 Current windows: {driver.window_handles}")
-            print(f"📍 Current URL: {driver.current_url}")
+            try:
+                # Debug current window state
+                print(f"🪟 Current windows: {driver.window_handles}")
+                print(f"📍 Current URL: {driver.current_url}")
 
-            # Navigate and search
-            print("🌐 Navigating to search page...")
-            driver.get('https://outline.uwaterloo.ca/browse/')
+                # Navigate and search
+                print("🌐 Navigating to search page...")
+                driver.get(f'https://outline.uwaterloo.ca/browse/search/?q={subject_code}+{catalog_number}&term=')
 
-            print(f"🔎 Searching for {formatted_code}...")
-            search_box = WebDriverWait(driver, 15).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "input[placeholder*='Course Search']"))
-            )
-            search_box.clear()
-            search_box.send_keys(formatted_code)
+                # Wait for search results to load
+                # At this point the script should be on the page with the view button
+                WebDriverWait(driver, 3).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
+                )
+                results = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
+                print(f"🔍 Found {len(results)} search results")
 
-            search_button = WebDriverWait(driver, 15).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "button#button-addon2"))
-            )
-            search_button.click()
+                # Click view button
+                print("🔗 Accessing syllabus...")
+                view_button = WebDriverWait(driver, 2).until(
+                    EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
+                )
+                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", view_button)
 
-            # Wait for search results to load
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
-            )
-            results = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
-            print(f"🔍 Found {len(results)} search results")
-
-            # Click view button
-            print("🔗 Accessing syllabus...")
-            view_button = WebDriverWait(driver, 15).until(
-                EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'btn-outline-primary') and contains(@title, 'View Online')]"))
-            )
-            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", view_button)
-
-            view_button.click()
+                view_button.click()
 
 
-            # Wait for syllabus page to load
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
-            )
+                # Wait for syllabus page to load
+                WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody tr"))
+                )
 
 
-            print("🖨️ Extracting syllabus content...")
-            topics = classify(extract_syllabus(driver))
+                print("🖨️ Extracting syllabus content...")
+                topics = classify(extract_syllabus(driver))
 
-            print("Adding to Json...")
+                print("Adding to Json...")
 
-            if len(topics) == 0:
-                print("⚠️ Warning: No topics extracted")
-            else:
-                print(f"✔️ Success: Collected {len(topics)} topics")
-                syllabus_data.append({
-                    "course_id": course["course_id"],
-                    "course_code": course["course_code"],
-                    "course_name": course["course_name"],
-                    "topics": topics
-                })
+                if len(topics) == 0:
+                    print("⚠️ Warning: No topics extracted")
+                else:
+                    print(f"✔️ Success: Collected {len(topics)} topics")
+                    syllabus_data.append({
+                        "course_id": idy,
+                        "course_code": course_code,
+                        "course_name": course[1],
+                        "term_name": course[0],
+                        "program_name": major['program_name'],
+                        "program_id": major['program_id'],
+                        "major_id": major['major_id'],
+                        "major_name": major['major_name'],
+                        "topics": topics
+                    })
 
 
-        except Exception as e:
-            print(f"❌ Error processing {course['course_code']}: {str(e)}")
-            print(f"🌍 Current URL: {driver.current_url}")
-            print(f"🪟 Window handles: {driver.window_handles}")
-            continue
+            except Exception as e:
+                print(f"❌ Error processing {course_code}: {str(e)}")
+                print(f"🌍 Current URL: {driver.current_url}")
+                print(f"🪟 Window handles: {driver.window_handles}")
+                continue
 
     with open('syllabi.json', 'w') as f:
         json.dump(syllabus_data, f, indent=4)

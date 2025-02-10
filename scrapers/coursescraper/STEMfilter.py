@@ -18,22 +18,14 @@ def filter_stem_majors(input_file, output_file):
     # Process nested structure from scraping code
     filtered_majors = []
     for major in data:
-        if any(re.search(pattern, major.get('major_name', '').lower())
-               for pattern in stem_patterns):
-            # Filter courses within STEM majors
-            filtered_courses = [
-                course for course in major['courses']
-                if any(re.search(pattern, course[1].lower())
-                      for pattern in stem_patterns)
-            ]
-            major['courses'] = filtered_courses
+        if any(re.search(pattern, major.get('major_name', '').lower()) for pattern in stem_patterns):
+            # Keep all courses if the major is STEM
             filtered_majors.append(major)
 
     with open(output_file, 'w') as f:
         json.dump(filtered_majors, f, indent=2)
 
     return len(data) - len(filtered_majors)
-
 
 # Example usage:
 removed_count = filter_stem_majors('course2.json', 'stem_majors.json')

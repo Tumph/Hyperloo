@@ -188,5 +188,34 @@
         "#/courses/view/65cce294481f4645a281aab4"
       ]
     ]
+  },
+  {
+    "major_name": "Computer Engineering (Bachelor of Applied Science - Honours)",
+    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/BybwJ10Ri3?group=Computer%20Engineering&bc=true&bcCurrent=Computer%20Engineering%20(Bachelor%20of%20Applied%20Science%20-%20Honours)&bcGroup=Computer%20Engineering&bcItemType=programs",
+    "major_id": 2,
+    "program_id": 39,
+    "program_name": "Computer Engineering",
+    "courses": [
+      [
+        "1A Term",
+        "ECE105 - Classical Mechanics (0.50)",
+        "#/courses/view/65ccc7aa1a5d9723a1703b39"
+      ],
+      [
+        "1A Term",
+        "ECE150 - Fundamentals of Programming (0.50)",
+        "#/courses/view/65cce24c481f467edf81aab1"
+      ],
+      [
+        "1A Term",
+        "ECE190 - Engineering Profession and Practice (0.25)",
+        "#/courses/view/65cce27a13b38625168e9ccb"
+      ],
+      [
+        "1A Term",
+        "ECE198 - Project Studio (0.25)",
+        "#/courses/view/65cce294481f4645a281aab4"
+      ]
+    ]
   }
 ]
