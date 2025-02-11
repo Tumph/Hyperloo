@@ -92,11 +92,13 @@ def extract_and_format_course_codes(course_titles):
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/shortcourse2.json', 'r') as f:
+    with open('../coursescraper/stem_majors3.json', 'r') as f:
         majors = json.load(f)
 
     driver = webdriver.Chrome()
     handle_login(driver)
+
+
     syllabus_data = []
 
     for idx, major in enumerate(majors):
@@ -105,8 +107,7 @@ def scrape_syllabi():
                   idx+1}/{len(majors)}: {major['major_name']}")
             print(f"\n📚 Processing {
                   idy+1}/{len(major['courses'])}: {course[1]}")
-            course_code, subject_code, catalog_number = extract_and_format_course_codes(
-                course[1])
+            course_code, subject_code, catalog_number = extract_and_format_course_codes(course[1])
 
             try:
                 # Debug current window state
@@ -172,8 +173,9 @@ def scrape_syllabi():
                 print(f"🪟 Window handles: {driver.window_handles}")
                 continue
 
-    with open('syllabi.json', 'w') as f:
-        json.dump(syllabus_data, f, indent=4)
+        with open('syllabi3.json', 'w') as f:
+            json.dump(syllabus_data, f, indent=4)
+            print(f"💾 Interim save: {major['major_name']} completed")
 
     driver.quit()
     print(f"\n🎉 Completed: {len(syllabus_data)} syllabi processed")
