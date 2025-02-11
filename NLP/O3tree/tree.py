@@ -1,5 +1,6 @@
 from openai import OpenAI
 
+
 client = OpenAI()
 
 topics_str = "Tools and Techniques for Software Development Winter 2025"
