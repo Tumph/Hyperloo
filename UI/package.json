@@ -9,7 +9,7 @@
     "neovis.js": "^2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-force-graph": "^1.46.0",
+    "react-force-graph": "^1.29.3",
     "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4"
   },
