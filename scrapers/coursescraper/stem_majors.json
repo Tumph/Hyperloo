@@ -8875,14 +8875,6 @@
     ]
   },
   {
-    "major_name": "Computer Science Minor",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyPykARoh?group=Computer%20Science&bc=true&bcCurrent=Computer%20Science%20Minor&bcGroup=Computer%20Science&bcItemType=programs",
-    "major_id": 10,
-    "program_id": 40,
-    "program_name": "Computer Science",
-    "courses": []
-  },
-  {
     "major_name": "Human-Computer Interaction Specialization",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/rkP1y00ih?group=Computer%20Science&bc=true&bcCurrent=Human-Computer%20Interaction%20Specialization&bcGroup=Computer%20Science&bcItemType=programs",
     "major_id": 13,
@@ -14121,30 +14113,6 @@
     ]
   },
   {
-    "major_name": "Bachelor of Science Degree Requirements (Health)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SkRI178-T?group=Degree%20Requirements&bc=true&bcCurrent=Bachelor%20of%20Science%20Degree%20Requirements%20(Health)&bcGroup=Degree%20Requirements&bcItemType=programs",
-    "major_id": 7,
-    "program_id": 45,
-    "program_name": "Degree Requirements",
-    "courses": []
-  },
-  {
-    "major_name": "Bachelor of Science Degree Requirements (Science)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/BJod_8jW6?group=Degree%20Requirements&bc=true&bcCurrent=Bachelor%20of%20Science%20Degree%20Requirements%20(Science)&bcGroup=Degree%20Requirements&bcItemType=programs",
-    "major_id": 8,
-    "program_id": 45,
-    "program_name": "Degree Requirements",
-    "courses": []
-  },
-  {
-    "major_name": "Earth Sciences - Geology Specialization (Bachelor of Science - Honours)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SyP1kRCs3?group=Earth%20Sciences&bc=true&bcCurrent=Earth%20Sciences%20-%20Geology%20Specialization%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Earth%20Sciences&bcItemType=programs",
-    "major_id": 2,
-    "program_id": 48,
-    "program_name": "Earth Sciences",
-    "courses": []
-  },
-  {
     "major_name": "Earth Sciences - Geophysics Specialization (Bachelor of Science - Honours)",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SkxDyJRRi2?group=Earth%20Sciences&bc=true&bcCurrent=Earth%20Sciences%20-%20Geophysics%20Specialization%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Earth%20Sciences&bcItemType=programs",
     "major_id": 3,
@@ -18186,14 +18154,6 @@
     ]
   },
   {
-    "major_name": "Kinesiology (Bachelor of Science - Four-Year General)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/r1EsJyRCj3?group=Kinesiology&bc=true&bcCurrent=Kinesiology%20(Bachelor%20of%20Science%20-%20Four-Year%20General)&bcGroup=Kinesiology&bcItemType=programs",
-    "major_id": 1,
-    "program_id": 94,
-    "program_name": "Kinesiology",
-    "courses": []
-  },
-  {
     "major_name": "Kinesiology (Bachelor of Science - Honours)",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/B14jyJC0jn?group=Kinesiology&bc=true&bcCurrent=Kinesiology%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Kinesiology&bcItemType=programs",
     "major_id": 2,
@@ -18766,14 +18726,7 @@
       ]
     ]
   },
-  {
-    "major_name": "Management Engineering (Bachelor of Applied Science - Honours)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/HkzsJ1CRsh?group=Management%20Engineering&bc=true&bcCurrent=Management%20Engineering%20(Bachelor%20of%20Applied%20Science%20-%20Honours)&bcGroup=Management%20Engineering&bcItemType=programs",
-    "major_id": 1,
-    "program_id": 100,
-    "program_name": "Management Engineering",
-    "courses": []
-  },
+  
   {
     "major_name": "Materials and Nanosciences (Bachelor of Science - Honours)",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/rylCky0Rih?group=Materials%20and%20Nanosciences&bc=true&bcCurrent=Materials%20and%20Nanosciences%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Materials%20and%20Nanosciences&bcItemType=programs",
@@ -19163,14 +19116,7 @@
       ]
     ]
   },
-  {
-    "major_name": "Mathematical Economics (Bachelor of Arts - Honours)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SySxyRAj2?group=Mathematical%20Economics&bc=true&bcCurrent=Mathematical%20Economics%20(Bachelor%20of%20Arts%20-%20Honours)&bcGroup=Mathematical%20Economics&bcItemType=programs",
-    "major_id": 3,
-    "program_id": 103,
-    "program_name": "Mathematical Economics",
-    "courses": []
-  },
+
   {
     "major_name": "Mathematical Economics (Bachelor of Mathematics - Honours)",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/r1gAJJ0Cin?group=Mathematical%20Economics&bc=true&bcCurrent=Mathematical%20Economics%20(Bachelor%20of%20Mathematics%20-%20Honours)&bcGroup=Mathematical%20Economics&bcItemType=programs",
@@ -27349,14 +27295,7 @@
       ]
     ]
   },
-  {
-    "major_name": "Political Science Minor",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/H1WLl1R0i2?group=Political%20Science&bc=true&bcCurrent=Political%20Science%20Minor&bcGroup=Political%20Science&bcItemType=programs",
-    "major_id": 5,
-    "program_id": 134,
-    "program_name": "Political Science",
-    "courses": []
-  },
+
   {
     "major_name": "Psychology (Bachelor of Science - Honours)",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/Syeg1RAsn?group=Psychology&bc=true&bcCurrent=Psychology%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Psychology&bcItemType=programs",
@@ -29521,14 +29460,7 @@
       ]
     ]
   },
-  {
-    "major_name": "Science and Business - Biotechnology Specialization (Bachelor of Science - Honours)",
-    "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/SJelxyCAj3?group=Science%20and%20Business&bc=true&bcCurrent=Science%20and%20Business%20-%20Biotechnology%20Specialization%20(Bachelor%20of%20Science%20-%20Honours)&bcGroup=Science%20and%20Business&bcItemType=programs",
-    "major_id": 4,
-    "program_id": 146,
-    "program_name": "Science and Business",
-    "courses": []
-  },
+
   {
     "major_name": "Human-Computer Interaction Specialization",
     "link": "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/Hk4leJARo3?group=Software%20Engineering&bc=true&bcCurrent=Human-Computer%20Interaction%20Specialization&bcGroup=Software%20Engineering&bcItemType=programs",
