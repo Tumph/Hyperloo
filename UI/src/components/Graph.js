@@ -101,7 +101,7 @@ const Graph = () => {
         const nodes = nodesResult.records.map((record) => ({
           id: record.get("id"),
           // You can adjust size based on connection count if desired.
-          size: 2,
+          size: 8, // Increased node size
           connections: 0,
           // Initial positions (will be overridden by DAG layout)
           x: (Math.random() - 0.5) * 500,
@@ -281,7 +281,7 @@ const Graph = () => {
     // Physics tweaks
     if (engine.d3Force) {
       engine.d3Force("charge").strength(-100);
-      engine.d3Force("link").distance(80);
+      engine.d3Force("link").distance(50); // Reduced link distance
     }
 
     // Camera settings
@@ -357,7 +357,7 @@ const Graph = () => {
         ref={fgRef}
         graphData={graphData}
         dagMode="td" // Arrange nodes top-down so parent (big) topics are on top.
-        dagLevelDistance={150} // Adjust the vertical spacing between levels.
+        dagLevelDistance={100} // Reduced vertical spacing between levels.
         backgroundColor="rgba(0,0,0,0)"
         nodeLabel={(node) =>
           `Course: ${node.id}\nConnections: ${node.connections}`
