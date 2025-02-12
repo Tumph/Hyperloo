@@ -1,0 +1,48 @@
+{
+    "name": "Newton's Laws and the causes of motion",
+    "topics": [
+      {
+        "name": "Newton's First Law",
+        "topics": [
+          {
+            "name": "Uniform Motion",
+            "topics": []
+          },
+          {
+            "name": "Kinematics",
+            "topics": []
+          },
+          {
+            "name": "Centripetal Motion",
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Newton's Second Law",
+        "topics": [
+          {
+            "name": "F=ma",
+            "topics": []
+          },
+          {
+            "name": "Causes of Motion",
+            "topics": [
+              {
+                "name": "Forces",
+                "topics": []
+              },
+              {
+                "name": "Friction",
+                "topics": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Newton's Third Law",
+        "topics": []
+      }
+    ]
+  }

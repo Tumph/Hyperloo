@@ -1,47 +1,46 @@
-from py2neo import Graph, Node, Relationship
-graph = Graph("bolt://localhost:7687", auth=("neo4j", "hyperloo"))
+from neo4j import GraphDatabase
+import json
 
-# Example nested dictionary
-org_chart = {
-    "President1": {
-        "CFO1": {
-            "Global Investments VP1": {},
-            "Internal Audits VP1": {}
-        },
-        "CTO1": {
-            "Global Cloud VP1": {},
-            "VP of Automations1": {
-                "Head of RPA Team1": {}
-            }
-        }
-    }
-}
+# Neo4j connection details
+URI = "bolt://localhost:7687"  # Update if necessary
+USERNAME = "neo4j"
+PASSWORD = "hyperloo"
 
-def create_nodes(data, parent=None):
-    for title, subordinates in data.items():
-        node = Node("Employee", title=title)
-        graph.create(node)
-        
-        if parent:
-            relationship = Relationship(parent, "MANAGES", node)
-            graph.create(relationship)
-        
-        create_nodes(subordinates, node)
+# Connect to Neo4j
+driver = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
 
-# Start creating nodes from the root
-create_nodes(org_chart)
-# ```
+# Function to create nodes and relationships recursively
+def insert_topic(tx, parent_name, topic):
+    topic_name = topic["name"]
+    
+    # Create topic node
+    tx.run(
+        "MERGE (t:Topic {name: $topic_name})",
+        topic_name=topic_name
+    )
+    
+    # Create relationship if there's a parent
+    if parent_name:
+        tx.run(
+            """
+            MATCH (p:Topic {name: $parent_name}), (c:Topic {name: $topic_name})
+            MERGE (p)-[:HAS_SUBTOPIC]->(c)
+            """,
+            parent_name=parent_name,
+            topic_name=topic_name
+        )
+    
+    # Recursively insert subtopics
+    for subtopic in topic["topics"]:
+        insert_topic(tx, topic_name, subtopic)
 
-# This code will create nodes for each employee in the hierarchy and establish "MANAGES" relationships between them. The nested structure is preserved through these relationships.
+# Load JSON file
+with open("Hyperloo/graph/small.json", "r") as file:
+    data = json.load(file)
 
-# To query the data:
+# Insert data into Neo4j using execute_write()
+with driver.session() as session:
+    session.execute_write(insert_topic, None, data)
 
-# ```python
-# Example query to find all employees managed by the CTO
-query = """
-MATCH (cto:Employee {title: 'CTO'})-[:MANAGES*]->(subordinate)
-RETURN subordinate.title
-"""
-results = graph.run(query)
-for record in results:
-    print(record["subordinate.title"])
+# Close connection
+driver.close()

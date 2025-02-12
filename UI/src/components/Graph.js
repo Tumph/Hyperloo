@@ -101,7 +101,7 @@ const Graph = () => {
         const nodes = nodesResult.records.map((record) => ({
           id: record.get("id"),
           // You can adjust size based on connection count if desired.
-          size: 2,
+          size: 7, // Increased node size
           connections: 0,
           // Initial positions (will be overridden by DAG layout)
           x: (Math.random() - 0.5) * 500,
@@ -144,22 +144,14 @@ const Graph = () => {
   useEffect(() => {
     if (fgRef.current) {
       const canvas = fgRef.current.renderer().domElement;
-      const PAN_SPEED = 0.4;
+      const ROTATION_SPEED = 0.005;
 
       const onMouseDown = (e) => {
         if (e.button === 2) {
           e.preventDefault();
-          const rect = canvas.getBoundingClientRect();
           dragState.current = {
-            startMouse: new THREE.Vector2(
-              ((e.clientX - rect.left) / rect.width) * 2 - 1,
-              -((e.clientY - rect.top) / rect.height) * 2 + 1
-            ),
-            startCameraPos: fgRef.current.camera().position.clone(),
-            startTarget: fgRef.current.controls().target.clone(),
-            startDistance: fgRef.current.camera().position.distanceTo(
-              fgRef.current.controls().target
-            ),
+            startX: e.clientX,
+            startY: e.clientY,
           };
         }
       };
@@ -168,25 +160,18 @@ const Graph = () => {
         if (!dragState.current) return;
         e.preventDefault();
 
-        const rect = canvas.getBoundingClientRect();
-        const currentMouse = new THREE.Vector2(
-          ((e.clientX - rect.left) / rect.width) * 2 - 1,
-          -((e.clientY - rect.top) / rect.height) * 2 + 1
-        );
-
-        const delta = currentMouse.clone().sub(dragState.current.startMouse);
-        const displacement = new THREE.Vector3(-delta.x, delta.y, 0).multiplyScalar(
-          PAN_SPEED * dragState.current.startDistance * 0.01
-        );
+        const deltaX = e.clientX - dragState.current.startX;
+        const deltaY = e.clientY - dragState.current.startY;
 
         const camera = fgRef.current.camera();
         const controls = fgRef.current.controls();
 
-        camera.position.copy(
-          dragState.current.startCameraPos.clone().add(displacement)
-        );
-        controls.target.copy(dragState.current.startTarget.clone().add(displacement));
+        controls.rotateLeft(deltaX * ROTATION_SPEED);
+        controls.rotateUp(deltaY * ROTATION_SPEED);
         controls.update();
+
+        dragState.current.startX = e.clientX;
+        dragState.current.startY = e.clientY;
       };
 
       const onMouseUp = () => (dragState.current = null);
@@ -280,8 +265,8 @@ const Graph = () => {
   const onEngineInit = useCallback((engine) => {
     // Physics tweaks
     if (engine.d3Force) {
-      engine.d3Force("charge").strength(-100);
-      engine.d3Force("link").distance(80);
+      engine.d3Force("charge").strength(-50); // Adjusted charge strength
+      engine.d3Force("link").distance(200); // Increased link distance
     }
 
     // Camera settings
@@ -357,7 +342,7 @@ const Graph = () => {
         ref={fgRef}
         graphData={graphData}
         dagMode="td" // Arrange nodes top-down so parent (big) topics are on top.
-        dagLevelDistance={150} // Adjust the vertical spacing between levels.
+        dagLevelDistance={100} // Reduced vertical spacing between levels.
         backgroundColor="rgba(0,0,0,0)"
         nodeLabel={(node) =>
           `Course: ${node.id}\nConnections: ${node.connections}`
