@@ -1,0 +1,363 @@
+(venv) aryan@Aryans-MacBook-Pro Processing % chmod +x run_parallel.sh
+./run_parallel.sh
+100%|███████████████████████████████████████████| 56/56 [10:03<00:00, 10.77s/it]
+Token usage:
+Input: 103791
+Output: 29785
+Total: 133576
+Failed courses: ['SYDE 285 - Expecting value: line 1 column 1 (char 0)', 'SYDE 252 - Expecting value: line 1 column 1 (char 0)', 'SYDE 361 - Expecting value: line 1 column 1 (char 0)', 'SYDE 461 - Expecting value: line 1 column 1 (char 0)', 'BME 544 - Expecting value: line 1 column 1 (char 0)', 'ECE 457B - Expecting value: line 1 column 1 (char 0)', 'SYDE 544 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:03<00:00,  9.39s/it]
+Token usage:
+Input: 131187
+Output: 35190
+Total: 166377
+Failed courses: ['SE 465 - Expecting property name enclosed in double quotes: line 55 column 17 (char 1231)', 'BET 360 - Expecting value: line 1 column 1 (char 0)', 'CS 343 - Expecting value: line 1 column 1 (char 0)', 'CS 450 - Expecting value: line 1 column 1 (char 0)', 'CS 451 - Expecting value: line 1 column 1 (char 0)', 'ECE 451 - Expecting value: line 1 column 1 (char 0)', 'CS 451 - Expecting value: line 1 column 1 (char 0)', 'CS 240 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:08<00:00,  9.46s/it]
+Token usage:
+Input: 128404
+Output: 35162
+Total: 163566
+Failed courses: ['MATH 249 - Expecting value: line 1 column 1 (char 0)', 'PMATH 340 - Expecting value: line 1 column 1 (char 0)', 'CS 234 - Expecting value: line 1 column 1 (char 0)', 'CO 250 - Expecting value: line 1 column 1 (char 0)', 'CS 245E - Expecting property name enclosed in double quotes: line 43 column 13 (char 967)', 'AMATH 383 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:15<00:00,  9.55s/it]
+Token usage:
+Input: 136836
+Output: 36879
+Total: 173715
+Failed courses: ['COMMST 191 - Expecting value: line 1 column 1 (char 0)', 'FR 252 - Expecting value: line 1 column 1 (char 0)', 'FR 255 - Expecting property name enclosed in double quotes: line 42 column 17 (char 1046)', 'MUSIC 370 - Expecting value: line 1 column 1 (char 0)', 'SPAN 201B - Expecting value: line 1 column 1 (char 0)', 'EMLS 101R - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:18<00:00,  9.59s/it]
+ 94%|████████████████████████████████████████▏  | 72/77 [12:18<00:38,  7.61s/it]Token usage:
+Input: 127865
+Output: 36059
+Total: 163924
+Failed courses: ['CO 370 - Expecting value: line 1 column 1 (char 0)', 'MATH 237 - Expecting value: line 1 column 1 (char 0)', 'PACS 202 - Expecting value: line 1 column 1 (char 0)', 'PMATH 432 - Expecting value: line 1 column 1 (char 0)', 'STAT 331 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:28<00:00,  9.72s/it]
+Token usage:
+Input: 130978
+Output: 38594
+Total: 169572
+Failed courses: ['CS 479 - Expecting value: line 1 column 1 (char 0)', 'STAT 442 - Expecting property name enclosed in double quotes: line 17 column 13 (char 352)', 'CS 245E - Expecting value: line 1 column 1 (char 0)', 'CS 466 - Expecting value: line 1 column 1 (char 0)', 'CS 479 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:37<00:00,  9.83s/it]
+Token usage:
+Input: 136442
+Output: 38912
+Total: 175354
+Failed courses: ['ECON 221 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:47<00:00,  9.96s/it]
+Token usage:
+Input: 139420
+Output: 37692
+Total: 177112
+Failed courses: ['BIOL 359 - Expecting value: line 1 column 1 (char 0)', 'CS 200 - Expecting value: line 1 column 1 (char 0)', 'STAT 331 - Expecting value: line 1 column 1 (char 0)', 'STAT 333 - Expecting property name enclosed in double quotes: line 54 column 17 (char 1272)', "STAT 431 - Expecting ',' delimiter: line 51 column 33 (char 1484)", 'AFM 433 - Expecting value: line 1 column 1 (char 0)', 'CHEM 237 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:48<00:00,  9.97s/it]
+Token usage:
+Input: 126384
+Output: 35996
+Total: 162380
+Failed courses: ['AMATH 242 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:48<00:00,  9.98s/it]
+Token usage:
+Input: 128641
+Output: 38314
+Total: 166955
+Failed courses: ['ENGL 193 - Expecting value: line 1 column 1 (char 0)', 'NE 241 - Expecting value: line 1 column 1 (char 0)', 'NE 217 - Expecting value: line 1 column 1 (char 0)', 'NE 226L - Expecting value: line 1 column 1 (char 0)', 'NE 343 - Expecting value: line 1 column 1 (char 0)', 'NE 408 - Expecting value: line 1 column 1 (char 0)', 'NE 454A - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:50<00:00, 10.01s/it]
+Token usage:
+Input: 137689
+Output: 38271
+Total: 175960
+Failed courses: ['CS 467 - Expecting value: line 1 column 1 (char 0)', 'MSE 343 - Expecting value: line 1 column 1 (char 0)', 'STAT 441 - Expecting value: line 1 column 1 (char 0)', 'STAT 331 - Expecting value: line 1 column 1 (char 0)', 'STAT 333 - Expecting value: line 1 column 1 (char 0)', 'MATH 239 - Expecting value: line 1 column 1 (char 0)', 'SYDE 101 - Expecting value: line 1 column 1 (char 0)', 'SYDE 114 - Expecting value: line 1 column 1 (char 0)', 'SYDE 162 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:50<00:00, 10.01s/it]
+Token usage:
+Input: 139119
+Output: 38661
+Total: 177780
+Failed courses: ['PLAN 414 - Expecting value: line 1 column 1 (char 0)', 'PLAN 471 - Expecting value: line 1 column 1 (char 0)', 'REC 200 - Expecting value: line 1 column 1 (char 0)', 'LS 221 - Expecting value: line 1 column 1 (char 0)', 'LS 322 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:53<00:00, 10.04s/it]
+Token usage:
+Input: 137252
+Output: 39915
+Total: 177167
+Failed courses: ['CHEM 333 - Expecting value: line 1 column 1 (char 0)', 'MATH 115 - Expecting value: line 1 column 1 (char 0)', 'MATH 118 - Expecting value: line 1 column 1 (char 0)', 'PHYS 115 - Expecting value: line 1 column 1 (char 0)', 'COMMST 100 - Expecting value: line 1 column 1 (char 0)', 'CHE 312 - Expecting value: line 1 column 1 (char 0)', 'CHE 361 - Expecting value: line 1 column 1 (char 0)', 'CHE 561 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:54<00:00, 10.06s/it]
+Token usage:
+Input: 125288
+Output: 36420
+Total: 161708
+Failed courses: ['ENGL 193 - Expecting value: line 1 column 1 (char 0)', 'PHYS 122 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:55<00:00, 10.07s/it]
+Token usage:
+Input: 137987
+Output: 38123
+Total: 176110
+Failed courses: ['AFM 321 - Expecting value: line 1 column 1 (char 0)', 'CS 135 - Expecting value: line 1 column 1 (char 0)', 'AMATH 350 - Expecting property name enclosed in double quotes: line 62 column 13 (char 1629)', 'STAT 371 - Expecting value: line 1 column 1 (char 0)', 'COMM 321 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:57<00:00, 10.10s/it]
+Token usage:
+Input: 133096
+Output: 37707
+Total: 170803
+Failed courses: ['STAT 372 - Expecting value: line 1 column 1 (char 0)', 'AFM 231 - Expecting value: line 1 column 1 (char 0)', 'CO 250 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [12:59<00:00, 10.12s/it]
+Token usage:
+Input: 131175
+Output: 36677
+Total: 167852
+Failed courses: ['STAT 341 - Expecting value: line 1 column 1 (char 0)', 'PHIL 226 - Expecting value: line 1 column 1 (char 0)', 'SOC 324 - Expecting value: line 1 column 1 (char 0)', 'SYDE 262 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:00<00:00, 10.13s/it]
+Token usage:
+Input: 128965
+Output: 37681
+Total: 166646
+Failed courses: ['CHE 565 - Expecting value: line 1 column 1 (char 0)', 'CHE 571 - Expecting value: line 1 column 1 (char 0)', 'NE 352 - Expecting value: line 1 column 1 (char 0)', 'CHEM 125L - Expecting value: line 1 column 1 (char 0)', 'PHYS 122 - Expecting value: line 1 column 1 (char 0)', 'CHEM 267L - Expecting value: line 1 column 1 (char 0)', 'CHEM 357 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:01<00:00, 10.15s/it]
+Token usage:
+Input: 125683
+Output: 36984
+Total: 162667
+Failed courses: ['PMATH 450 - Expecting value: line 1 column 1 (char 0)', 'MATH 148 - Expecting value: line 1 column 1 (char 0)', 'BIOL 110 - Expecting value: line 1 column 1 (char 0)', 'PHYS 112L - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:02<00:00, 10.17s/it]
+Token usage:
+Input: 139545
+Output: 40241
+Total: 179786
+Failed courses: ['GEOG 368 - Expecting value: line 1 column 1 (char 0)', 'PLAN 341 - Expecting value: line 1 column 1 (char 0)', 'GEOG 309 - Expecting value: line 1 column 1 (char 0)', 'BIOL 130 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:10<00:00, 10.26s/it]
+Token usage:
+Input: 133928
+Output: 37712
+Total: 171640
+Failed courses: ['CS 245E - Expecting value: line 1 column 1 (char 0)', 'CS 341 - Expecting value: line 1 column 1 (char 0)', 'CS 240 - Expecting value: line 1 column 1 (char 0)', 'ENGL 295 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:10<00:00, 10.26s/it]
+Token usage:
+Input: 126798
+Output: 37853
+Total: 164651
+Failed courses: ['BIOL 280 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:12<00:00, 10.30s/it]
+Token usage:
+Input: 133270
+Output: 37853
+Total: 171123
+Failed courses: ['EARTH 122L - Expecting value: line 1 column 1 (char 0)', 'PSCI 228 - Expecting value: line 1 column 1 (char 0)', 'CHEM 120 - Expecting value: line 1 column 1 (char 0)', 'PSYCH 291 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:16<00:00, 10.34s/it]
+Token usage:
+Input: 136871
+Output: 37000
+Total: 173871
+Failed courses: ['SCBUS 323 - Expecting value: line 1 column 1 (char 0)', 'ECON 372 - Expecting value: line 1 column 1 (char 0)', 'INDEV 100 - Expecting value: line 1 column 1 (char 0)', 'STAT 231 - Expecting value: line 1 column 1 (char 0)', 'STAT 333 - Expecting value: line 1 column 1 (char 0)', 'PACS 315 - Expecting value: line 1 column 1 (char 0)', 'STV 202 - Expecting property name enclosed in double quotes: line 24 column 17 (char 556)']
+100%|███████████████████████████████████████████| 77/77 [13:22<00:00, 10.42s/it]
+Token usage:
+Input: 136001
+Output: 39336
+Total: 175337
+Failed courses: ['CS 136L - Expecting value: line 1 column 1 (char 0)', 'CS 240 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:24<00:00, 10.45s/it]
+Token usage:
+Input: 131063
+Output: 38905
+Total: 169968
+Failed courses: ['BIOL 239 - Expecting property name enclosed in double quotes: line 36 column 9 (char 711)', 'CHEM 120L - Expecting value: line 1 column 1 (char 0)', 'AVIA 100 - Expecting value: line 1 column 1 (char 0)', 'GEOG 309 - Expecting value: line 1 column 1 (char 0)', 'GEOG 381 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:27<00:00, 10.48s/it]
+Token usage:
+Input: 137906
+Output: 38324
+Total: 176230
+Failed courses: ['GEOG 101 - Expecting value: line 1 column 1 (char 0)', 'GEOG 349 - Expecting value: line 1 column 1 (char 0)', 'GEOG 368 - Expecting value: line 1 column 1 (char 0)', 'GEOG 411 - Expecting value: line 1 column 1 (char 0)', 'HLTH 201 - Expecting value: line 1 column 1 (char 0)', 'HLTH 260 - Expecting value: line 1 column 1 (char 0)', 'INDEV 308 - Expecting value: line 1 column 1 (char 0)', 'INDEV 404 - Expecting value: line 1 column 1 (char 0)', 'MSE 211 - Expecting value: line 1 column 1 (char 0)', 'PLAN 100 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:29<00:00, 10.51s/it]
+Token usage:
+Input: 134020
+Output: 40197
+Total: 174217
+Failed courses: ['COMMST 192 - Expecting value: line 1 column 1 (char 0)', 'ECE 192 - Expecting value: line 1 column 1 (char 0)', 'ECE 327 - Expecting value: line 1 column 1 (char 0)', 'ARBUS 202 - Expecting value: line 1 column 1 (char 0)', 'BIOL 373L - Expecting property name enclosed in double quotes: line 34 column 13 (char 789)', 'CHEM 262L - Expecting value: line 1 column 1 (char 0)', 'EARTH 122 - Expecting value: line 1 column 1 (char 0)', 'PHYS 263 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:30<00:00, 10.52s/it]
+Token usage:
+Input: 133396
+Output: 38950
+Total: 172346
+Failed courses: ['ENVS 200 - Expecting value: line 1 column 1 (char 0)', 'CIVE 230 - Expecting value: line 1 column 1 (char 0)', 'EARTH 458 - Expecting value: line 1 column 1 (char 0)', 'CIVE 332 - Expecting value: line 1 column 1 (char 0)', 'BME 364 - Expecting value: line 1 column 1 (char 0)', 'SYDE 262 - Expecting value: line 1 column 1 (char 0)', 'ECE 305 - Expecting value: line 1 column 1 (char 0)', 'PHYS 234 - Expecting value: line 1 column 1 (char 0)', 'GEOE 223 - Expecting value: line 1 column 1 (char 0)', 'ME 203 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:32<00:00, 10.55s/it]
+Token usage:
+Input: 143190
+Output: 37848
+Total: 181038
+Failed courses: ['ENBUS 102 - Expecting value: line 1 column 1 (char 0)', 'ENBUS 315 - Expecting value: line 1 column 1 (char 0)', 'ERS 100 - Expecting value: line 1 column 1 (char 0)', 'ERS 320 - Expecting value: line 1 column 1 (char 0)', 'FINE 252 - Expecting value: line 1 column 1 (char 0)', 'FR 276 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:32<00:00, 10.56s/it]
+Token usage:
+Input: 134208
+Output: 38761
+Total: 172969
+Failed courses: ['MNS 102 - Expecting value: line 1 column 1 (char 0)', 'SCI 238 - Expecting value: line 1 column 1 (char 0)', 'CHEM 120L - Expecting value: line 1 column 1 (char 0)', 'SCBUS 223 - Expecting value: line 1 column 1 (char 0)', 'AFM 231 - Invalid control character at: line 55 column 48 (char 1619)', 'ENGL 193 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:33<00:00, 10.56s/it]
+Token usage:
+Input: 140580
+Output: 41608
+Total: 182188
+Failed courses: ['EARTH 436A - Expecting value: line 1 column 1 (char 0)', 'BIOL 150 - Expecting value: line 1 column 1 (char 0)', 'BIOL 447 - Expecting value: line 1 column 1 (char 0)', 'EARTH 123 - Expecting value: line 1 column 1 (char 0)', 'ERS 316 - Expecting value: line 1 column 1 (char 0)', 'BIOL 450 - Expecting value: line 1 column 1 (char 0)', 'EARTH 456 - Expecting value: line 1 column 1 (char 0)', 'PLAN 353 - Expecting value: line 1 column 1 (char 0)', 'GEOG 320 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:33<00:00, 10.57s/it]
+Token usage:
+Input: 135464
+Output: 41006
+Total: 176470
+Failed courses: ['ENVE 330 - Expecting property name enclosed in double quotes: line 97 column 13 (char 2214)', 'CIVE 554 - Expecting value: line 1 column 1 (char 0)', 'ENVE 577 - Expecting value: line 1 column 1 (char 0)', 'GEOG 209 - Expecting value: line 1 column 1 (char 0)', 'PLAN 478 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:34<00:00, 10.57s/it]
+Token usage:
+Input: 139421
+Output: 39897
+Total: 179318
+Failed courses: ['MATH 118 - Expecting value: line 1 column 1 (char 0)', 'CIVE 123 - Expecting value: line 1 column 1 (char 0)', 'CIVE 221 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:37<00:00, 10.61s/it]
+Token usage:
+Input: 138778
+Output: 39380
+Total: 178158
+Failed courses: ['ECE 204 - Expecting value: line 1 column 1 (char 0)', 'ECE 457B - Expecting value: line 1 column 1 (char 0)', 'ECE 459 - Expecting value: line 1 column 1 (char 0)', 'SYDE 548 - Expecting value: line 1 column 1 (char 0)', 'BIOL 240 - Expecting value: line 1 column 1 (char 0)', 'BIOL 354 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:41<00:00, 10.67s/it]
+Token usage:
+Input: 133816
+Output: 40679
+Total: 174495
+Failed courses: ["SCI 238 - Expecting ',' delimiter: line 51 column 42 (char 1345)", 'CS 447 - Expecting value: line 1 column 1 (char 0)', 'CS 146 - Expecting value: line 1 column 1 (char 0)', 'CS 240 - Expecting value: line 1 column 1 (char 0)', 'CS 246 - Expecting value: line 1 column 1 (char 0)', 'MATH 128 - Expecting property name enclosed in double quotes: line 32 column 9 (char 669)']
+100%|███████████████████████████████████████████| 77/77 [13:42<00:00, 10.68s/it]
+Token usage:
+Input: 132740
+Output: 39506
+Total: 172246
+Failed courses: ['MATH 106 - Expecting property name enclosed in double quotes: line 34 column 13 (char 785)', 'CS 135 - Expecting value: line 1 column 1 (char 0)', 'CS 146 - Expecting value: line 1 column 1 (char 0)', 'STAT 321 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:42<00:00, 10.69s/it]
+Token usage:
+Input: 132271
+Output: 38765
+Total: 171036
+Failed courses: ['STAT 230 - Expecting value: line 1 column 1 (char 0)', 'PMATH 332 - Expecting property name enclosed in double quotes: line 23 column 9 (char 451)', 'PHYS 334 - Expecting value: line 1 column 1 (char 0)', 'BIOL 130L - Expecting value: line 1 column 1 (char 0)', 'BIOL 220 - Expecting property name enclosed in double quotes: line 69 column 17 (char 1652)', 'CS 135 - Expecting value: line 1 column 1 (char 0)', 'CS 146 - Expecting value: line 1 column 1 (char 0)', 'CS 116 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:46<00:00, 10.73s/it]
+Token usage:
+Input: 135446
+Output: 39630
+Total: 175076
+Failed courses: ['AMATH 350 - Expecting value: line 1 column 1 (char 0)', 'STAT 333 - Expecting property name enclosed in double quotes: line 56 column 13 (char 1241)', 'ME 321 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:51<00:00, 10.80s/it]
+Token usage:
+Input: 133592
+Output: 38683
+Total: 172275
+Failed courses: ['ECE 451 - Expecting value: line 1 column 1 (char 0)', 'CS 459 - Expecting value: line 1 column 1 (char 0)', 'MATH 115 - Expecting value: line 1 column 1 (char 0)', 'SE 101 - Expecting value: line 1 column 1 (char 0)', 'CS 240 - Expecting value: line 1 column 1 (char 0)', 'SE 390 - Expecting value: line 1 column 1 (char 0)', 'SE 490 - Expecting value: line 1 column 1 (char 0)', 'CHE 161 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:53<00:00, 10.82s/it]
+Token usage:
+Input: 136584
+Output: 40608
+Total: 177192
+Failed courses: ['LS 413 - Expecting value: line 1 column 1 (char 0)', 'PSCI 432 - Expecting value: line 1 column 1 (char 0)', 'STV 305 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:56<00:00, 10.87s/it]
+Token usage:
+Input: 135799
+Output: 40815
+Total: 176614
+Failed courses: ['CS 445 - Expecting value: line 1 column 1 (char 0)', 'ECE 406 - Expecting value: line 1 column 1 (char 0)', 'ECE 409 - Expecting value: line 1 column 1 (char 0)', 'ECE 432 - Expecting value: line 1 column 1 (char 0)', 'ECE 444 - Expecting value: line 1 column 1 (char 0)', 'ECE 457A - Expecting value: line 1 column 1 (char 0)', 'ECE 457C - Expecting value: line 1 column 1 (char 0)', 'ECE 463 - Expecting value: line 1 column 1 (char 0)', 'ECE 493 - Expecting value: line 1 column 1 (char 0)', 'ECE 499 - Expecting value: line 1 column 1 (char 0)', 'ECE 224 - Expecting value: line 1 column 1 (char 0)', 'ECE 327 - Expecting value: line 1 column 1 (char 0)', 'GEOE 224 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:57<00:00, 10.88s/it]
+Token usage:
+Input: 132425
+Output: 39357
+Total: 171782
+Failed courses: ['PHYS 275 - Expecting value: line 1 column 1 (char 0)', 'CS 451 - Expecting value: line 1 column 1 (char 0)', 'CS 479 - Expecting value: line 1 column 1 (char 0)', 'ECE 327 - Expecting value: line 1 column 1 (char 0)', 'ECE 486 - Expecting property name enclosed in double quotes: line 27 column 9 (char 517)', 'ECE 488 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:58<00:00, 10.88s/it]
+Token usage:
+Input: 128009
+Output: 39537
+Total: 167546
+Failed courses: ['BIOL 240 - Expecting value: line 1 column 1 (char 0)', 'PHYS 363 - Expecting value: line 1 column 1 (char 0)', 'CS 114 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [13:59<00:00, 10.91s/it]
+Token usage:
+Input: 136456
+Output: 39582
+Total: 176038
+Failed courses: ['ECE 140 - Expecting value: line 1 column 1 (char 0)', 'SYDE 121 - Expecting value: line 1 column 1 (char 0)', 'BME 393 - Expecting value: line 1 column 1 (char 0)', 'CS 234 - Expecting value: line 1 column 1 (char 0)', 'ECE 124 - Expecting value: line 1 column 1 (char 0)', 'ECE 327 - Expecting value: line 1 column 1 (char 0)', 'ECE 356 - Expecting value: line 1 column 1 (char 0)', 'ECE 451 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:05<00:00, 10.98s/it]
+Token usage:
+Input: 135247
+Output: 39688
+Total: 174935
+Failed courses: ['MATH 138 - Expecting value: line 1 column 1 (char 0)', 'EARTH 223 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:07<00:00, 11.00s/it]
+Token usage:
+Input: 138723
+Output: 42622
+Total: 181345
+Failed courses: ['ECE 486 - Expecting property name enclosed in double quotes: line 20 column 17 (char 497)', 'SYDE 584 - Expecting value: line 1 column 1 (char 0)', 'MATH 115 - Expecting value: line 1 column 1 (char 0)', 'MTE 262 - Expecting value: line 1 column 1 (char 0)', 'MTE 309 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:08<00:00, 11.02s/it]
+Token usage:
+Input: 133190
+Output: 39058
+Total: 172248
+Failed courses: ['ECE 327 - Expecting value: line 1 column 1 (char 0)', 'CHEM 254 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:09<00:00, 11.04s/it]
+Token usage:
+Input: 132965
+Output: 39182
+Total: 172147
+Failed courses: ['BIOL 458 - Expecting value: line 1 column 1 (char 0)', 'EARTH 238 - Expecting value: line 1 column 1 (char 0)', 'EARTH 440 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:10<00:00, 11.05s/it]
+Token usage:
+Input: 135549
+Output: 41447
+Total: 176996
+Failed courses: ['CIVE 542 - Expecting value: line 1 column 1 (char 0)', 'CIVE 596 - Expecting value: line 1 column 1 (char 0)', 'CIVE 484 - Expecting value: line 1 column 1 (char 0)', 'GEOG 305 - Expecting value: line 1 column 1 (char 0)', 'CS 349 - Expecting value: line 1 column 1 (char 0)', 'CS 449 - Expecting value: line 1 column 1 (char 0)', 'ECE 486 - Expecting property name enclosed in double quotes: line 27 column 9 (char 517)', 'PSYCH 101 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:10<00:00, 11.05s/it]
+Token usage:
+Input: 131345
+Output: 40252
+Total: 171597
+Failed courses: ['ECE 204 - Expecting value: line 1 column 1 (char 0)', 'ECE 298 - Expecting value: line 1 column 1 (char 0)', 'BIOL 150 - Expecting value: line 1 column 1 (char 0)', 'PHYS 275 - Expecting value: line 1 column 1 (char 0)', 'ECE 331 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:14<00:00, 11.10s/it]
+Token usage:
+Input: 126416
+Output: 37291
+Total: 163707
+Failed courses: ['PHYS 122L - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:15<00:00, 11.11s/it]
+Token usage:
+Input: 140531
+Output: 41427
+Total: 181958
+Failed courses: ['BME 284 - Expecting value: line 1 column 1 (char 0)', 'BME 284L - Expecting value: line 1 column 1 (char 0)', 'CIVE 460 - Expecting value: line 1 column 1 (char 0)', 'ECE 350 - Expecting value: line 1 column 1 (char 0)', 'ECE 356 - Expecting value: line 1 column 1 (char 0)', 'ECE 406 - Expecting value: line 1 column 1 (char 0)', 'MTE 241 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:17<00:00, 11.13s/it]
+Token usage:
+Input: 134327
+Output: 39861
+Total: 174188
+Failed courses: ['MSE 343 - Expecting value: line 1 column 1 (char 0)', 'PHYS 249 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:20<00:00, 11.18s/it]
+Token usage:
+Input: 134014
+Output: 39697
+Total: 173711
+Failed courses: ['ME 452 - Expecting value: line 1 column 1 (char 0)', 'CIVE 121 - Expecting value: line 1 column 1 (char 0)', 'BIOL 150 - Expecting value: line 1 column 1 (char 0)', 'BIOL 273 - Expecting value: line 1 column 1 (char 0)', 'ENVS 200 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:29<00:00, 11.30s/it]
+Token usage:
+Input: 134372
+Output: 43043
+Total: 177415
+Failed courses: ['MATH 227 - Expecting value: line 1 column 1 (char 0)', 'PHYS 249 - Expecting value: line 1 column 1 (char 0)', 'BIOL 130L - Expecting value: line 1 column 1 (char 0)', 'BIOL 240L - Expecting value: line 1 column 1 (char 0)', 'BME 101L - Expecting value: line 1 column 1 (char 0)', 'SYDE 113 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:38<00:00, 11.41s/it]
+Token usage:
+Input: 136791
+Output: 42196
+Total: 178987
+Failed courses: ['CO 487 - Expecting value: line 1 column 1 (char 0)', 'ECE 224 - Expecting value: line 1 column 1 (char 0)', 'ECE 252 - Expecting value: line 1 column 1 (char 0)', 'BME 386 - Expecting value: line 1 column 1 (char 0)', 'CHE 331 - Expecting value: line 1 column 1 (char 0)', 'CHE 571 - Expecting value: line 1 column 1 (char 0)', 'ECE 356 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [14:40<00:00, 11.44s/it]
+Token usage:
+Input: 136944
+Output: 40436
+Total: 177380
+Failed courses: ['MSE 333 - Expecting value: line 1 column 1 (char 0)', 'SYDE 334 - Expecting value: line 1 column 1 (char 0)', 'CS 135 - Expecting value: line 1 column 1 (char 0)', 'MSE 121 - Expecting value: line 1 column 1 (char 0)', 'CS 138 - Expecting value: line 1 column 1 (char 0)', 'CS 146 - Expecting value: line 1 column 1 (char 0)', 'EARTH 456 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [15:05<00:00, 11.76s/it]
+Token usage:
+Input: 135435
+Output: 42292
+Total: 177727
+Failed courses: ['CS 100 - Expecting value: line 1 column 1 (char 0)', 'CHEM 123L - Expecting value: line 1 column 1 (char 0)', 'EARTH 122 - Expecting value: line 1 column 1 (char 0)', 'EARTH 223 - Expecting value: line 1 column 1 (char 0)', 'EARTH 235 - Expecting value: line 1 column 1 (char 0)', 'EARTH 421 - Expecting value: line 1 column 1 (char 0)', 'EARTH 458 - Expecting value: line 1 column 1 (char 0)', 'PHYS 122 - Expecting value: line 1 column 1 (char 0)', 'ECE 124 - Expecting value: line 1 column 1 (char 0)']
+100%|███████████████████████████████████████████| 77/77 [15:37<00:00, 12.17s/it]
+Token usage:
+Input: 136437
+Output: 42501
+Total: 178938
+Failed courses: ['PHIL 256 - Expecting value: line 1 column 1 (char 0)', 'STAT 441 - Expecting value: line 1 column 1 (char 0)', 'BIOL 201 - Expecting value: line 1 column 1 (char 0)', 'BIOL 239 - Expecting value: line 1 column 1 (char 0)', 'BIOL 434 - Expecting value: line 1 column 1 (char 0)']
+(venv) aryan@Aryans-MacBook-Pro Processing %

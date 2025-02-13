@@ -1,0 +1,9 @@
+# Split into chunks
+python split_syllabi.py
+
+# Process in parallel (use nohup for long-running)
+chmod +x run_parallel.sh
+./run_parallel.sh
+
+# Combine results
+cat trees/trees_*.jsonl > final_trees.jsonl

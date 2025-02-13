@@ -3,7 +3,7 @@ import json
 import math
 import os
 
-def split_json(input_file, chunks=20):
+def split_json(input_file, chunks=60):
     with open(input_file, 'r') as f:
         data = json.load(f)
 
@@ -21,4 +21,4 @@ def split_json(input_file, chunks=20):
             json.dump(chunk, f)
 
 if __name__ == '__main__':
-    split_json('syllabi2.json', 20)
+    split_json('../../scrapers/scrapesyllabus/syllabi2.json', 60)

@@ -1,7 +1,7 @@
 import json
 
 # Load the JSON file
-with open('./deduplicated_courses.json', 'r') as file:
+with open('../../NLP/Processing/chunks/syllabi_chunk_19.json', 'r') as file:
     data = json.load(file)
 
 # Count the number of objects
