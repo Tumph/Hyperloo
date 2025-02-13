@@ -7,3 +7,6 @@ chmod +x run_parallel.sh
 
 # Combine results
 cat trees/trees_*.jsonl > final_trees.jsonl
+
+#combine error jsnols as well
+cat missedtrees/trees_*.jsonl > final_missed_trees.jsonl
