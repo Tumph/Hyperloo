@@ -4,6 +4,8 @@ from tqdm import tqdm
 import argparse
 import time
 import random
+from json_repair import repair_json
+import sys
 
 client = OpenAI()
 
@@ -103,7 +105,7 @@ def getTree(topics_str):
                           ]
                         }
                       ]
-                    }"""},
+                    }}"""},
                     {"role": "user", "content": """Generate a nested JSON object containing a "knowledge tree" describing a certain course. Every course or subject on earth can be diluted down into a knowledge tree, or a tree diagram representing the main topic of the course, then subtopics required to build up to that main topic, and then sub sub topics about each of those subtopics. You will receive a text dump of the syllabus of this course. This syllabus has some parts of it that aren't main topics, subtopics, or anything else. Ignore those, and just get the general essence of what the course is about and what it is trying to teach from the syllabus text dump. You need to organize these course topics into a hierarchical JSON structure.
 
                     Rules: 1. Create a logical parent-child relationship between broad concepts and specific subtopics 2. Remove duplicate concepts 3. Keep maximum 4 levels of nesting 4. Output exactly in this format:
@@ -202,8 +204,8 @@ def getTree(topics_str):
                         "topics": []
                         }
                     ]
-                    }
 
+                    }
 
                     Yours would be more elaborate, less elaborate, with more or less nesting: your discretion based on the complexity of the subject material. Here is the text dump: "topics":""" + f"{topics_str}" + """
 
@@ -243,7 +245,38 @@ def main():
             token_counts['output'] += out_tok
             token_counts['total'] += total_tok
 
-            json.loads(result)  # Validate JSON
+            try:
+                json.loads(result)
+
+            except ValueError as err:
+                # Handle invalid JSON with retries
+                max_retries = 3
+                retry_count = 0
+                success = False
+
+                while retry_count < max_retries and not success:
+                    try:
+                        # Regenerate the tree with updated tokens
+                        result, in_tok, out_tok, total_tok = getTree(''.join(course['topics']))
+                        token_counts['input'] += in_tok
+                        token_counts['output'] += out_tok
+                        token_counts['total'] += total_tok
+
+                        # Validate JSON again
+                        json.loads(result)
+                        success = True
+
+                    except Exception as retry_error:
+                        retry_count += 1
+                        sleep_time = (2 ** retry_count) + random.uniform(0, 1)
+                        time.sleep(sleep_time)
+                        print(f"⚠️ Retry {retry_count} for {course['course_code']}: {str(retry_error)}")
+
+                if not success:
+                    print(f"{course['course_code']} - Max retries exceeded: {str(err)}")
+                    result = repair_json(result)
+                    continue
+
             json_list.append({
                 "course_id": course['course_id'],
                 "course_code": course['course_code'],
@@ -267,5 +300,87 @@ def main():
     print(f"Token usage:\nInput: {token_counts['input']}\nOutput: {token_counts['output']}\nTotal: {token_counts['total']}")
     print(f"Failed courses: {invalid_courses}")
 
-if __name__ == '__main__':
-    main()
+
+def test_with_samples():
+    """Test pipeline with sample_syllabi.json"""
+    with open('../../scrapers/scrapesyllabus/samplesyllabi.json', 'r') as f:
+        test_courses = json.load(f)
+
+    print("\n=== TESTING WITH SAMPLE DATA ===")
+    json_list = []
+    token_counts = {'input': 0, 'output': 0, 'total': 0}
+    invalid_courses = []
+
+    for course in tqdm(test_courses):
+        try:
+            result, in_tok, out_tok, total_tok = getTree(''.join(course['topics']))
+            token_counts['input'] += in_tok
+            token_counts['output'] += out_tok
+            token_counts['total'] += total_tok
+
+            try:
+                json.loads(result)
+
+            except ValueError as err:
+                print("X JSON ERROR")
+                # Handle invalid JSON with retries
+                max_retries = 3
+                retry_count = 0
+                success = False
+
+                while retry_count < max_retries and not success:
+                    try:
+                        # Regenerate the tree with updated tokens
+                        result, in_tok, out_tok, total_tok = getTree(''.join(course['topics']))
+                        token_counts['input'] += in_tok
+                        token_counts['output'] += out_tok
+                        token_counts['total'] += total_tok
+
+                        # Validate JSON again
+                        json.loads(result)
+                        success = True
+
+                    except Exception as retry_error:
+                        retry_count += 1
+                        sleep_time = (2 ** retry_count) + random.uniform(0, 1)
+                        time.sleep(sleep_time)
+                        print(f"⚠️ Retry {retry_count} for {course['course_code']}: {str(retry_error)}")
+
+                if not success:
+                    print(f"{course['course_code']} - Max retries exceeded: {str(err)}")
+                    result = repair_json(result)
+                    continue
+
+            json_list.append({
+                "course_id": course['course_id'],
+                "course_code": course['course_code'],
+                "course_name": course['course_name'],
+                "term_name": course['term_name'],
+                "program_name": course['program_name'],
+                "program_id": course['program_id'],
+                "major_id": course['major_id'],
+                "major_name": course['major_name'],
+                "tree": result
+            })
+        except Exception as e:
+            invalid_courses.append(f"{course['course_code']} - {str(e)}")
+            continue
+
+    print(f"result: {json_list}")
+
+    print(f"Token usage:\nInput: {token_counts['input']}\nOutput: {token_counts['output']}\nTotal: {token_counts['total']}")
+    print(f"Failed courses: {invalid_courses}")
+
+
+if __name__ == "__main__":
+    # Top-level parser for --test flag only
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument('--test', action='store_true', help='Run test cases')
+    args, unknown = parser.parse_known_args()
+
+    if args.test:
+        test_with_samples()
+    else:
+        # Re-parse arguments with main()'s parser
+        sys.argv = [sys.argv[0]] + unknown
+        main()
