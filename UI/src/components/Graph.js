@@ -86,7 +86,16 @@ const GraphComponent = () => {
   };
 
   return (
-    <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        position: "absolute", // Ensure the container fills the viewport
+        top: 0,
+        left: 0,
+        overflow: "hidden",  // Hide scrollbars for the container
+      }}
+    >
       {mode === "courses" && (
         <button
           style={{
@@ -112,7 +121,8 @@ const GraphComponent = () => {
         dagMode={mode === "courses" ? "td" : null}
         dagLevelDistance={mode === "courses" ? 300 : 0}
         onNodeClick={handleNodeClick}
-        // Improved layout configuration
+        // Make the nodes bigger
+        nodeRelSize={10}  // Increase this value to make nodes bigger
         cooldownTicks={100}
         warmupTicks={10}
         numDimensions={3}
