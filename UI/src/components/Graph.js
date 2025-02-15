@@ -84,6 +84,10 @@ const GraphComponent = () => {
       );
       loadGraphData(convertCoursesGraphDataForMajor(filteredCourses, selectedMajor));
     }
+    // Reset search state when graph changes
+    setSearchTerm('');
+    setSearchSuggestions([]);
+    setShowSuggestions(false);
   }, [mode, selectedMajor]);
 
   const handleNodeClick = (node) => {
