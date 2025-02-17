@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "d3": "^7.9.0",
     "lucide-react": "^0.474.0",
     "neo4j-driver": "^5.27.0",
     "neovis.js": "^2.1.0",
