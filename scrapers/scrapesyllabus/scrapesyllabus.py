@@ -92,7 +92,7 @@ def extract_and_format_course_codes(course_titles):
 
 def scrape_syllabi():
     print("🚀 Starting syllabus scraping process")
-    with open('../coursescraper/stem_majors5.json', 'r') as f:
+    with open('../coursescraper/stem_majors.json', 'r') as f:
         majors = json.load(f)
 
     driver = webdriver.Chrome()
@@ -173,7 +173,7 @@ def scrape_syllabi():
                 print(f"🪟 Window handles: {driver.window_handles}")
                 continue
 
-        with open('syllabi5.json', 'w') as f:
+        with open('syllabi.json', 'w') as f:
             json.dump(syllabus_data, f, indent=4)
             print(f"💾 Interim save: {major['major_name']} completed")
 
